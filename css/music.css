@@ -4,6 +4,15 @@ body{
     background: linear-gradient(90deg, hsl(261, 100%, 67%) ,  hsl(265, 46%, 27%));
     cursor:url(../img/8673214_ic_fluent_cursor_click_filled_icon.png), auto !important;
     background:url(../img/ezgif.com-gif-maker-cat.gif); background-size:cover; background-repeat: no-repeat;
+    overflow-y: hidden;
+}
+
+#wrap{
+    overflow-y: scroll;
+    position:relative;
+}
+#wrap::-webkit-scrollbar-thumb{
+    border-radius: 10px;
 }
 
 header{
@@ -18,7 +27,7 @@ header{
     }
     #search > p{
         color:white;
-        font-family: 'Pretendard-Regular'; font-size:1.3vw;
+        font-family: 'Pretendard-Regular'; font-size:1.3vw; font-weight: normal;
     }
     #search > p:hover{
         cursor: url(../img/premium-icon-click-2725783-1.png), auto !important; 
@@ -28,6 +37,71 @@ header{
     width:100%; height:42vh;
     background-color:black;
 }
+    #the_bottom_music_bar{
+        width:89vw; height:7vh;
+        position:fixed; bottom:4.25%; z-index: 1;
+        background-color: #222;
+        display:none;
+    }
+    #random_modal{
+        width:100%;
+        display:flex; justify-content: space-between;
+    }
+    #play_button_box{
+        width:14vw; height:7vh;
+        display:flex; justify-content: space-evenly; align-items: center;
+        position: relative;
+    }
+        #left_play,
+        #play_music,
+        #right_play{
+            width:0.8vw; height:1.5vh;
+            filter:invert(1);
+        }
+        #play_music{
+            width:1.8vw; height:3vh;
+            filter:invert(0);
+        }
+        #music_clock{
+            width:4vw; height:7vh;
+            background: olive;
+        }
+    #middle{
+        display:flex;
+    }
+    #album_box{
+        width:15vw; height:7vh;
+        display:flex; align-items: center; justify-content: space-evenly;
+    }  
+    #album_image{
+        width:2.5vw;
+        border-radius: 3px;
+    }
+        #album_show > p,
+        #album_show > span{
+            font-family: 'Pretendard-Regular'; font-size:0.95vw;
+            color:white;
+        }
+        #album_show > span{
+            color:#999;
+        }
+
+    #etc_icon_box{
+        width:14vw; height:7vh;
+        display:flex; justify-content: space-evenly; align-items: center;
+    }
+        #etc_icon_box img{
+            width:1.3vw;
+            filter: invert(0.7);
+        }
+    #music_volume_etc{
+        width:12vw; height:7vh;
+        display:flex; justify-content: space-evenly; align-items: center;
+    }
+        #music_volume_etc img{
+            width:1.5vw;
+            filter: invert(0.7);
+        }
 #music_top_text{
     width:20vw; height:5vh;
     margin-left:5%; 
@@ -224,3 +298,150 @@ header{
     width:100%; height:auto;
     background-color:black;
 }
+
+#music_middle_text{
+    width:20vw; height:10vh;
+    margin-left:5%;
+    padding-top:3%;
+    line-height:10vh;
+}
+#music_middle_text > h1{
+    font-family: 'Pretendard-Regular'; font-size:2vw;
+    color:white;
+}
+
+#re_music_listen,
+#re_music_listen_2{
+    width:100%; height:40vh;
+    display:flex; justify-content: space-evenly;
+    position:relative;
+    overflow: hidden;
+}
+#re_music_listen_slide,
+#re_music_listen_slide_2{
+    width:100%; height:40vh;
+    display:flex;
+    overflow: hidden;
+}
+#re_music_listen_slide_2{
+    display:none;
+}
+
+    #re_wrecked,
+    #mgk_love_race,
+    #pdm_hypnotized,
+    #surfaces_wave_of_you,
+    #mgk_meb,
+    #iu_summer_love,
+    #or_start_again,
+    #wdw_fallin,
+    #sweet_home,
+    #dnce_tb{
+        width:20vw; height:40vh;
+        display: flex; flex-flow: column; justify-content: center; align-items: center;
+        position:relative;
+        float:left;
+    }
+    #iu_summer_love,
+    #or_start_again,
+    #wdw_fallin,
+    #sweet_home,
+    #dnce_tb{
+        width:20vw; height:40vh;
+        display: flex; flex-flow: column; justify-content: center; align-items: center;
+        position:relative;
+        float:left;
+    }
+    #re_wrecked:hover,
+    #mgk_love_race:hover,
+    #pdm_hypnotized:hover,
+    #surfaces_wave_of_you:hover,
+    #mgk_meb:hover,
+    #iu_summer_love:hover,
+    #or_start_again:hover,
+    #wdw_fallin:hover,
+    #sweet_home:hover,
+    #dnce_tb:hover{
+        filter: brightness(0.8);
+    }
+        #re_wrecked > #play,
+        #mgk_love_race > #play,
+        #pdm_hypnotized > #play,
+        #surfaces_wave_of_you > #play,
+        #mgk_meb > #play,
+        #iu_summer_love > #play,
+        #or_start_again > #play,
+        #wdw_fallin > #play,
+        #sweet_home > #play,
+        #dnce_tb > #play{
+            width:3vw;
+            position:absolute; top:35%; left:42%;
+            opacity: 0;
+        }
+        #re_wrecked:hover > #play,
+        #mgk_love_race:hover > #play,
+        #pdm_hypnotized:hover > #play,
+        #surfaces_wave_of_you:hover > #play,
+        #mgk_meb:hover > #play,
+        #iu_summer_love:hover > #play,
+        #or_start_again:hover > #play,
+        #wdw_fallin:hover > #play,
+        #sweet_home:hover > #play,
+        #dnce_tb:hover > #play{
+            opacity:1;
+            filter:brightness(1);
+        }
+
+    #re_wrecked img,
+    #mgk_love_race img,
+    #pdm_hypnotized img,
+    #surfaces_wave_of_you img,
+    #mgk_meb img,
+    #iu_summer_love img,
+    #or_start_again img,
+    #wdw_fallin img,
+    #sweet_home img,
+    #dnce_tb img{
+        width:15vw;
+        border-radius: 10px;
+    }
+    #re_wrecked_text,
+    #mgk_love_race_text,
+    #pdm_hypnotized_text,
+    #surfaces_wave_of_you_text,
+    #mgk_meb_text,
+    #iu_summer_love_text,
+    #or_start_again_text,
+    #wdw_fallin_text,
+    #sweet_home_text,
+    #dnce_tb_text{
+        width:15vw; height:7vh;
+        font-family: 'Pretendard-Regular'; font-size:0.9vw;
+        color:white;
+        display: flex; flex-flow: column; justify-content: center;
+    }
+        #pdm_hypnotized_text > span,
+        #surfaces_wave_of_you_text > span,
+        #mgk_meb_text > span,
+        #iu_summer_love_text > span,
+        #or_start_again_text > span,
+        #wdw_fallin_text > span,
+        #sweet_home_text > span{
+            width:95%;
+            overflow:hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    #prev,
+    #next{
+        width:2.5vw;
+        position:absolute; top:36%;
+        filter:invert(1);
+    }
+    #prev{
+        left:0;
+        display:none;
+    }
+    #next{
+        right:0;
+    }

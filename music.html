@@ -8,6 +8,9 @@
 
     <link href="css/music.css" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -27,6 +30,38 @@
             </header>
 
             <div id="slider">
+                <div id="the_bottom_music_bar">
+                    <div id="random_modal">
+                        <div id="play_button_box">
+                            <img id="left_play" src="img/2203516_music_pause_play_player_left_icon.png" alt="">
+                            <img id="play_music" src="img/211876_play_icon.png" alt="">
+                            <img id="right_play" src="img/2203516_music_pause_play_player_right_icon.png" alt="">
+                            <div id="music_clock"></div>
+                        </div>
+                        <div id="middle">
+                            <div id="album_box">
+                                <img id="album_image" src="img/5992143.jpg" alt="">
+                                <div id="album_show">
+                                    <p>SOCIETY</p>
+                                    <span>Valley • SOCIETY • 2021</span>
+                                </div>
+                            </div>
+                            <div id="etc_icon_box">
+                                <img id="hate" src="img/8324235_ui_essential_app_hate_icon.png" alt="">
+                                <img id="like" src="img/8324235_ui_essential_app_like_icon.png" alt="">
+                                <img id="new_create" src="img/5084665_add_create_new_plus_icon.png" alt="">
+                                <img id="playlist_add" src="img/3669292_playlist_add_ic_icon.png" alt="">
+                                <img id="playlist" src="img/4781859_dot_list_menu_nav_navigation_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div id="music_volume_etc">
+                            <img src="img/352215_up_volume_icon.png" alt="">
+                            <img src="img/8680214_repeat_fill_icon.png" alt="">
+                            <img src="img/513930_shuffle_arrows_music_random_icon.png" alt="">
+                            <img src="img/353429_music_note_sound_audio_icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
                 <div id="music_top_text">
                     <p>이 노래로 뮤직 스테이션 시작하기</p>
                     <h1>빠른 선곡</h1>
@@ -171,13 +206,101 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <div class="section">
-                <div>
-                    즐겨 듣는 음악
+                <div id="music_middle_text">
+                    <h1>다시 듣기</h1>
                 </div>
+                <div id="re_music_listen">
+                    <ul id="re_music_listen_slide">
+                        <div id="re_wrecked">
+                            <img src="img/6398197.jpg" alt="">
+                            <img id="play" src="img/211876_play_icon.png" alt="">
+                            <div id="re_wrecked_text">
+                                <p>Wrekced</p>
+                                <span>노래 • Imagine Dragons</span>
+                            </div>
+                        </div>
+                        <div id="mgk_love_race">
+                            <img src="img/5739088.jpg" alt="">
+                            <img id="play" src="img/211876_play_icon.png" alt="">
+                            <div id="re_wrecked_text">
+                                <p>love race(feat. kellin Quinn)</p>
+                                <span>노래 • Machine Gun Kelly</span>
+                            </div>
+                        </div>
+                        <div id="pdm_hypnotized">
+                            <img src="img/400x400cc.jpg" alt="">
+                            <img id="play" src="img/211876_play_icon.png" alt="">
+                            <div id="pdm_hypnotized_text">
+                                <p>Hypnotized</p>
+                                <span>노래 • Purple Disco Machine 및 Sophie and the Giants</span>
+                            </div>
+                        </div>
+                        <div id="surfaces_wave_of_you">
+                            <img src="img/5535290.jpg" alt="">
+                            <img id="play" src="img/211876_play_icon.png" alt="">
+                            <div id="surfaces_wave_of_you_text">
+                                <p>Wave of You</p>
+                                <span>노래 • Surfaces</span>
+                            </div>
+                        </div>
+                        <div id="mgk_meb">
+                            <img src="img/4962415.jpg" alt="">
+                            <img id="play" src="img/211876_play_icon.png" alt="">
+                            <div id="mgk_meb_text">
+                                <p>my ex's best friend</p>
+                                <span>노래 • Machine Gun Kelly • Tickets To My Downfall</span>
+                            </div>
+                        </div>
+                    </ul>
+                        <ul id="re_music_listen_slide_2">
+                            <div id="iu_summer_love">
+                                <img src="img/437030.jpg" alt="">
+                                <img id="play" src="img/211876_play_icon.png" alt="">
+                                <div id="iu_summer_love_text">
+                                    <p>애타는 마음 Summer Love</p>
+                                    <span>노래 • 울랄라세션 & 아이유 및 IU • 애타는 마음</span>
+                                </div>
+                            </div>
+                            <div id="or_start_again">
+                                <img src="img/2468750.jpg" alt="">
+                                <img id="play" src="img/211876_play_icon.png" alt="">
+                                <div id="or_start_again_text">
+                                    <p>Start Again</p>
+                                    <span>노래 • OneRepublic(원리퍼블릭) 및 Vegas Jones • Start Again</span>
+                                </div>
+                            </div>
+                            <div id="wdw_fallin">
+                                <img src="img/5009855.jpg" alt="">
+                                <img id="play" src="img/211876_play_icon.png" alt="">
+                                <div id="wdw_fallin_text">
+                                    <p>Fallin' (Adrenaline)</p>
+                                    <span>노래 • 와이 돈 위 • The Good Times and The Bad Ones</span>
+                                </div>
+                            </div>
+                            <div id="sweet_home">
+                                <img src="img/5173694.jpg" alt="">
+                                <img id="play" src="img/211876_play_icon.png" alt="">
+                                <div id="sweet_home_text">
+                                    <p>4 Strings of Sweet Home</p>
+                                    <span>노래 • GAE MI • 스위트홈 OST (넷플릭스 드라마)</span>
+                                </div>
+                            </div>
+                            <div id="dnce_tb">
+                                <img src="img/730592.jpg" alt="">
+                                <img id="play" src="img/211876_play_icon.png" alt="">
+                                <div id="dnce_tb_text">
+                                    <p>Toothbrush</p>
+                                    <span>노래 • DNCE • DNCE</span>
+                                </div>
+                            </div>
+                        </ul>
+                    <img id="prev" src="img/6646422_arrow_button_circle_essentials_prev_icon.png" alt="">
+                    <img id="next" src="img/6646422_arrow_button_circle_essentials_next_icon.png" alt="">
+                </div>
+
             </div>
 
             <footer>

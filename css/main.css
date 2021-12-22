@@ -7,6 +7,7 @@ body{
     background: linear-gradient(90deg, hsl(261, 100%, 67%) ,  hsl(265, 46%, 27%));
     cursor:url(../img/8673214_ic_fluent_cursor_click_filled_icon.png), auto !important;
     background:url(../img/ezgif.com-gif-maker.gif); background-size:cover; background-repeat: no-repeat;
+    overflow-y: hidden;
 }
 
     .container > div:nth-of-type(1){
