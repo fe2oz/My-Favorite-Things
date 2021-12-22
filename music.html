@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music</title>
+
+    <link href="css/music.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrap">
+        <div class="container" onload="printClock()">
+            <header>
+                <div id="clock" onload="showTime()"></div>
+                <div id="the_top_right">
+                    <img src="img/free-icon-wifi-93158.png" alt="">
+                    <img src="img/premium-icon-half-battery-5604492.png" alt="">
+                </div>
+                <div id="search">
+                    <p onclick="location.href='index.html'">홈</p>
+                    <p>둘러보기</p>
+                    <p>보관함</p>
+                    <p>검색</p>
+                </div>
+            </header>
+
+            <div id="slider">
+                <div id="music_top_text">
+                    <p>이 노래로 뮤직 스테이션 시작하기</p>
+                    <h1>빠른 선곡</h1>
+                </div>
+                <div id="music_select">
+                    <div id="music_select_one">
+                        <div id="pdm_dopamine">
+                            <img src="img/400x400cc.jpg" alt="">
+                            <img id="play" src="img/211876_play_icon.png" alt="">
+                            <div id="pdm_dopamine_text">
+                                <p>Dopamine</p>
+                                <span>
+                                    <img id="sound" src="img/4083823_audio_melody_music_sound_icon.png" alt="">
+                                    <p>Purple Disco Machine 및 Eyelar • Exotica</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="jw_comeandgo">
+                            <img src="img/4641786.jpg" alt="">
+                            <img id="play" src="img/211876_play_icon.png" alt="">
+                            <div id="jw_comeandgo_text">
+                                <p>Come & Go(feat. Marshmallow)</p>
+                                <span>
+                                    <img id="sound" src="img/4083823_audio_melody_music_sound_icon.png" alt="">
+                                    <p>Juice Wrld(주스 월드) Legends Never Die 2020</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="id_wrecked">
+                            <img src="img/6398197.jpg" alt="">
+                            <img id="play" src="img/211876_play_icon.png" alt="">
+                            <div id="id_wrecked_text">
+                                <p>Dopamine</p>
+                                <span>
+                                    <img id="sound" src="img/4083823_audio_melody_music_sound_icon.png" alt="">
+                                    <p>Imagine Dragons Mercury - Act 1 2021</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="aw_stranger_things">
+                            <img src="img/2345147.jpg" alt="">
+                            <img id="play" src="img/211876_play_icon.png" alt="">
+                            <div id="aw_stranger_things_text">
+                                <p>Stranger Things (Alan Walker Remix)(feat. OneRepublic(원리퍼블릭))</p>
+                                <span>
+                                    <img id="sound" src="img/4083823_audio_melody_music_sound_icon.png" alt="">
+                                    <p>Kygo(카이고) • Kids in Love (Remixes)</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="music_select_two">
+                        <div id="or_someday">
+                            <img src="img/6391703.jpg" alt="">
+                            <img id="play" src="img/211876_play_icon.png" alt="">
+                            <div id="or_someday_text">
+                                <p>Someday</p>
+                                <span>
+                                    <img id="sound" src="img/4083823_audio_melody_music_sound_icon.png" alt="">
+                                    <p>OneRepublic Human (Deluxe)</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="tw_moth_to_a_flame">
+                            <img src="img/mta.jpg" alt="">
+                            <img id="play" src="img/211876_play_icon.png" alt="">
+                            <div id="tw_moth_to_a_flame_text">
+                                <p>Moth To A Flame</p>
+                                <span>
+                                    <img id="sound" src="img/4083823_audio_melody_music_sound_icon.png" alt="">
+                                    <p>Swedish House Mafia 및 The Weeknd Moth To A Flame</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="en_loco">
+                            <img src="img/649974.jpg" alt="">
+                            <img id="play" src="img/211876_play_icon.png" alt="">
+                            <div id="en_loco_text">
+                                <p>못참겠어(feat. 로꼬)</p>
+                                <span>
+                                    <img id="sound" src="img/4083823_audio_melody_music_sound_icon.png" alt="">
+                                    <p>에릭남 • 못참겠어 Can't Help Myself</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="pt_good_luck">
+                            <img src="img/318851.jpg" alt="">
+                            <img id="play" src="img/211876_play_icon.png" alt="">
+                            <div id="pt_good_luck_text">
+                                <p>행운을 빌어요</p>
+                                <span>
+                                    <img id="sound" src="img/4083823_audio_melody_music_sound_icon.png" alt="">
+                                    <p>페퍼톤스 (Peppertones) • Beginner's Luck</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="music_select_three">
+                        <div id="lh_baby_blue">
+                            <img src="img/6294979.jpg" alt="">
+                            <img id="play" src="img/211876_play_icon.png" alt="">
+                            <div id="lh_baby_blue_text">
+                                <p>Baby Blue</p>
+                                <span>
+                                    <img id="sound" src="img/4083823_audio_melody_music_sound_icon.png" alt="">
+                                    <p>Luke Hemmings • When Facing the Things We Turn Away From</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="airman_soda">
+                            <img src="img/4898075.jpg" alt="">
+                            <img id="play" src="img/211876_play_icon.png" alt="">
+                            <div id="airman_soda_text">
+                                <p>SODA(feat. 0back, 1ho)</p>
+                                <span>
+                                    <img id="sound" src="img/4083823_audio_melody_music_sound_icon.png" alt="">
+                                    <p>공기남 • 오선지</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="valley_society">
+                            <img src="img/5992143.jpg" alt="">
+                            <img id="play" src="img/211876_play_icon.png" alt="">
+                            <div id="valley_society_text">
+                                <p>SOCIETY</p>
+                                <span>
+                                    <img id="sound" src="img/4083823_audio_melody_music_sound_icon.png" alt="">
+                                    <p>Valley • SOCIETY</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="eh_one">
+                            <img src="img/138893.jpg" alt="">
+                            <img id="play" src="img/211876_play_icon.png" alt="">
+                            <div id="eh_one_text">
+                                <p>One(feat. 지선)</p>
+                                <span>
+                                    <img id="sound" src="img/4083823_audio_melody_music_sound_icon.png" alt="">
+                                    <p>Epik High • Pieces, Part One</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <div>
+                    즐겨 듣는 음악
+                </div>
+            </div>
+
+            <footer>
+
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        function showTime(){
+        var date = new Date();
+        var h = date.getHours();
+        var m = date.getMinutes();
+        var s = date.getSeconds();
+        var session = "AM";
+
+        if(h==0){
+            h=12;
+        }
+
+        if(h>12){
+            h = h - 12;
+            session = "PM";
+        }
+
+        h = (h<10) ? "0" + h : h;
+        m = (m<10) ? "0" + m : m;
+        s = (s<10) ? "0" + s : s;
+
+        var time = h + ":" + m + ":" + s + " " + session;
+
+        document.getElementById("clock").innerText = time;
+        document.getElementById("clock").textContent = time;
+
+        setTimeout(showTime, 1000);
+        }
+
+        showTime();
+    </script>
+</body>
+</html>

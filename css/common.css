@@ -1,0 +1,60 @@
+
+*{
+    margin:0; padding:0;
+}
+
+ul, li, ol{
+    list-style: none; 
+    margin:0; padding:0;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+@font-face {
+    font-family: 'ACCchildrenheartOTF-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112-2@1.0/ACCchildrenheartOTF-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+#wrap{
+    width:90%; height:90vh;
+    margin:0 auto; margin-top:3%;
+    border-radius: 0.5%;
+    box-shadow:5px 5px 15px black, 8px 8px 15px black, -5px -5px 25px black, -8px -8px 15px black, 0 0 60px black;
+    background:hsl(265, 46%, 27%, 0.5);
+}
+
+.container{
+    width:100%; height:100%;
+    position:relative;
+}
+
+#clock{
+    width:25vw; height:5vh;
+    position:absolute; top:0;
+    font-size: 1.5vw;
+    font-family: 'ACCchildrenheartOTF-Regular';
+    color:white;
+}
+
+#the_top_right{
+    width:4vw; height:5vh;
+    position:absolute; top:0; right:0;
+    filter:invert(1);
+}
+#the_top_right img{
+    width:1.5vw;
+}

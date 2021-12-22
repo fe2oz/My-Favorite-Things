@@ -1,32 +1,6 @@
 
 
-*{
-    margin:0; padding:0;
-}
 
-ul, li, ol{
-    list-style: none; 
-    margin:0; padding:0;
-}
-
-a{
-    text-decoration: none;
-    color:black;
-}
-
-@font-face {
-    font-family: 'ACCchildrenheartOTF-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112-2@1.0/ACCchildrenheartOTF-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
 
 body{
     height:100vh;
@@ -34,30 +8,6 @@ body{
     cursor:url(../img/8673214_ic_fluent_cursor_click_filled_icon.png), auto !important;
     background:url(../img/ezgif.com-gif-maker.gif); background-size:cover; background-repeat: no-repeat;
 }
-
-#wrap{
-    width:90%; height:90vh;
-    margin:0 auto; margin-top:3%;
-    border-radius: 0.5%;
-    box-shadow:5px 5px 15px black, 8px 8px 15px black, -5px -5px 25px black, -8px -8px 15px black, 0 0 60px black;
-    background:hsl(265, 46%, 27%, 0.5);
-}
-    .container{
-        width:100%; height:100%;
-        position:relative;
-    }
-    .container > p{
-        font-family: 'ACCchildrenheartOTF-Regular'; font-weight: bold; font-size:7vw;
-        color:white;
-        text-align: center;
-        text-shadow:5px 5px 10px black;
-        line-height:90vh;
-        animation:floating 2s infinite alternate;
-    }
-    @keyframes floating{
-        0%{transform:translate(0,0);}
-        100%{transform:translate(0,15px);}
-    }
 
     .container > div:nth-of-type(1){
         width:18vw; height:8vh; 
@@ -78,29 +28,15 @@ body{
         100%{transform:rotateY(-360deg);}
     }
 
-    #clock{
-        width:25vw; height:5vh;
-        position:absolute; top:0;
-        font-size: 1.5vw;
-        font-family: 'ACCchildrenheartOTF-Regular';
-        color:white;
-    }
-    #the_top_right{
-        width:4vw; height:5vh;
-        position:absolute; top:0; right:0;
-        filter:invert(1);
-    }
-    #the_top_right img{
-        width:1.5vw;
-    }
-
     #pinterest,
     #music,
     #drum{
         width:2.5vw;
+        cursor: url(../img/premium-icon-click-2725783.png), auto !important; 
     }
     #tv{
         width:2.5vw;
+        cursor: url(../img/premium-icon-click-2725783.png), auto !important; 
     }
 
     #menu_icon{
@@ -128,6 +64,11 @@ body{
     #menu_icon > div > img,
     #menu_icon2 > div > img{
         width:3vw;
+        
+    }
+    #menu_icon > div > img:hover,
+    #menu_icon2 > div > img:hover{
+        cursor: url(../img/premium-icon-click-2725783.png), auto !important; 
     }
 
     
