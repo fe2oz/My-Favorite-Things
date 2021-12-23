@@ -40,6 +40,7 @@ header{
         width:89vw; height:7vh;
         position:fixed; bottom:4.25%; z-index: 1;
         background-color: #222;
+        display:none;
     }
     #random_modal{
         width:100%;
@@ -79,20 +80,32 @@ header{
         display:flex;
     }
     #album_box{
-        width:15vw; height:7vh;
+        width:auto; height:7vh;
         display:flex; align-items: center; justify-content: space-evenly;
     }  
     #album_image{
         width:2.5vw;
         border-radius: 3px;
     }
-        #album_show > p,
-        #album_show > span{
+        #music_title,
+        #singer_and_album{
             font-family: 'Pretendard-Regular'; font-size:0.95vw;
             color:white;
+            width:11vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display:block;
+            padding-left:5%;
         }
-        #album_show > span{
+        #singer_and_album{
+            width:11vw;
+            font-size:0.9vw;
             color:#999;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display:block;
         }
 
     #etc_icon_box{
@@ -203,6 +216,7 @@ header{
     width:100%; height:7.5vh;
     display:flex; flex-flow: column wrap; justify-content: center; align-items: center;
     position: relative;
+    cursor: pointer;
 }
     #pdm_dopamine:hover,
     #jw_comeandgo:hover,
@@ -398,6 +412,7 @@ header{
         display: flex; flex-flow: column; justify-content: center; align-items: center;
         position:relative;
         float:left;
+        cursor: pointer;
     }
     #iu_summer_love,
     #or_start_again,
@@ -540,6 +555,7 @@ header{
         width:13vw; height:40vh;
         position: relative;
         display: flex; flex-flow: column; align-items: center; justify-content: space-evenly;
+        cursor: pointer;
     }
     #ttrm:hover,
     #the_weeknd:hover,

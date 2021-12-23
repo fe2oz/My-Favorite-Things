@@ -11,6 +11,7 @@
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/music.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -43,10 +44,10 @@
                         </div>
                         <div id="middle">
                             <div id="album_box">
-                                <img id="album_image" src="img/5992143.jpg" alt="">
+                                <img id="album_image" src="" alt="">
                                 <div id="album_show">
-                                    <p>SOCIETY</p>
-                                    <span>Valley • SOCIETY • 2021</span>
+                                    <p id="music_title"></p>
+                                    <span id="singer_and_album"></span>
                                 </div>
                             </div>
                             <div id="etc_icon_box">
@@ -58,14 +59,13 @@
                             </div>
                         </div>
                         <div id="music_volume_etc">
-                            <input id="volume_bar" type="range" min="0" max="10" value="3">
+                            <input id="volume_bar" type="range" min="0" max="20" value="3" onchange="setVolume()">
                             <img src="img/352215_up_volume_icon.png" alt="">
                             <img src="img/8680214_repeat_fill_icon.png" alt="">
                             <img src="img/513930_shuffle_arrows_music_random_icon.png" alt="">
                             <img src="img/353429_music_note_sound_audio_icon.png" alt="">
                         </div>
                     </div>
-                    <audio id="SOCIETY_music" class="audio" src="audio/Valley - SOCIETY (Audio).mp3"></audio>
                 </div>
                 <div id="music_top_text">
                     <p>이 노래로 뮤직 스테이션 시작하기</p>
