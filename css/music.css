@@ -41,14 +41,14 @@ header{
         width:89vw; height:7vh;
         position:fixed; bottom:4.25%; z-index: 1;
         background-color: #222;
-        display:none;
+       
     }
     #random_modal{
         width:100%;
         display:flex; justify-content: space-between;
     }
     #play_button_box{
-        width:14vw; height:7vh;
+        width:15vw; height:7vh;
         display:flex; justify-content: space-evenly; align-items: center;
         position: relative;
     }
@@ -62,10 +62,21 @@ header{
             width:1.8vw; height:3vh;
             filter:invert(0);
         }
-        #music_clock{
-            width:4vw; height:7vh;
-            background: olive;
+        #play_music:hover{
+            cursor: url(../img/premium-icon-click-2725783-1.png), auto !important; 
         }
+        #music_time{
+            display:flex;
+        }
+            #music_current_time{
+                width:2.3vw; height:7vh;
+                color:white;
+            }
+            #music_duration_time{
+                width:2.3vw; height:7vh;
+                color:white;
+            }
+
     #middle{
         display:flex;
     }
@@ -95,13 +106,30 @@ header{
             filter: invert(0.7);
         }
     #music_volume_etc{
-        width:12vw; height:7vh;
+        width:18vw; height:7vh;
         display:flex; justify-content: space-evenly; align-items: center;
     }
         #music_volume_etc img{
-            width:1.5vw;
+            width:1.3vw;
             filter: invert(0.7);
         }
+        #volume_bar{
+            width:4vw;
+            color:white;
+        }
+        input[type="range"]{
+            -webkit-appearance: none;
+            
+        }
+        input[type="range"]::-webkit-slider-runnable-track{
+            background-color:tomato;
+        }
+        input[type="range"]::-webkit-slider-thumb{
+            -webkit-appearance: none;
+            border:1px solid white;
+        }
+
+
 #music_top_text{
     width:20vw; height:5vh;
     margin-left:5%; 
@@ -300,9 +328,9 @@ header{
 }
 
 #music_middle_text{
-    width:20vw; height:10vh;
+    width:20vw; height:5vh;
     margin-left:5%;
-    padding-top:3%;
+    padding-top:7%;
     line-height:10vh;
 }
 #music_middle_text > h1{
@@ -316,6 +344,7 @@ header{
     display:flex; justify-content: space-evenly;
     position:relative;
     overflow: hidden;
+    margin-top:2%;
 }
 #re_music_listen_slide,
 #re_music_listen_slide_2{
@@ -445,3 +474,149 @@ header{
     #next{
         right:0;
     }
+
+#enjoy_music_listen{
+    width:100%; height:70vh;
+    display:flex; flex-flow: column;
+    position:relative;
+    overflow: hidden;
+}
+#enjoy_music_listen_text{
+    width:20vw; height:5vh;
+    margin-left:5%;
+    padding-top:8%;
+    line-height:5vh;
+    font-family: 'Pretendard-Regular'; font-size:2vw; font-weight: bold;
+    color:white;
+}
+#enjoy_music_listen_slide,
+#enjoy_music_listen_slide_2{
+    width:100%;
+    display:flex; justify-content: space-evenly;
+}
+#enjoy_music_listen_slide_2{
+    display:none;
+}
+    #ttrm,
+    #the_weeknd,
+    #peppertones,
+    #ns_all_for_me,
+    #johnk_shadows,
+    #mcmong,
+    #mgk,
+    #n_flying,
+    #isaac_dunbar,
+    #yun_gun,
+    #hs_golden,
+    #chain_smokers{
+        width:13vw; height:40vh;
+        position: relative;
+        display: flex; flex-flow: column; align-items: center; justify-content: space-evenly;
+    }
+    #ttrm:hover,
+    #the_weeknd:hover,
+    #peppertones:hover,
+    #ns_all_for_me:hover,
+    #johnk_shadows:hover,
+    #mcmong:hover,
+    #mgk:hover,
+    #n_flying:hover,
+    #isaac_dunbar:hover,
+    #yun_gun:hover,
+    #hs_golden:hover,
+    #chain_smokers:hover{
+        filter:brightness(0.8);
+    }
+    #ttrm img,
+    #the_weeknd img,
+    #peppertones img,
+    #mgk img,
+    #yun_gun img,
+    #chain_smokers img{
+        width:12vw;
+        border-radius: 50%;
+    }
+        #ns_all_for_me img,
+        #johnk_shadows img,
+        #mcmong img,
+        #n_flying img,
+        #isaac_dunbar img,
+        #hs_golden img{
+            width:12vw;
+            border-radius: 10px;
+        }
+    #ttrm_text,
+    #the_weeknd_text,
+    #peppertones_text,
+    #ns_all_for_me_text,
+    #johnk_shadows_text,
+    #mcmong_text,
+    #mgk_text,
+    #n_flying_text,
+    #isaac_dunbar_text,
+    #yun_gun_text,
+    #hs_golden_text,
+    #chain_smokers_text{
+        width:100%; 
+        font-family: 'Pretendard-Regular'; font-size:0.9vw;
+        color:white;
+        display: flex; flex-flow: column;
+        padding-left:10%;
+    }
+        #ttrm_text > span,
+        #the_weeknd_text > span,
+        #peppertones_text > span,
+        #ns_all_for_me_text > span,
+        #johnk_shadows_text > span,
+        #mcmong_text > span,
+        #mgk_text > span,
+        #n_flying_text > span,
+        #isaac_dunbar_text > span,
+        #yun_gun_text > span,
+        #hs_golden_text > span,
+        #chain_smokers_text > span{
+            color:#999;
+        }
+            #isaac_dunbar_text > p,
+            #chain_smokers_text > span{
+                width:95%;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+    #ns_all_for_me > #play,
+    #johnk_shadows > #play,
+    #mcmong > #play,
+    #n_flying > #play,
+    #isaac_dunbar > #play,
+    #hs_golden > #play,
+    #chain_smokers > #play{
+        width:2.3vw;
+        position:absolute; top:35%; left:42%;
+    }
+    #prev1,
+    #next1{
+        width:2.5vw;
+        position:absolute; top:47%;
+        filter:invert(1);
+    }
+    #prev1{
+        left:0;
+        display:none;
+    }
+    #next1{
+        right:0;
+    }
+
+#recommend_music_video{
+    width:100%; height:50vh;
+    background: orange;
+}
+#recommend_music_video_text{
+    width:20vw; height:5vh;
+    margin-left:5%;
+    padding-top:2%;
+    line-height:5vh;
+    font-family: 'Pretendard-Regular'; font-size:2vw;
+    color:white;
+}

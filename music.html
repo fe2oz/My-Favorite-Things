@@ -34,9 +34,12 @@
                     <div id="random_modal">
                         <div id="play_button_box">
                             <img id="left_play" src="img/2203516_music_pause_play_player_left_icon.png" alt="">
-                            <img id="play_music" src="img/211876_play_icon.png" alt="">
+                            <img id="play_music" src="img/211876_play_icon.png" alt="" onclick="imgToggle()">
                             <img id="right_play" src="img/2203516_music_pause_play_player_right_icon.png" alt="">
-                            <div id="music_clock"></div>
+                            <div id="music_time">
+                                <div id="music_current_time"></div>
+                                <div id="music_duration_time"></div>
+                            </div>
                         </div>
                         <div id="middle">
                             <div id="album_box">
@@ -55,12 +58,14 @@
                             </div>
                         </div>
                         <div id="music_volume_etc">
+                            <input id="volume_bar" type="range" min="0" max="10" value="3">
                             <img src="img/352215_up_volume_icon.png" alt="">
                             <img src="img/8680214_repeat_fill_icon.png" alt="">
                             <img src="img/513930_shuffle_arrows_music_random_icon.png" alt="">
                             <img src="img/353429_music_note_sound_audio_icon.png" alt="">
                         </div>
                     </div>
+                    <audio id="SOCIETY_music" class="audio" src="audio/Valley - SOCIETY (Audio).mp3"></audio>
                 </div>
                 <div id="music_top_text">
                     <p>이 노래로 뮤직 스테이션 시작하기</p>
@@ -94,7 +99,7 @@
                             <img src="img/6398197.jpg" alt="">
                             <img id="play" src="img/211876_play_icon.png" alt="">
                             <div id="id_wrecked_text">
-                                <p>Dopamine</p>
+                                <p>Wrekced</p>
                                 <span>
                                     <img id="sound" src="img/4083823_audio_melody_music_sound_icon.png" alt="">
                                     <p>Imagine Dragons Mercury - Act 1 2021</p>
@@ -301,6 +306,117 @@
                     <img id="next" src="img/6646422_arrow_button_circle_essentials_next_icon.png" alt="">
                 </div>
 
+                <div id="enjoy_music_listen">
+                    <div id="enjoy_music_listen_text">
+                        즐겨 듣는 음악
+                    </div>
+
+                    <div id="enjoy_music_listen_slide">
+                        <div id="ttrm">
+                            <img src="img/ttrm.jpg" alt="">
+                            <div id="ttrm_text">
+                                <p>TTRM (Titanrium)</p>
+                                <span>구독자 3.24만명</span>
+                            </div>
+                        </div>
+                        <div id="the_weeknd">
+                            <img src="img/ab67616d0000b273775c1b5de32446751c21188e.jpg" alt="">
+                            <div id="the_weeknd_text">
+                                <p>The Weeknd (위켄드)</p>
+                                <span>구독자 2660만명</span>
+                            </div>
+                        </div>
+                        <div id="peppertones">
+                            <img src="img/class78-conts1.jpg" alt="">
+                            <div id="peppertones_text">
+                                <p>페퍼톤스 (peppertones)</p>
+                                <span>구독자 5.52천명</span>
+                            </div>
+                        </div>
+                        <div id="ns_all_for_me">
+                            <img src="img/4568375.jpg" alt="">
+                            <img id="play" src="img/211876_play_icon.png" alt="">
+                            <div id="ns_all_for_me_text">
+                                <p>All For Me</p>
+                                <span>노래 • Nicklas Sahl</span>
+                            </div>
+                        </div>
+                        <div id="johnk_shadows">
+                            <img src="img/6077615.jpg" alt="">
+                            <img id="play" src="img/211876_play_icon.png" alt="">
+                            <div id="johnk_shadows_text">
+                                <p>shadows</p>
+                                <span>노래 • John k</span>
+                            </div>
+                        </div>
+                        <div id="mcmong">
+                            <img src="img/493655.jpg" alt="">
+                            <img id="play" src="img/211876_play_icon.png" alt="">
+                            <div id="mcmong_text">
+                                <p>사랑 범벅(feat. Chancellor)</p>
+                                <span>노래 • MC 몽</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="enjoy_music_listen_slide_2">
+                        <div id="mgk">
+                            <img src="img/415950561_n.jpg" alt="">
+                            <div id="mgk_text">
+                                <p>Machine Gun Kelly</p>
+                                <span>구독자 808만명</span>
+                            </div>
+                        </div>
+                        <div id="n_flying">
+                            <img src="img/5975463.jpg" alt="">
+                            <img id="play" src="img/211876_play_icon.png" alt="">
+                            <div id="n_flying_text">
+                                <p>사랑 범벅(feat. Chancellor)</p>
+                                <span>노래 • MC 몽</span>
+                            </div>
+                        </div>
+                        <div id="isaac_dunbar">
+                            <img src="img/4593766.jpg" alt="">
+                            <img id="play" src="img/211876_play_icon.png" alt="">
+                            <div id="isaac_dunbar_text">
+                                <p>scorton's creek (re-imagined by filous)</p>
+                                <span>노래 • 이삭 던바</span>
+                            </div>
+                        </div>
+                        <div id="yun_gun">
+                            <img src="img/4532848.jpg" alt="">
+                            <div id="yun_gun_text">
+                                <p>윤건</p>
+                                <span>구독자 3.34천명</span>
+                            </div>
+                        </div>
+                        <div id="hs_golden">
+                            <img src="img/3248968.jpg" alt="">
+                            <img id="play" src="img/211876_play_icon.png" alt="">
+                            <div id="hs_golden_text">
+                                <p>Golden</p>
+                                <span>노래 • Harry Styles(해리 스타일스)</span>
+                            </div>
+                        </div>
+                        <div id="chain_smokers">
+                            <img src="img/1775087.jpg" alt="">
+                            <img id="play" src="img/211876_play_icon.png" alt="">
+                            <div id="chain_smokers_text">
+                                <p>Bloodstream</p>
+                                <span>노래 • The chainsmokers(체인스모커스)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <img id="prev1" src="img/6646422_arrow_button_circle_essentials_prev_icon.png" alt="">
+                    <img id="next1" src="img/6646422_arrow_button_circle_essentials_next_icon.png" alt="">
+                </div>
+
+                <div id="recommend_music_video">
+                    <div id="recommend_music_video_text">
+                        추천 뮤직비디오
+                    </div>
+                    <div id="tc_closer"></div>
+                </div>
             </div>
 
             <footer>
@@ -339,6 +455,20 @@
         }
 
         showTime();
+    </script>
+
+    <script>
+        $.ajax({
+            method: "GET",
+            url: "https://dapi.kakao.com/v2/search/vclip",
+            data: {query:"The Chainsmokers"},
+            headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+        })
+
+        .done(function(msg) {
+            console.log(msg);
+            
+        });
     </script>
 </body>
 </html>
