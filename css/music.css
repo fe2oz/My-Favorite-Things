@@ -2,7 +2,6 @@
 body{
     height:100vh;
     background: linear-gradient(90deg, hsl(261, 100%, 67%) ,  hsl(265, 46%, 27%));
-    cursor:url(../img/8673214_ic_fluent_cursor_click_filled_icon.png), auto !important;
     background:url(../img/ezgif.com-gif-maker-cat.gif); background-size:cover; background-repeat: no-repeat;
     overflow-y: hidden;
 }
@@ -30,7 +29,7 @@ header{
         font-family: 'Pretendard-Regular'; font-size:1.3vw; font-weight: normal;
     }
     #search > p:hover{
-        cursor: url(../img/premium-icon-click-2725783-1.png), auto !important; 
+        cursor: pointer;
     }
 
 #slider{
@@ -41,7 +40,6 @@ header{
         width:89vw; height:7vh;
         position:fixed; bottom:4.25%; z-index: 1;
         background-color: #222;
-       
     }
     #random_modal{
         width:100%;
@@ -119,21 +117,51 @@ header{
         }
         input[type="range"]{
             -webkit-appearance: none;
-            
+        }
+        input[type="range"]:focus{
+            outline: none;
         }
         input[type="range"]::-webkit-slider-runnable-track{
-            background-color:tomato;
+            width: 100%;
+            height: 3px;
+            cursor: pointer;
+            background: #999;
+            border-radius: 20px;
+        }
+        input[type="range"]::-moz-range-track{
+            width: 100%;
+            height: 3px;
+            cursor: pointer;
+            background: #999;
+            border-radius: 20px;
         }
         input[type="range"]::-webkit-slider-thumb{
             -webkit-appearance: none;
-            border:1px solid white;
+            height: 15px;
+            width: 15px;
+            border-radius: 100%;
+            background: #999;
+            cursor: pointer;
+            z-index: 9;
+            position: relative;
+            margin-top:-6px;
+        }
+        input[type="range"]::-moz-range-thumb{
+            height: 10px;
+            width: 10px;
+            border-radius: 100%;
+            background: #2a438a;
+            cursor: pointer;
+            border: 0;
+            z-index: 9;
+            position: relative;
         }
 
 
 #music_top_text{
     width:20vw; height:5vh;
     margin-left:5%; 
-    padding-top:1%;
+    padding-top:3%;
 }
 #music_top_text > p{
     font-family: 'Pretendard-Regular'; font-size:1vw;
