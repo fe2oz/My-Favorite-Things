@@ -27,9 +27,11 @@ $(document).ready(function(){
     img.addEventListener("click", function(){
         if(img.src.match("stop_icon")){ // 이미지 src 중 stop_icon과 일치하면
             img.src = "img/211876_play_icon.png"; // play_icon 이미지로 변경되고
+            img.style.filter ="invert(0)";
             audio.pause(); // 오디오 멈춤
         }else if(img.src.match("play_icon")){ // 이미지 src 중 play_icon과 일치하면
             img.src = "img/743894_pause_control_line_play_stop_icon.png"; //stop_icon 이미지로 변경되고
+            img.style.filter ="invert(1)";
             audio.play(); // 오디오 재생
         };
     });
@@ -38,6 +40,11 @@ $(document).ready(function(){
     const volumeBar = document.getElementById("volume_bar");
     const progressBar = document.getElementById("progress");
 
+    function updateProgress(){
+        var current = audio.currentTime;
+        var percent = (current / audio.duration) * 100;
+        progressBar.value = percent += "%";
+    }
     
     // 노래 함수명 지정
     const dopaMine = document.getElementById("pdm_dopamine");
@@ -71,6 +78,7 @@ $(document).ready(function(){
         document.getElementById("music_title").innerHTML = "Dopamine";
         document.getElementById("singer_and_album").innerHTML = "Purple Disco Machine 및 Eyelar • Exotica";
         imgToggle();
+        updateProgress();
     })
 
     juiceWrld.addEventListener("click", function(){

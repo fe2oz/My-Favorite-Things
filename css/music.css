@@ -58,6 +58,9 @@ header{
         #play_music,
         #right_play{
             width:0.8vw; height:1.5vh;
+        }
+        #left_play,
+        #right_play{
             filter:invert(1);
         }
         #play_music{
