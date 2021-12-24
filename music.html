@@ -32,10 +32,11 @@
 
             <div id="slider">
                 <div id="the_bottom_music_bar">
+                    <input id="progress" type="range" min="0" max="100" value="0">
                     <div id="random_modal">
                         <div id="play_button_box">
-                            <img id="left_play" src="img/2203516_music_pause_play_player_left_icon.png" alt="">
-                            <img id="play_music" src="img/211876_play_icon.png" alt="" onclick="imgToggle()">
+                            <img id="left_play" src="img/2203516_music_pause_play_player_left_icon.png" alt="" onclick="prevMusic()">
+                            <img id="play_music" src="img/743894_pause_control_line_play_stop_icon.png" alt="">
                             <img id="right_play" src="img/2203516_music_pause_play_player_right_icon.png" alt="">
                             <div id="music_time">
                                 <div id="music_current_time"></div>
@@ -59,7 +60,7 @@
                             </div>
                         </div>
                         <div id="music_volume_etc">
-                            <input id="volume_bar" type="range" min="0" max="20" value="3" onchange="setVolume()">
+                            <input id="volume_bar" type="range" min="0" max="20" value="3">
                             <img src="img/352215_up_volume_icon.png" alt="">
                             <img src="img/8680214_repeat_fill_icon.png" alt="">
                             <img src="img/513930_shuffle_arrows_music_random_icon.png" alt="">
@@ -413,9 +414,232 @@
 
                 <div id="recommend_music_video">
                     <div id="recommend_music_video_text">
-                        추천 뮤직비디오
+                        <img src="img/unnamed.jpg" alt="">
+                        <div id="rmvt1">
+                            <p>아래 아티스트를 좋아한다면</p>
+                            <h1>블랙베어</h1>
+                        </div>
                     </div>
-                    <div id="tc_closer"></div>
+
+                    <div id="recommend_music_video_slide">
+                        <div id="arijona">
+                            <img src="img/unnamed(1).jpg" alt="">
+                            <div id="arijona_text">
+                                <p>아리조나 제르바스</p>
+                                <span>구독자 92.2만명</span>
+                            </div>
+                        </div>
+                        <div id="g_eazy">
+                            <img src="img/unnamed(2).jpg" alt="">
+                            <div id="g_eazy_text">
+                                <p>G-Eazy(지 이지)</p>
+                                <span>구독자 816만명</span>
+                            </div>
+                        </div>
+                        <div id="yungblud">
+                            <img id="rmv_list" src="img/4781859_dot_list_menu_nav_navigation_icon.png" alt="">
+                            <img src="img/unnamed(3).jpg" alt="">
+                            <img id="rmv_play" src="img/352073_circle_fill_play_icon.png" alt="">
+                            <div id="yungblud_text">
+                                <p>Presenting YUNGBLUD</p>
+                                <span>Yungblud(영블러드)님, Machine Gun Kelly님(머신 건 켈리)님, Halsey(할시)님</span>
+                            </div>
+                        </div>
+                        <div id="trevor_daniel">
+                            <img src="img/unnamed(4).jpg" alt="">
+                            <div id="trevor_daniel_text">
+                                <p>트레버 다니엘</p>
+                                <span>구독자 164만명</span>
+                            </div>
+                        </div>
+                        <div id="goody_grace">
+                            <img src="img/2340548.jpg." alt="">
+                            <img id="rmv_list" src="img/4781859_dot_list_menu_nav_navigation_icon.png" alt="">
+                            <img id="rmv_play" src="img/352073_circle_fill_play_icon.png" alt="">
+                            <div id="goody_grace_text">
+                                <p>Two Shorts</p>
+                                <span>싱글 • 구디 그레이스</span>
+                            </div>
+                        </div>
+                        <div id="bazzi">
+                            <img src="img/unnamed(5).jpg" alt="">
+                            <div id="bazzi_text">
+                                <p>Bazzi(바지)</p>
+                                <span>구독자 312만명</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="recommend_music_video_slide_2">
+                        <div id="b6lack">
+                            <img src="img/unnamed(6).jpg" alt="">
+                            <div id="b6lack_text">
+                                <p>6LACK</p>
+                                <span>구독자 165만명</span>
+                            </div>
+                        </div>
+                        <div id="halsey">
+                            <img id="rmv_list" src="img/4781859_dot_list_menu_nav_navigation_icon.png" alt="">
+                            <img src="img/unnamed(7).jpg" alt="">
+                            <img id="rmv_play" src="img/352073_circle_fill_play_icon.png" alt="">
+                            <div id="halsey_text">
+                                <p>Presenting Halsey</p>
+                                <span>Halsey(할시)님, BTS(방탄소년단)님, Post Malone(포스트 말론)님</span>
+                            </div>
+                        </div>
+                        <div id="ashton_irwin">
+                            <img src="img/unnamed(8).jpg" alt="">
+                            <div id="ashton_irwin_text">
+                                <p>Ashton_Irwin</p>
+                                <span>구독자 18만명</span>
+                            </div>
+                        </div>
+                        <div id="post_malone">
+                            <img src="img/unnamed(9).jpg" alt="">
+                            <div id="post_malone_text">
+                                <p>Post Malone(포스트 말론)</p>
+                                <span>구독자 2300만명</span>
+                            </div>
+                        </div>
+                        <div id="mod_sun">
+                            <img id="rmv_list" src="img/4781859_dot_list_menu_nav_navigation_icon.png" alt="">
+                            <img src="img/unnamed(10).jpg" alt="">
+                            <img id="rmv_play" src="img/352073_circle_fill_play_icon.png" alt="">
+                            <div id="mod_sun_text">
+                                <p>I Remember Way Too Much</p>
+                                <span>싱글 • Mod Sun</span>
+                            </div>
+                        </div>
+                        <div id="witt_lowry">
+                            <img src="img/unnamed(11).jpg" alt="">
+                            <div id="witt_lowry_text">
+                                <p>위트 로리</p>
+                                <span>구독자 74.1만명</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img id="prev2" src="img/6646422_arrow_button_circle_essentials_prev_icon.png" alt="">
+                    <img id="next2" src="img/6646422_arrow_button_circle_essentials_next_icon.png" alt="">
+                </div>
+
+                <div id="recommend_music_video_2">
+                    <div id="recommend_music_video_2_text">
+                        <img src="img/unnamed(12).jpg" alt="">
+                        <div id="rmvt1">
+                            <p>아래 아티스트를 좋아한다면</p>
+                            <h1>5 Seconds of Summer</h1>
+                        </div>
+                    </div>
+
+                    <div id="recommend_music_video_2_slide">
+                        <div id="whydontwe">
+                            <img src="img/unnamed(13).jpg" alt="">
+                            <div id="whydontwe_text">
+                                <p>와이 돈 위</p>
+                                <span>구독자 383만명</span>
+                            </div>
+                        </div>
+                        <div id="jonas_brothers">
+                            <img src="img/unnamed(14).jpg" alt="">
+                            <div id="jonas_brothers_text">
+                                <p>조나스 브라더스</p>
+                                <span>구독자 517만명</span>
+                            </div>
+                        </div>
+                        <div id="pops_hits">
+                            <img id="rmv_list" src="img/4781859_dot_list_menu_nav_navigation_icon.png" alt="">
+                            <img src="img/unnamed(15).jpg" alt="">
+                            <img id="rmv_play" src="img/352073_circle_fill_play_icon.png" alt="">
+                            <div id="pops_hits_text">
+                                <p>21세기 최고의 팝</p>
+                                <span>Ariana Grande(아리아나 그란데)님, Justin Bieber(저스틴 비버)님</span>
+                            </div>
+                        </div>
+                        <div id="one_direction">
+                            <img id="rmv_list" src="img/4781859_dot_list_menu_nav_navigation_icon.png" alt="">
+                            <img src="img/unnamed(16).jpg" alt="">
+                            <img id="rmv_play" src="img/352073_circle_fill_play_icon.png" alt="">
+                            <div id="one_direction_text">
+                                <p>Up All Night</p>
+                                <span>앨범 • One Direction</span>
+                            </div>
+                        </div>
+                        <div id="pops_hits_2">
+                            <img id="rmv_list" src="img/4781859_dot_list_menu_nav_navigation_icon.png" alt="">
+                            <img src="img/unnamed(17).jpg" alt="">
+                            <img id="rmv_play" src="img/352073_circle_fill_play_icon.png" alt="">
+                            <div id="pops_hits_2_text">
+                                <p>날아갈 듯 기분 산뜻한 팝</p>
+                                <span>Ariana Grande(아리아나 그란데)님, Justin Bieber(저스틴 비버)님</span>
+                            </div>
+                        </div>
+                        <div id="niall_horan">
+                            <img id="rmv_list" src="img/4781859_dot_list_menu_nav_navigation_icon.png" alt="">
+                            <img src="img/unnamed(18).jpg" alt="">
+                            <img id="rmv_play" src="img/352073_circle_fill_play_icon.png" alt="">
+                            <div id="pops_hits_2_text">
+                                <p>Heartbreak Weather</p>
+                                <span>앨범 • 나일 호런</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="recommend_music_video_2_slide_2">
+                        <div id="louis_tomlinson">
+                            <img src="img/unnamed(19).jpg" alt="">
+                            <div id="louis_tomlinson_text">
+                                <p>Louis Tomlinson</p>
+                                <span>구독자 419만명</span>
+                            </div>
+                        </div>
+                        <div id="pops_hits_3">
+                            <img id="rmv_list" src="img/4781859_dot_list_menu_nav_navigation_icon.png" alt="">
+                            <img src="img/unnamed(20).jpg" alt="">
+                            <img id="rmv_play" src="img/352073_circle_fill_play_icon.png" alt="">
+                            <div id="pops_hits_3_text">
+                                <p>많이 들어본 광고 음악</p>
+                                <span>Queen(퀸)님, Saint Motel님, 5 Seconds of Summer님, The Vamps(더 뱀프스)님</span>
+                            </div>
+                        </div>
+                        <div id="meat_the_vamps">
+                            <img id="rmv_list" src="img/4781859_dot_list_menu_nav_navigation_icon.png" alt="">
+                            <img src="img/unnamed(21).jpg" alt="">
+                            <img id="rmv_play" src="img/352073_circle_fill_play_icon.png" alt="">
+                            <div id="meat_the_vamps_text">
+                                <p>Meat The Vamps</p>
+                                <span>앨범 • The Vamps</span>
+                            </div>
+                        </div>
+                        <div id="shawn_mendes">
+                            <img src="img/unnamed(22).jpg" alt="">
+                            <div id="shawn_mendes_text">
+                                <p>Shawn Mendes</p>
+                                <span>구독자 2870만명</span>
+                            </div>
+                        </div>
+                        <div id="cool_again">
+                            <img id="rmv_list" src="img/4781859_dot_list_menu_nav_navigation_icon.png" alt="">
+                            <img src="img/unnamed(23).jpg" alt="">
+                            <img id="rmv_play" src="img/352073_circle_fill_play_icon.png" alt="">
+                            <div id="cool_again_text">
+                                <p>Cool Again</p>
+                                <span>싱글 • Shoffy</span>
+                            </div>
+                        </div>
+                        <div id="aj_mitchell">
+                            <img id="rmv_list" src="img/4781859_dot_list_menu_nav_navigation_icon.png" alt="">
+                            <img src="img/unnamed(24).jpg" alt="">
+                            <img id="rmv_play" src="img/352073_circle_fill_play_icon.png" alt="">
+                            <div id="aj_mitchell_text">
+                                <p>SKYVIEW</p>
+                                <span>앨범 • AJ Mitchell</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img id="prev3" src="img/6646422_arrow_button_circle_essentials_prev_icon.png" alt="">
+                    <img id="next3" src="img/6646422_arrow_button_circle_essentials_next_icon.png" alt="">
                 </div>
             </div>
 
@@ -467,7 +691,6 @@
 
         .done(function(msg) {
             console.log(msg);
-            
         });
     </script>
 </body>

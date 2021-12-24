@@ -15,9 +15,9 @@ body{
 }
 
 header{
-    width:100%; height:4vh;
-    position:relative;
-    background-color:black;
+    width:89%; height:4vh;
+    position:fixed; z-index:2;
+    background-color:black; 
 }
     #search{
         width:20vw;
@@ -25,8 +25,11 @@ header{
         display:flex; justify-content: space-evenly;
     }
     #search > p{
-        color:white;
+        color:#999;
         font-family: 'Pretendard-Regular'; font-size:1.3vw; font-weight: normal;
+    }
+    #search > p:nth-of-type(1){
+        color:white;
     }
     #search > p:hover{
         cursor: pointer;
@@ -59,7 +62,6 @@ header{
         }
         #play_music{
             width:1.8vw; height:3vh;
-            filter:invert(0);
         }
         #play_music:hover{
             cursor: url(../img/premium-icon-click-2725783-1.png), auto !important; 
@@ -128,38 +130,65 @@ header{
             width:4vw;
             color:white;
         }
-        input[type="range"]{
+        #volume_bar[type="range"]{
             -webkit-appearance: none;
         }
-        input[type="range"]:focus{
+            #progress[type="range"]{
+                -webkit-appearance: none;
+                position:absolute;
+                width:100%;
+            }
+        #volume_bar[type="range"]:focus{
             outline: none;
         }
-        input[type="range"]::-webkit-slider-runnable-track{
+            #progress[type="range"]:focus{
+                outline: none;
+            }
+
+        #volume_bar[type="range"]::-webkit-slider-runnable-track{
             width: 100%;
             height: 3px;
             cursor: pointer;
             background: #999;
             border-radius: 20px;
         }
-        input[type="range"]::-moz-range-track{
+            #progress[type="range"]::-webkit-slider-runnable-track{
+                width: 100%;
+                height: 3px;
+                cursor: pointer;
+                background: #555;
+            }
+
+        #volume_bar[type="range"]::-moz-range-track{
             width: 100%;
             height: 3px;
             cursor: pointer;
             background: #999;
             border-radius: 20px;
         }
-        input[type="range"]::-webkit-slider-thumb{
+
+        #volume_bar[type="range"]::-webkit-slider-thumb{
             -webkit-appearance: none;
             height: 15px;
             width: 15px;
-            border-radius: 100%;
             background: #999;
             cursor: pointer;
             z-index: 9;
             position: relative;
             margin-top:-6px;
+            border-radius: 100%;
         }
-        input[type="range"]::-moz-range-thumb{
+
+            #progress[type="range"]::-webkit-slider-thumb{
+                -webkit-appearance: none;
+                border:1px solid red;
+                height:3px;
+                width:0;
+                background: red;
+                cursor: pointer;
+            }
+
+        #volume_bar[type="range"]::-moz-range-thumb{
             height: 10px;
             width: 10px;
             border-radius: 100%;
@@ -174,11 +203,11 @@ header{
 #music_top_text{
     width:20vw; height:5vh;
     margin-left:5%; 
-    padding-top:3%;
+    padding-top:6%;  padding-bottom:1%;
 }
 #music_top_text > p{
     font-family: 'Pretendard-Regular'; font-size:1vw;
-    color:#888;
+    color:#999;
 }
 #music_top_text > h1{
     font-family: 'Pretendard-Regular'; font-size:2vw;
@@ -370,9 +399,9 @@ header{
 }
 
 #music_middle_text{
-    width:20vw; height:5vh;
+    width:20vw; height:3vh;
     margin-left:5%;
-    padding-top:7%;
+    padding-top:9%; padding-bottom:1.5%;
     line-height:10vh;
 }
 #music_middle_text > h1{
@@ -519,7 +548,7 @@ header{
     }
 
 #enjoy_music_listen{
-    width:100%; height:62vh;
+    width:100%; height:59vh;
     display:flex; flex-flow: column;
     position:relative;
     overflow: hidden;
@@ -527,7 +556,7 @@ header{
 #enjoy_music_listen_text{
     width:20vw; height:5vh;
     margin-left:5%;
-    padding-top:8%;
+    padding-top:5%; padding-bottom:1.5%;
     line-height:5vh;
     font-family: 'Pretendard-Regular'; font-size:2vw; font-weight: bold;
     color:white;
@@ -552,7 +581,7 @@ header{
     #yun_gun,
     #hs_golden,
     #chain_smokers{
-        width:13vw; height:31vh;
+        width:13vw; height:33vh;
         position: relative;
         display: flex; flex-flow: column; align-items: center; justify-content: space-evenly;
         cursor: pointer;
@@ -605,8 +634,25 @@ header{
         font-family: 'Pretendard-Regular'; font-size:0.9vw;
         color:white;
         display: flex; flex-flow: column;
-        padding-left:10%;
     }
+
+        #ns_all_for_me_text,
+        #johnk_shadows_text,
+        #mcmong_text,
+        #n_flying_text,
+        #isaac_dunbar_text,
+        #chain_smokers_text{
+            padding-left:10%;
+        }
+
+        #ttrm_text,
+        #the_weeknd_text,
+        #peppertones_text,
+        #mgk_text,
+        #yun_gun_text{
+            text-align: center;
+        }
+
         #ttrm_text > span,
         #the_weeknd_text > span,
         #peppertones_text > span,
@@ -641,7 +687,7 @@ header{
     #prev1,
     #next1{
         width:2.5vw;
-        position:absolute; top:47%;
+        position:absolute; top:45%;
         filter:invert(1);
     }
     #prev1{
@@ -652,15 +698,321 @@ header{
         right:0;
     }
 
-#recommend_music_video{
-    width:100%; height:50vh;
-    background: orange;
+#recommend_music_video,
+#recommend_music_video_2{
+    width:100%; height:auto;
+    position:relative;
 }
 #recommend_music_video_text{
-    width:20vw; height:5vh;
+    width:16vw;
     margin-left:5%;
-    padding-top:2%;
-    line-height:5vh;
-    font-family: 'Pretendard-Regular'; font-size:2vw;
+    line-height:3.5vh;
+    font-family: 'Pretendard-Regular';
     color:white;
+    display:flex; justify-content: space-between;
 }
+    #recommend_music_video_2_text{
+        width:25vw;
+        margin-left:5%;
+        line-height:3.5vh;
+        font-family: 'Pretendard-Regular';
+        color:white;
+        display:flex; justify-content: space-between;
+        padding-top:4.5%;
+    }
+#recommend_music_video_text > img,
+#recommend_music_video_2_text > img{
+    width:4vw;
+    border-radius: 50%;
+}
+#rmvt1 > p{
+    font-size:1vw;
+    color:#999;
+}
+#rmvt1 > h1{
+    font-size:2vw;
+}
+
+#recommend_music_video_slide,
+#recommend_music_video_slide_2,
+#recommend_music_video_2_slide,
+#recommend_music_video_2_slide_2{
+    width:100%; height:37vh;
+    display:flex; justify-content: space-evenly; align-items: center;
+}
+#recommend_music_video_slide_2,
+#recommend_music_video_2_slide_2{
+    display:none;
+}
+
+    #arijona,
+    #g_eazy,
+    #yungblud,
+    #trevor_daniel,
+    #goody_grace,
+    #bazzi,
+    #b6lack,
+    #halsey,
+    #ashton_irwin,
+    #post_malone,
+    #mod_sun,
+    #witt_lowry,
+    #whydontwe,
+    #jonas_brothers,
+    #pops_hits,
+    #one_direction,
+    #pops_hits_2,
+    #niall_horan,
+    #louis_tomlinson,
+    #pops_hits_3,
+    #meat_the_vamps,
+    #shawn_mendes,
+    #cool_again,
+    #aj_mitchell{
+        width:13vw; height:33vh;
+        position: relative;
+        display: flex; flex-flow: column; align-items: center; justify-content: space-evenly;
+        cursor: pointer;
+        position:relative;
+    }
+    #arijona img:hover,
+    #g_eazy img:hover,
+    #yungblud img:hover,
+    #trevor_daniel img:hover,
+    #goody_grace img:hover,
+    #bazzi img:hover,
+    #b6lack img:hover,
+    #halsey img:hover,
+    #ashton_irwin img:hover,
+    #post_malone img:hover,
+    #mod_sun img:hover,
+    #witt_lowry img:hover,
+    #whydontwe img:hover,
+    #jonas_brothers img:hover,
+    #pops_hits img:hover,
+    #one_direction img:hover,
+    #pops_hits_2 img:hover,
+    #niall_horan img:hover,
+    #louis_tomlinson img:hover,
+    #pops_hits_3 img:hover,
+    #meat_the_vamps img:hover,
+    #shawn_mendes img:hover,
+    #cool_again img:hover,
+    #aj_mitchell img:hover{
+        filter: brightness(0.8);
+    }
+
+        #arijona img,
+        #g_eazy img,
+        #trevor_daniel img,
+        #bazzi img,
+        #b6lack img,
+        #ashton_irwin img,
+        #post_malone img,
+        #witt_lowry img,
+        #whydontwe img,
+        #jonas_brothers img,
+        #louis_tomlinson img,
+        #shawn_mendes img{
+            width:12vw;
+            border-radius: 50%;
+        }
+            #yungblud img,
+            #goody_grace img,
+            #halsey img,
+            #mod_sun img,
+            #pops_hits img,
+            #one_direction img,
+            #pops_hits_2 img,
+            #niall_horan img,
+            #pops_hits_3 img,
+            #meat_the_vamps img,
+            #cool_again img,
+            #aj_mitchell img{
+                width:12vw;
+                border-radius: 10px;
+            }
+            #yungblud > #rmv_list,
+            #goody_grace > #rmv_list,
+            #halsey > #rmv_list,
+            #mod_sun > #rmv_list,
+            #pops_hits > #rmv_list,
+            #one_direction > #rmv_list,
+            #pops_hits_2 > #rmv_list,
+            #niall_horan > #rmv_list,
+            #pops_hits_3 > #rmv_list,
+            #meat_the_vamps > #rmv_list,
+            #cool_again > #rmv_list,
+            #aj_mitchell > #rmv_list,
+            #yungblud > #rmv_play,
+            #goody_grace > #rmv_play,
+            #halsey > #rmv_play,
+            #mod_sun > #rmv_play,
+            #pops_hits > #rmv_play,
+            #one_direction > #rmv_play,
+            #pops_hits_2 > #rmv_play,
+            #niall_horan > #rmv_play,
+            #pops_hits_3 > #rmv_play,
+            #meat_the_vamps > #rmv_play,
+            #cool_again > #rmv_play,
+            #aj_mitchell > #rmv_play{
+                width:2.5vw;
+                position:absolute;
+                
+            }
+            #yungblud > #rmv_list,
+            #goody_grace > #rmv_list,
+            #halsey > #rmv_list,
+            #mod_sun > #rmv_list,
+            #pops_hits > #rmv_list,
+            #one_direction > #rmv_list,
+            #pops_hits_2 > #rmv_list,
+            #niall_horan > #rmv_list,
+            #pops_hits_3 > #rmv_list,
+            #meat_the_vamps > #rmv_list,
+            #cool_again > #rmv_list,
+            #aj_mitchell > #rmv_list{
+                width:1.3vw;
+                right:6%; top:10%;
+            }
+            #yungblud > #rmv_play,
+            #goody_grace > #rmv_play,
+            #halsey > #rmv_play,
+            #mod_sun > #rmv_play,
+            #pops_hits > #rmv_play,
+            #one_direction > #rmv_play,
+            #pops_hits_2 > #rmv_play,
+            #niall_horan > #rmv_play,
+            #pops_hits_3 > #rmv_play,
+            #meat_the_vamps > #rmv_play,
+            #cool_again > #rmv_play,
+            #aj_mitchell > #rmv_play{
+                right:10%; bottom:30%;
+            }
+
+        #arijona_text,
+        #g_eazy_text,
+        #yungblud_text,
+        #trevor_daniel_text,
+        #goody_grace_text,
+        #bazzi_text,
+        #b6lack_text,
+        #halsey_text,
+        #ashton_irwin_text,
+        #post_malone_text,
+        #mod_sun_text,
+        #witt_lowry_text,
+        #whydontwe_text,
+        #jonas_brothers_text,
+        #pops_hits_text,
+        #one_direction_text,
+        #pops_hits_2_text,
+        #niall_horan_text,
+        #louis_tomlinson_text,
+        #pops_hits_3_text,
+        #meat_the_vamps_text,
+        #shawn_mendes_text,
+        #cool_again_text,
+        #aj_mitchell_text{
+            width:100%; 
+            font-family: 'Pretendard-Regular'; font-size:0.9vw;
+            color:white;
+            display: flex; flex-flow: column;
+            
+        }
+            #arijona_text,
+            #g_eazy_text,
+            #trevor_daniel_text,
+            #bazzi_text,
+            #b6lack_text,
+            #ashton_irwin_text,
+            #post_malone_text,
+            #witt_lowry_text,
+            #whydontwe_text,
+            #jonas_brothers_text,
+            #louis_tomlinson_text,
+            #shawn_mendes_text{
+                text-align: center;
+            }
+
+            #pops_hits_text,
+            #one_direction_text,
+            #pops_hits_2_text,
+            #niall_horan_text,
+            #pops_hits_3_text,
+            #meat_the_vamps_text,
+            #cool_again_text,
+            #aj_mitchell_text{
+                padding-left:10%;
+            }
+
+        #arijona_text > span,
+        #g_eazy_text > span,
+        #yungblud_text > span,
+        #trevor_daniel_text > span,
+        #goody_grace_text > span,
+        #bazzi_text > span,
+        #b6lack_text > span,
+        #halsey_text > span,
+        #ashton_irwin_text > span,
+        #post_malone_text > span,
+        #mod_sun_text > span,
+        #witt_lowry_text > span,
+        #whydontwe_text > span,
+        #jonas_brothers_text > span,
+        #pops_hits_text > span,
+        #one_direction_text > span,
+        #pops_hits_2_text > span,
+        #niall_horan_text > span,
+        #louis_tomlinson_text > span,
+        #pops_hits_3_text > span,
+        #meat_the_vamps_text > span,
+        #shawn_mendes_text > span,
+        #cool_again_text > span,
+        #aj_mitchell_text > span{
+            width:100%;
+            color:#999;
+        }
+            #yungblud_text > span,
+            #halsey_text > span,
+            #pops_hits_text > span,
+            #pops_hits_2_text > span,
+            #pops_hits_3_text > span{
+                width:12vw; height:3vh;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+    
+
+        #prev2,
+        #next2{
+            width:2.5vw;
+            position:absolute; top:47%;
+            filter:invert(1);
+        }
+        #prev2{
+            left:0;
+            display:none;
+        }
+        #next2{
+            right:0;
+        }
+
+        #prev3,
+        #next3{
+            width:2.5vw;
+            position:absolute; top:53%;
+            filter:invert(1);
+        }
+        #prev3{
+            left:0;
+            display:none;
+        }
+        #next3{
+            right:0;
+        }
+
+        
+
+

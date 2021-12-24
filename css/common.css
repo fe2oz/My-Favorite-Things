@@ -44,7 +44,7 @@ a{
 
 #clock{
     width:25vw; height:5vh;
-    position:absolute; top:0;
+    position:fixed; top:6%; left:5.5%; z-index:2;
     font-size: 1.5vw;
     font-family: 'ACCchildrenheartOTF-Regular';
     color:white;
@@ -52,7 +52,7 @@ a{
 
 #the_top_right{
     width:4vw; height:5vh;
-    position:absolute; top:0; right:0;
+    position:fixed; top:6%; right:5.5%;  z-index:2;
     filter:invert(1);
 }
 #the_top_right img{
