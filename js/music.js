@@ -55,7 +55,7 @@ $(document).ready(function(){
     const summerLove = document.getElementById("iu_summer_love");
     const startAgain = document.getElementById("or_start_again");
 
-    function musicStart(){
+    function musicStart(){ // 노래 재생시
         musicBar.style.display = "block";
         img.style.filter = "invert(1)";
         audio.play();
@@ -75,8 +75,9 @@ $(document).ready(function(){
         audio.currentTime = progressBar.value;
     }
     audio.ontimeupdate = () => {
-        progressBar.value = audio.currentTime;
+        progressBar.value = audio.currentTime; // range value 의 값 = audio.currentTime 값
         progressBarFront.style.width = (progressBar.value/audio.duration) * 100 + "%";
+        progressBarFront.style.transition = "ease 1s";
     }
 
     // 재생, 정지 버튼 토글

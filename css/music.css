@@ -199,6 +199,7 @@ header{
                 cursor: pointer;
                 margin-top:-3px;
                 visibility: hidden;
+                transition:0.3s;
             }
 
         #volume_bar[type="range"]::-moz-range-thumb{
@@ -681,7 +682,8 @@ header{
             color:#999;
         }
             #isaac_dunbar_text > p,
-            #chain_smokers_text > span{
+            #chain_smokers_text > span,
+            #n_flying_text > span{
                 width:95%;
                 text-overflow: ellipsis;
                 overflow: hidden;
