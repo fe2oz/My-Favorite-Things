@@ -66,6 +66,7 @@ $(document).ready(function(){
     const toothBrush = document.getElementById("dnce_tb");
 
     const ttRm = document.getElementById("ttrm");
+    const tW = document.getElementById("the_weeknd");
 
     function musicStart(){ // 노래 재생시
         musicBar.style.display = "block";
@@ -306,13 +307,24 @@ $(document).ready(function(){
         imgToggle();
     });
 
+
+
     ttRm.addEventListener("click", function(){
         changeIframe();
-        window.scrollTo(0, 0);
     });
+
+    tW.addEventListener("click", function(){
+        changeIframeTwo();
+    })
 
     function changeIframe(){
         document.getElementById("pagemove").src = "ttrm.html";
+        document.getElementById("pagemove").style.display = "block";
+        document.getElementById("wrap").style.overflowY = "hidden";
+    };
+
+    function changeIframeTwo(){
+        document.getElementById("pagemove").src = "theweeknd.html";
         document.getElementById("pagemove").style.display = "block";
         document.getElementById("wrap").style.overflowY = "hidden";
     };
@@ -392,8 +404,6 @@ $(function(){
         $(this).hide();
     })
 
-    $("#ttrm").click(function(){
-        $("#wrap").stop().animate({scrollTop: 0}, "fast")
-    })
+    
 })
 

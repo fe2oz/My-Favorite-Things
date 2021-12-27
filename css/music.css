@@ -14,8 +14,9 @@ body{
     border-radius: 10px;
 }
 #pagemove{
-    width:99.8%; height:100%;
-    position:relative; z-index:1; top:0; left:0;
+    width:90%; height:90.5%;
+    position:fixed; z-index:1; top:51%; left:50%;
+    transform: translate(-50%, -50%);
     border:0;
     overflow-y: scroll;
     display: none;
