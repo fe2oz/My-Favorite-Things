@@ -1,0 +1,84 @@
+body{
+    background:black;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#wrap{
+    overflow-y: scroll;
+    position:relative;
+}
+#wrap::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+}
+
+#slider{
+    width:100%; height:80vh;
+    background-image: url(../img/ttrm_bg.jpg); background-repeat: no-repeat; background-size:100% 100%;
+    position:relative;
+}
+
+#ttrm-show{
+    width:100%; height:auto;
+    display:flex; flex-flow: row wrap;
+    position:absolute; top:60%; left:10%;
+}
+
+#ttrm-text{
+    width:100%; height:6vh;
+}
+    #ttrm-text > p,
+    #shuffle > p,
+    #music-station > p{
+        font-family: 'Pretendard-Regular'; font-size:0.8vw;
+    }
+    #ttrm-text > p{
+        font-size:1.8vw; font-weight: bold;
+        color:white;
+    }
+#shuffle,
+#music-station{
+    width:8vw; height:4vh;
+    border-radius: 3px;
+    background-color: white;
+    display:flex; align-items: center; justify-content: space-evenly;
+    margin-right:0.5%;
+}
+#subscribe{
+    border: 1px solid #ff4245; border-radius: 3px;
+    
+}
+#subscribe p{
+    width:6vw; height:4vh;
+    color:#ff4245; 
+    font-family: 'Pretendard-Regular';
+    display: flex; align-items: center; justify-content: center;
+}
+    #shuffle img,
+    #music-station img{
+        width:1.5vw;
+    }
+
+.section{
+    width:100%; height:auto;
+}
+
+#music-list{
+    width:80%;
+    background-color:orange;
+    margin:0 auto;
+}
+
+#music-title{
+    width:80%;
+    color:white;
+    font-family: 'Pretendard-Regular'; font-size:1.45vw;
+   
+}
+
+#music-list-list{
+    width:100%; height:auto;
+}
+#legend-story > div:nth-of-type(1){
+
+}

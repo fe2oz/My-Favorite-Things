@@ -13,26 +13,40 @@ body{
 #wrap::-webkit-scrollbar-thumb{
     border-radius: 10px;
 }
+#pagemove{
+    width:99.8%; height:100%;
+    position:relative; z-index:1; top:0; left:0;
+    border:0;
+    overflow-y: scroll;
+    display: none;
+}
 
 header{
-    width:89%; height:4vh;
-    position:fixed; z-index:2;
+    width:88.9%; height:6vh;
+    position:fixed; z-index:2; top:5%;
     background-color:black; 
 }
     #search{
-        width:20vw;
+        width:20vw; height: 6vh;
         position:absolute; top:0; left:40%;
-        display:flex; justify-content: space-evenly;
+        display:flex; justify-content: space-evenly; align-items: center;
     }
     #search > p{
         color:#999;
         font-family: 'Pretendard-Regular'; font-size:1.3vw; font-weight: normal;
     }
     #search > p:nth-of-type(1){
+        line-height:0;
+    }
+    #search > p:nth-of-type(2){
         color:white;
     }
     #search > p:hover{
         cursor: pointer;
+    }
+    #left_arrow{
+        width:1.5vw;
+        filter:invert(0.9);
     }
 
 #slider{
@@ -40,14 +54,14 @@ header{
     background-color:black;
 }
     #the_bottom_music_bar{
-        width:89vw; height:7vh;
-        position:fixed; bottom:4.25%; z-index: 1;
+        width:89vw; height:7.5vh;
+        position:fixed; bottom:4.25%; z-index: 2;
         background-color: #222;
         display:none;
     }
     #random_modal{
-        width:100%;
-        display:flex; justify-content: space-between;
+        width:100%; height:7.5vh;
+        display:flex; justify-content: space-between; align-items: center;
     }
     #play_button_box{
         width:15vw; height:7vh;
@@ -128,6 +142,9 @@ header{
         #music_volume_etc img{
             width:1.3vw;
             filter: invert(0.7);
+        }
+        .active{
+            filter:invert(1);
         }
         #volume_bar{
             width:4vw;
@@ -408,7 +425,7 @@ header{
             }
 
 .section{
-    width:100%; height:auto;
+    width:100%; height:230vh;
     background-color:black;
 }
 
@@ -588,7 +605,7 @@ header{
     #peppertones,
     #ns_all_for_me,
     #johnk_shadows,
-    #mcmong,
+    #taeyeon,
     #mgk,
     #n_flying,
     #isaac_dunbar,
@@ -605,7 +622,7 @@ header{
     #peppertones:hover,
     #ns_all_for_me:hover,
     #johnk_shadows:hover,
-    #mcmong:hover,
+    #taeyeon:hover,
     #mgk:hover,
     #n_flying:hover,
     #isaac_dunbar:hover,
@@ -625,7 +642,7 @@ header{
     }
         #ns_all_for_me img,
         #johnk_shadows img,
-        #mcmong img,
+        #taeyeon img,
         #n_flying img,
         #isaac_dunbar img,
         #hs_golden img{
@@ -637,7 +654,7 @@ header{
     #peppertones_text,
     #ns_all_for_me_text,
     #johnk_shadows_text,
-    #mcmong_text,
+    #taeyeon_text,
     #mgk_text,
     #n_flying_text,
     #isaac_dunbar_text,
@@ -652,7 +669,7 @@ header{
 
         #ns_all_for_me_text,
         #johnk_shadows_text,
-        #mcmong_text,
+        #taeyeon_text,
         #n_flying_text,
         #isaac_dunbar_text,
         #chain_smokers_text{
@@ -672,7 +689,7 @@ header{
         #peppertones_text > span,
         #ns_all_for_me_text > span,
         #johnk_shadows_text > span,
-        #mcmong_text > span,
+        #taeyeon_text > span,
         #mgk_text > span,
         #n_flying_text > span,
         #isaac_dunbar_text > span,
@@ -683,7 +700,8 @@ header{
         }
             #isaac_dunbar_text > p,
             #chain_smokers_text > span,
-            #n_flying_text > span{
+            #n_flying_text > span,
+            #taeyeon_text > span{
                 width:95%;
                 text-overflow: ellipsis;
                 overflow: hidden;
@@ -691,7 +709,7 @@ header{
             }
     #ns_all_for_me > #play,
     #johnk_shadows > #play,
-    #mcmong > #play,
+    #taeyeon > #play,
     #n_flying > #play,
     #isaac_dunbar > #play,
     #hs_golden > #play,

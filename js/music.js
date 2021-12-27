@@ -19,17 +19,24 @@ $(document).ready(function(){
         "audio/Wave_Of_You.mp3",
         "audio/my_ex's_best_friend.mp3", //15
         "audio/Summer_Love.mp3",
-        "audio/Start_Again.mp3"
+        "audio/Start_Again.mp3",
+        "audio/Fallin.mp3",
+        "audio/4_Strings_of_Sweet_Home.mp3",
+        "audio/Toothbrush.mp3" //20
         );
 
     var img = document.getElementById("play_music"); //재생 버튼 이미지
     var prevImg = document.getElementById("left_play") //이전 재생 버튼 이미지
     var nextImg = document.getElementById("right_play") //다음 재생 버튼 이미지
 
+    const ctrlZ = document.getElementById("left_arrow")
+
     const musicBar = document.getElementById("the_bottom_music_bar");
     const volumeBar = document.getElementById("volume_bar");
     const progressBar = document.getElementById("progress");
-    const progressBarFront = document.getElementById("progress_the_front")
+    const progressBarFront = document.getElementById("progress_the_front");
+
+    const rePeat = document.getElementsByClassName("etcimg");
     
     // 노래 함수명 지정
     //빠른 선곡 부분
@@ -54,6 +61,11 @@ $(document).ready(function(){
     const myExsBestFriend = document.getElementById("mgk_meb");
     const summerLove = document.getElementById("iu_summer_love");
     const startAgain = document.getElementById("or_start_again");
+    const fallIn = document.getElementById("wdw_fallin");
+    const sweetHome = document.getElementById("sweet_home");
+    const toothBrush = document.getElementById("dnce_tb");
+
+    const ttRm = document.getElementById("ttrm");
 
     function musicStart(){ // 노래 재생시
         musicBar.style.display = "block";
@@ -90,7 +102,7 @@ $(document).ready(function(){
             img.src = "img/743894_pause_control_line_play_stop_icon.png"; //stop_icon 이미지로 변경되고
             img.style.filter ="invert(1)";
             audio.play(); // 오디오 재생
-        }else if(audio.currentTime == 0){
+        }else if(progressBar.value = audio.duration){
             img.src = "img/211876_play_icon.png";
         };
     });
@@ -266,8 +278,56 @@ $(document).ready(function(){
         document.getElementById("singer_and_album").innerHTML = "노래 • OneRepublic(원리퍼블릭) 및 Vegas Jones • Start Again"
         imgToggle();
     });
-    
-})
+
+    fallIn.addEventListener("click", function(){
+        audio.src = playList[18];
+        musicStart();
+        document.getElementById("album_image").src = "img/5009855.jpg"
+        document.getElementById("music_title").innerHTML = "Fallin' (Adrenaline)"
+        document.getElementById("singer_and_album").innerHTML = "노래 • 와이 돈 위 • The Good Times and The Bad Ones"
+        imgToggle();
+    });
+
+    sweetHome.addEventListener("click", function(){
+        audio.src = playList[19];
+        musicStart();
+        document.getElementById("album_image").src = "img/5173694.jpg"
+        document.getElementById("music_title").innerHTML = "4 Strings of Sweet Home"
+        document.getElementById("singer_and_album").innerHTML = "노래 • GAE MI • 스위트홈 OST (넷플릭스 드라마)"
+        imgToggle();
+    });
+
+    toothBrush.addEventListener("click", function(){
+        audio.src = playList[20];
+        musicStart();
+        document.getElementById("album_image").src = "img/730592.jpg"
+        document.getElementById("music_title").innerHTML = "Toothbrush"
+        document.getElementById("singer_and_album").innerHTML = "노래 • DNCE • DNCE"
+        imgToggle();
+    });
+
+    ttRm.addEventListener("click", function(){
+        changeIframe();
+        window.scrollTo(0, 0);
+    });
+
+    function changeIframe(){
+        document.getElementById("pagemove").src = "ttrm.html";
+        document.getElementById("pagemove").style.display = "block";
+        document.getElementById("wrap").style.overflowY = "hidden";
+    };
+
+    ctrlZ.addEventListener("click", function(){
+        iframeClose();
+    });
+
+    function iframeClose(){
+        document.getElementById("pagemove").style.display = "none";
+        document.getElementById("wrap").style.overflowY = "scroll";
+    };
+
+
+});
 
 
 
@@ -330,6 +390,10 @@ $(function(){
         $("#recommend_music_video_2_slide_2").hide().css("display", "none");
         $("#next3").show().css("display", "block");
         $(this).hide();
+    })
+
+    $("#ttrm").click(function(){
+        $("#wrap").stop().animate({scrollTop: 0}, "fast")
     })
 })
 
