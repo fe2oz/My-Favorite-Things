@@ -22,7 +22,12 @@ $(document).ready(function(){
         "audio/Start_Again.mp3",
         "audio/Fallin.mp3",
         "audio/4_Strings_of_Sweet_Home.mp3",
-        "audio/Toothbrush.mp3" //20
+        "audio/Toothbrush.mp3", //20
+        "audio/All-For-Me.mp3",
+        "audio/shadows.mp3",
+        "audio/Weekend.mp3",
+        "audio/Flashback.mp3",
+        "audio/scorton-s-creek.mp3" //25
         );
 
     var img = document.getElementById("play_music"); //재생 버튼 이미지
@@ -67,6 +72,13 @@ $(document).ready(function(){
 
     const ttRm = document.getElementById("ttrm");
     const tW = document.getElementById("the_weeknd");
+    const pT = document.getElementById("peppertones");
+    const nicklasSahl = document.getElementById("ns_all_for_me");
+    const johnK = document.getElementById("johnk_shadows");
+    const taeYeon = document.getElementById("taeyeon");
+    const machineGun = document.getElementById("mgk");
+    const flashBack = document.getElementById("n_flying");
+    const scorTons = document.getElementById("isaac_dunbar");
 
     function musicStart(){ // 노래 재생시
         musicBar.style.display = "block";
@@ -307,6 +319,50 @@ $(document).ready(function(){
         imgToggle();
     });
 
+    nicklasSahl.addEventListener("click", function(){
+        audio.src = playList[21];
+        musicStart();
+        document.getElementById("album_image").src = "img/4568375.jpg"
+        document.getElementById("music_title").innerHTML = "All For Me"
+        document.getElementById("singer_and_album").innerHTML = "노래 • Nicklas Sahl"
+        imgToggle();
+    });
+
+    johnK.addEventListener("click", function(){
+        audio.src = playList[22];
+        musicStart();
+        document.getElementById("album_image").src = "img/6077615.jpg"
+        document.getElementById("music_title").innerHTML = "shadows"
+        document.getElementById("singer_and_album").innerHTML = "노래 • John k"
+        imgToggle();
+    });
+
+    taeYeon.addEventListener("click", function(){
+        audio.src = playList[23];
+        musicStart();
+        document.getElementById("album_image").src = "img/6153066.jpg"
+        document.getElementById("music_title").innerHTML = "Weekend"
+        document.getElementById("singer_and_album").innerHTML = "노래 • 태연 (TAEYEON) • Weekend"
+        imgToggle();
+    });
+
+    flashBack.addEventListener("click", function(){
+        audio.src = playList[24];
+        musicStart();
+        document.getElementById("album_image").src = "img/5975463.jpg"
+        document.getElementById("music_title").innerHTML = "Flashback"
+        document.getElementById("singer_and_album").innerHTML = "노래 • 엔플라잉(N.Flying) • Man on the Moon"
+        imgToggle();
+    });
+
+    scorTons.addEventListener("click", function(){
+        audio.src = playList[25];
+        musicStart();
+        document.getElementById("album_image").src = "img/4593766.jpg"
+        document.getElementById("music_title").innerHTML = "scorton's creek (re-imagined by filous)"
+        document.getElementById("singer_and_album").innerHTML = "노래 • 이삭 던바"
+        imgToggle();
+    });
 
 
     ttRm.addEventListener("click", function(){
@@ -315,6 +371,14 @@ $(document).ready(function(){
 
     tW.addEventListener("click", function(){
         changeIframeTwo();
+    });
+
+    pT.addEventListener("click", function(){
+        changeIframeThree();
+    });
+
+    machineGun.addEventListener("click",function(){
+        changeIframeFour();
     })
 
     function changeIframe(){
@@ -325,6 +389,18 @@ $(document).ready(function(){
 
     function changeIframeTwo(){
         document.getElementById("pagemove").src = "theweeknd.html";
+        document.getElementById("pagemove").style.display = "block";
+        document.getElementById("wrap").style.overflowY = "hidden";
+    };
+
+    function changeIframeThree(){
+        document.getElementById("pagemove").src = "peppertones.html";
+        document.getElementById("pagemove").style.display = "block";
+        document.getElementById("wrap").style.overflowY = "hidden";
+    };
+
+    function changeIframeFour(){
+        document.getElementById("pagemove").src = "machinegunkelly.html";
         document.getElementById("pagemove").style.display = "block";
         document.getElementById("wrap").style.overflowY = "hidden";
     };

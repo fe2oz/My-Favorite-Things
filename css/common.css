@@ -27,10 +27,8 @@ a{
     font-style: normal;
 }
 
-
-
 #wrap{
-    width:90%; height:90vh;
+    width:90%; height:90.5vh;
     margin:0 auto; margin-top:3%;
     border-radius: 0.5%;
     box-shadow:5px 5px 15px black, 8px 8px 15px black, -5px -5px 25px black, -8px -8px 15px black, 0 0 60px black;

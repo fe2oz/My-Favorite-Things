@@ -10,9 +10,15 @@ body{
     overflow-y: scroll;
     position:relative;
 }
-#wrap::-webkit-scrollbar-thumb{
-    border-radius: 10px;
-}
+#wrap::-webkit-scrollbar {
+    width: 10px;
+  }
+  #wrap::-webkit-scrollbar-thumb {
+    background-color: #555;
+  }
+  #wrap::-webkit-scrollbar-track {
+    background-color: #222;
+  }
 #pagemove{
     width:90%; height:90.5%;
     position:fixed; z-index:1; top:51%; left:50%;
@@ -21,9 +27,18 @@ body{
     overflow-y: scroll;
     display: none;
 }
+#pagemove::-webkit-scrollbar {
+    width: 10px;
+  }
+  #pagemove::-webkit-scrollbar-thumb {
+    background-color: #555;
+  }
+  #pagemove::-webkit-scrollbar-track {
+    background-color: #222;
+  }
 
 header{
-    width:88.9%; height:6vh;
+    width:89.45%; height:6vh;
     position:fixed; z-index:2; top:5%;
     background-color:black; 
 }
@@ -55,8 +70,8 @@ header{
     background-color:black;
 }
     #the_bottom_music_bar{
-        width:89vw; height:7.5vh;
-        position:fixed; bottom:4.25%; z-index: 2;
+        width:89.5vw; height:7.5vh;
+        position:fixed; bottom:3.8%; z-index: 2;
         background-color: #222;
         display:none;
     }

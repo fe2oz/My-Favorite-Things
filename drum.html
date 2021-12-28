@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/css/drum.css" rel="stylesheet">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="container" onload="printClock()">
+            <div id="clock" onload="showTime()"></div>
+            <div id="the_top_right">
+                <img src="img/free-icon-wifi-93158.png" alt="">
+                <img src="img/premium-icon-half-battery-5604492.png" alt="">
+            </div>
+
+            <div id="social-icon">
+                <img src="img/fb.jpg" alt="">
+                <img src="img/insta.jpg" alt="">
+                <img src="img/tw.jpg" alt="">
+                <img src="img/yt.jpg" alt="">
+            </div>
+
+            <div id="mmlogo">
+                <img src="img/mmlogo.png" alt="">
+            </div>
+
+            <div id="etc">
+                <p>YOUTUBE &nbsp;|&nbsp; MERCH &nbsp;|&nbsp; CONTACT</p>
+            </div>
+
+            <div id="show">
+                <p>MATT MCGUIRE</p>
+                <span>EST. 1993</span>
+                <span>Australian Based Live & Session Drummer/Audio Engineer/Performer</span>
+            </div>
+
+            <div id="sponsor">
+                <img src="img/sponsorsa.png" alt="">
+                <img src="img/sponsorsb.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showTime(){
+        var date = new Date();
+        var h = date.getHours();
+        var m = date.getMinutes();
+        var s = date.getSeconds();
+        var session = "AM";
+
+        if(h==0){
+            h=12;
+        }
+
+        if(h>12){
+            h = h - 12;
+            session = "PM";
+        }
+
+        h = (h<10) ? "0" + h : h;
+        m = (m<10) ? "0" + m : m;
+        s = (s<10) ? "0" + s : s;
+
+        var time = h + ":" + m + ":" + s + " " + session;
+
+        document.getElementById("clock").innerText = time;
+        document.getElementById("clock").textContent = time;
+
+        setTimeout(showTime, 1000);
+        }
+
+        showTime();
+    </script>
+</body>
+</html>
