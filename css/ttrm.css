@@ -237,6 +237,10 @@ body::-webkit-scrollbar {
     font-family: 'Pretendard-Regular';
     padding-top:5%;
 }
+#list-1 p:hover,
+#list-2 p:hover{
+    text-decoration: underline;
+}
 #list-1 span,
 #list-2 span{
     color:#999;
@@ -287,6 +291,10 @@ body::-webkit-scrollbar {
     color:white; 
     font-family: 'Pretendard-Regular'; font-size:0.9vw;
     padding-top:3%;
+}
+#vll li p:hover,
+#al1 li p:hover{
+    text-decoration: underline;
 }
 #al1 li p{
     padding-top:8%;

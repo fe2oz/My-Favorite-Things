@@ -27,7 +27,9 @@ $(document).ready(function(){
         "audio/shadows.mp3",
         "audio/Weekend.mp3",
         "audio/Flashback.mp3",
-        "audio/scorton-s-creek.mp3" //25
+        "audio/scorton-s-creek.mp3", //25
+        "audio/Golden.mp3",
+        "audio/Bloodstream.mp3"
         );
 
     var img = document.getElementById("play_music"); //재생 버튼 이미지
@@ -79,6 +81,9 @@ $(document).ready(function(){
     const machineGun = document.getElementById("mgk");
     const flashBack = document.getElementById("n_flying");
     const scorTons = document.getElementById("isaac_dunbar");
+    const yunGun = document.getElementById("yun_gun");
+    const golDen = document.getElementById("hs_golden");
+    const bloodStream = document.getElementById("chain_smokers");
 
     function musicStart(){ // 노래 재생시
         musicBar.style.display = "block";
@@ -364,6 +369,24 @@ $(document).ready(function(){
         imgToggle();
     });
 
+    golDen.addEventListener("click", function(){
+        audio.src = playList[26];
+        musicStart();
+        document.getElementById("album_image").src = "img/3248968.jpg"
+        document.getElementById("music_title").innerHTML = "Golden"
+        document.getElementById("singer_and_album").innerHTML = "노래 • Harry Styles(해리 스타일스)"
+        imgToggle();
+    });
+
+    bloodStream.addEventListener("click", function(){
+        audio.src = playList[27];
+        musicStart();
+        document.getElementById("album_image").src = "img/1775087.jpg"
+        document.getElementById("music_title").innerHTML = "Bloodstream"
+        document.getElementById("singer_and_album").innerHTML = "노래 • The chainsmokers(체인스모커스)"
+        imgToggle();
+    });
+
 
     ttRm.addEventListener("click", function(){
         changeIframe();
@@ -379,7 +402,11 @@ $(document).ready(function(){
 
     machineGun.addEventListener("click",function(){
         changeIframeFour();
-    })
+    });
+
+    yunGun.addEventListener("click",function(){
+        changeIframeFive();
+    });
 
     function changeIframe(){
         document.getElementById("pagemove").src = "ttrm.html";
@@ -401,6 +428,12 @@ $(document).ready(function(){
 
     function changeIframeFour(){
         document.getElementById("pagemove").src = "machinegunkelly.html";
+        document.getElementById("pagemove").style.display = "block";
+        document.getElementById("wrap").style.overflowY = "hidden";
+    };
+
+    function changeIframeFive(){
+        document.getElementById("pagemove").src = "yungun.html";
         document.getElementById("pagemove").style.display = "block";
         document.getElementById("wrap").style.overflowY = "hidden";
     };
