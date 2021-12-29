@@ -196,22 +196,50 @@ body {
 }
 
 #all-my-drum-cover,
-#the-chainsmokres {
+#the-chainsmokres,
+#vi-ew,
+#o-l-d,
+#v-log,
+#offi-cial,
+#re-mix,
+#dub-step,
+#be-st {
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: 2;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #all-my-drum-cover #video-list,
-#the-chainsmokres #video-list {
+#the-chainsmokres #video-list,
+#vi-ew #video-list,
+#o-l-d #video-list,
+#v-log #video-list,
+#offi-cial #video-list,
+#re-mix #video-list,
+#dub-step #video-list,
+#be-st #video-list {
   width: 70%;
   height: 100%;
   position: relative;
 }
 
 #all-my-drum-cover #video-list video,
-#the-chainsmokres #video-list video {
+#the-chainsmokres #video-list video,
+#vi-ew #video-list video,
+#o-l-d #video-list video,
+#v-log #video-list video,
+#offi-cial #video-list video,
+#re-mix #video-list video,
+#dub-step #video-list video,
+#be-st #video-list video {
   width: 99%;
   position: absolute;
   bottom: 20%;
@@ -220,18 +248,39 @@ body {
 }
 
 #all-my-drum-cover #video-list video:hover,
-#the-chainsmokres #video-list video:hover {
+#the-chainsmokres #video-list video:hover,
+#vi-ew #video-list video:hover,
+#o-l-d #video-list video:hover,
+#v-log #video-list video:hover,
+#offi-cial #video-list video:hover,
+#re-mix #video-list video:hover,
+#dub-step #video-list video:hover,
+#be-st #video-list video:hover {
   -webkit-filter: opacity(0.9);
           filter: opacity(0.9);
 }
 
 #all-my-drum-cover #video-list video:nth-of-type(1),
-#the-chainsmokres #video-list video:nth-of-type(1) {
+#the-chainsmokres #video-list video:nth-of-type(1),
+#vi-ew #video-list video:nth-of-type(1),
+#o-l-d #video-list video:nth-of-type(1),
+#v-log #video-list video:nth-of-type(1),
+#offi-cial #video-list video:nth-of-type(1),
+#re-mix #video-list video:nth-of-type(1),
+#dub-step #video-list video:nth-of-type(1),
+#be-st #video-list video:nth-of-type(1) {
   display: block;
 }
 
 #all-my-drum-cover #video-list #play,
-#the-chainsmokres #video-list #play {
+#the-chainsmokres #video-list #play,
+#vi-ew #video-list #play,
+#o-l-d #video-list #play,
+#v-log #video-list #play,
+#offi-cial #video-list #play,
+#re-mix #video-list #play,
+#dub-step #video-list #play,
+#be-st #video-list #play {
   width: 4vw;
   position: absolute;
   left: 50%;
@@ -240,7 +289,14 @@ body {
 }
 
 #all-my-drum-cover #video-choice,
-#the-chainsmokres #video-choice {
+#the-chainsmokres #video-choice,
+#vi-ew #video-choice,
+#o-l-d #video-choice,
+#v-log #video-choice,
+#offi-cial #video-choice,
+#re-mix #video-choice,
+#dub-step #video-choice,
+#be-st #video-choice {
   width: 29%;
   height: 98%;
   background-color: #222;
@@ -250,25 +306,53 @@ body {
 }
 
 #all-my-drum-cover #video-choice-text p,
-#the-chainsmokres #video-choice-text p {
+#the-chainsmokres #video-choice-text p,
+#vi-ew #video-choice-text p,
+#o-l-d #video-choice-text p,
+#v-log #video-choice-text p,
+#offi-cial #video-choice-text p,
+#re-mix #video-choice-text p,
+#dub-step #video-choice-text p,
+#be-st #video-choice-text p {
   color: white;
   font-family: 'Pretendard-Regular';
 }
 
 #all-my-drum-cover #video-choice-text p:nth-of-type(2),
-#the-chainsmokres #video-choice-text p:nth-of-type(2) {
+#the-chainsmokres #video-choice-text p:nth-of-type(2),
+#vi-ew #video-choice-text p:nth-of-type(2),
+#o-l-d #video-choice-text p:nth-of-type(2),
+#v-log #video-choice-text p:nth-of-type(2),
+#offi-cial #video-choice-text p:nth-of-type(2),
+#re-mix #video-choice-text p:nth-of-type(2),
+#dub-step #video-choice-text p:nth-of-type(2),
+#be-st #video-choice-text p:nth-of-type(2) {
   font-size: 0.8vw;
   padding-top: 1%;
 }
 
 #all-my-drum-cover #video-choice-text p:nth-of-type(2) span,
-#the-chainsmokres #video-choice-text p:nth-of-type(2) span {
+#the-chainsmokres #video-choice-text p:nth-of-type(2) span,
+#vi-ew #video-choice-text p:nth-of-type(2) span,
+#o-l-d #video-choice-text p:nth-of-type(2) span,
+#v-log #video-choice-text p:nth-of-type(2) span,
+#offi-cial #video-choice-text p:nth-of-type(2) span,
+#re-mix #video-choice-text p:nth-of-type(2) span,
+#dub-step #video-choice-text p:nth-of-type(2) span,
+#be-st #video-choice-text p:nth-of-type(2) span {
   color: #999;
   font-size: 0.7vw;
 }
 
 #all-my-drum-cover #video-choice-text,
-#the-chainsmokres #video-choice-text {
+#the-chainsmokres #video-choice-text,
+#vi-ew #video-choice-text,
+#o-l-d #video-choice-text,
+#v-log #video-choice-text,
+#offi-cial #video-choice-text,
+#re-mix #video-choice-text,
+#dub-step #video-choice-text,
+#be-st #video-choice-text {
   width: 93%;
   height: 6vh;
   padding-top: 5%;
@@ -281,7 +365,14 @@ body {
 }
 
 #all-my-drum-cover #video-choice-list,
-#the-chainsmokres #video-choice-list {
+#the-chainsmokres #video-choice-list,
+#vi-ew #video-choice-list,
+#o-l-d #video-choice-list,
+#v-log #video-choice-list,
+#offi-cial #video-choice-list,
+#re-mix #video-choice-list,
+#dub-step #video-choice-list,
+#be-st #video-choice-list {
   width: 97%;
   height: 70vh;
   margin-left: 1.5%;
@@ -291,23 +382,51 @@ body {
 }
 
 #all-my-drum-cover #video-choice-list::-webkit-scrollbar,
-#the-chainsmokres #video-choice-list::-webkit-scrollbar {
+#the-chainsmokres #video-choice-list::-webkit-scrollbar,
+#vi-ew #video-choice-list::-webkit-scrollbar,
+#o-l-d #video-choice-list::-webkit-scrollbar,
+#v-log #video-choice-list::-webkit-scrollbar,
+#offi-cial #video-choice-list::-webkit-scrollbar,
+#re-mix #video-choice-list::-webkit-scrollbar,
+#dub-step #video-choice-list::-webkit-scrollbar,
+#be-st #video-choice-list::-webkit-scrollbar {
   width: 8px;
 }
 
 #all-my-drum-cover #video-choice-list::-webkit-scrollbar-thumb,
-#the-chainsmokres #video-choice-list::-webkit-scrollbar-thumb {
+#the-chainsmokres #video-choice-list::-webkit-scrollbar-thumb,
+#vi-ew #video-choice-list::-webkit-scrollbar-thumb,
+#o-l-d #video-choice-list::-webkit-scrollbar-thumb,
+#v-log #video-choice-list::-webkit-scrollbar-thumb,
+#offi-cial #video-choice-list::-webkit-scrollbar-thumb,
+#re-mix #video-choice-list::-webkit-scrollbar-thumb,
+#dub-step #video-choice-list::-webkit-scrollbar-thumb,
+#be-st #video-choice-list::-webkit-scrollbar-thumb {
   background-color: #999;
   border-radius: 10px;
 }
 
 #all-my-drum-cover #video-choice-list::-webkit-scrollbar-track,
-#the-chainsmokres #video-choice-list::-webkit-scrollbar-track {
+#the-chainsmokres #video-choice-list::-webkit-scrollbar-track,
+#vi-ew #video-choice-list::-webkit-scrollbar-track,
+#o-l-d #video-choice-list::-webkit-scrollbar-track,
+#v-log #video-choice-list::-webkit-scrollbar-track,
+#offi-cial #video-choice-list::-webkit-scrollbar-track,
+#re-mix #video-choice-list::-webkit-scrollbar-track,
+#dub-step #video-choice-list::-webkit-scrollbar-track,
+#be-st #video-choice-list::-webkit-scrollbar-track {
   background-color: #222;
 }
 
 #all-my-drum-cover #video-choice-list ul,
-#the-chainsmokres #video-choice-list ul {
+#the-chainsmokres #video-choice-list ul,
+#vi-ew #video-choice-list ul,
+#o-l-d #video-choice-list ul,
+#v-log #video-choice-list ul,
+#offi-cial #video-choice-list ul,
+#re-mix #video-choice-list ul,
+#dub-step #video-choice-list ul,
+#be-st #video-choice-list ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,7 +439,21 @@ body {
 #all-my-drum-cover #video-choice-list ul li,
 #all-my-drum-cover #video-choice-list ul li:nth-of-type(2),
 #the-chainsmokres #video-choice-list ul li,
-#the-chainsmokres #video-choice-list ul li:nth-of-type(2) {
+#the-chainsmokres #video-choice-list ul li:nth-of-type(2),
+#vi-ew #video-choice-list ul li,
+#vi-ew #video-choice-list ul li:nth-of-type(2),
+#o-l-d #video-choice-list ul li,
+#o-l-d #video-choice-list ul li:nth-of-type(2),
+#v-log #video-choice-list ul li,
+#v-log #video-choice-list ul li:nth-of-type(2),
+#offi-cial #video-choice-list ul li,
+#offi-cial #video-choice-list ul li:nth-of-type(2),
+#re-mix #video-choice-list ul li,
+#re-mix #video-choice-list ul li:nth-of-type(2),
+#dub-step #video-choice-list ul li,
+#dub-step #video-choice-list ul li:nth-of-type(2),
+#be-st #video-choice-list ul li,
+#be-st #video-choice-list ul li:nth-of-type(2) {
   width: 100%;
   height: 8vh;
   display: -webkit-box;
@@ -338,28 +471,84 @@ body {
 #all-my-drum-cover #video-choice-list ul li img,
 #all-my-drum-cover #video-choice-list ul li:nth-of-type(2) img,
 #the-chainsmokres #video-choice-list ul li img,
-#the-chainsmokres #video-choice-list ul li:nth-of-type(2) img {
+#the-chainsmokres #video-choice-list ul li:nth-of-type(2) img,
+#vi-ew #video-choice-list ul li img,
+#vi-ew #video-choice-list ul li:nth-of-type(2) img,
+#o-l-d #video-choice-list ul li img,
+#o-l-d #video-choice-list ul li:nth-of-type(2) img,
+#v-log #video-choice-list ul li img,
+#v-log #video-choice-list ul li:nth-of-type(2) img,
+#offi-cial #video-choice-list ul li img,
+#offi-cial #video-choice-list ul li:nth-of-type(2) img,
+#re-mix #video-choice-list ul li img,
+#re-mix #video-choice-list ul li:nth-of-type(2) img,
+#dub-step #video-choice-list ul li img,
+#dub-step #video-choice-list ul li:nth-of-type(2) img,
+#be-st #video-choice-list ul li img,
+#be-st #video-choice-list ul li:nth-of-type(2) img {
   width: 5.5vw;
 }
 
 #all-my-drum-cover #video-choice-list ul li > div > p,
 #all-my-drum-cover #video-choice-list ul li:nth-of-type(2) > div > p,
 #the-chainsmokres #video-choice-list ul li > div > p,
-#the-chainsmokres #video-choice-list ul li:nth-of-type(2) > div > p {
+#the-chainsmokres #video-choice-list ul li:nth-of-type(2) > div > p,
+#vi-ew #video-choice-list ul li > div > p,
+#vi-ew #video-choice-list ul li:nth-of-type(2) > div > p,
+#o-l-d #video-choice-list ul li > div > p,
+#o-l-d #video-choice-list ul li:nth-of-type(2) > div > p,
+#v-log #video-choice-list ul li > div > p,
+#v-log #video-choice-list ul li:nth-of-type(2) > div > p,
+#offi-cial #video-choice-list ul li > div > p,
+#offi-cial #video-choice-list ul li:nth-of-type(2) > div > p,
+#re-mix #video-choice-list ul li > div > p,
+#re-mix #video-choice-list ul li:nth-of-type(2) > div > p,
+#dub-step #video-choice-list ul li > div > p,
+#dub-step #video-choice-list ul li:nth-of-type(2) > div > p,
+#be-st #video-choice-list ul li > div > p,
+#be-st #video-choice-list ul li:nth-of-type(2) > div > p {
   width: 100%;
 }
 
 #all-my-drum-cover #video-choice-list ul li > div,
 #all-my-drum-cover #video-choice-list ul li:nth-of-type(2) > div,
 #the-chainsmokres #video-choice-list ul li > div,
-#the-chainsmokres #video-choice-list ul li:nth-of-type(2) > div {
+#the-chainsmokres #video-choice-list ul li:nth-of-type(2) > div,
+#vi-ew #video-choice-list ul li > div,
+#vi-ew #video-choice-list ul li:nth-of-type(2) > div,
+#o-l-d #video-choice-list ul li > div,
+#o-l-d #video-choice-list ul li:nth-of-type(2) > div,
+#v-log #video-choice-list ul li > div,
+#v-log #video-choice-list ul li:nth-of-type(2) > div,
+#offi-cial #video-choice-list ul li > div,
+#offi-cial #video-choice-list ul li:nth-of-type(2) > div,
+#re-mix #video-choice-list ul li > div,
+#re-mix #video-choice-list ul li:nth-of-type(2) > div,
+#dub-step #video-choice-list ul li > div,
+#dub-step #video-choice-list ul li:nth-of-type(2) > div,
+#be-st #video-choice-list ul li > div,
+#be-st #video-choice-list ul li:nth-of-type(2) > div {
   width: 50%;
 }
 
 #all-my-drum-cover #video-choice-list ul li p,
 #all-my-drum-cover #video-choice-list ul li:nth-of-type(2) p,
 #the-chainsmokres #video-choice-list ul li p,
-#the-chainsmokres #video-choice-list ul li:nth-of-type(2) p {
+#the-chainsmokres #video-choice-list ul li:nth-of-type(2) p,
+#vi-ew #video-choice-list ul li p,
+#vi-ew #video-choice-list ul li:nth-of-type(2) p,
+#o-l-d #video-choice-list ul li p,
+#o-l-d #video-choice-list ul li:nth-of-type(2) p,
+#v-log #video-choice-list ul li p,
+#v-log #video-choice-list ul li:nth-of-type(2) p,
+#offi-cial #video-choice-list ul li p,
+#offi-cial #video-choice-list ul li:nth-of-type(2) p,
+#re-mix #video-choice-list ul li p,
+#re-mix #video-choice-list ul li:nth-of-type(2) p,
+#dub-step #video-choice-list ul li p,
+#dub-step #video-choice-list ul li:nth-of-type(2) p,
+#be-st #video-choice-list ul li p,
+#be-st #video-choice-list ul li:nth-of-type(2) p {
   font-family: 'Pretendard-Regular';
   font-size: 0.8vw;
   color: white;
@@ -368,7 +557,21 @@ body {
 #all-my-drum-cover #video-choice-list ul li span,
 #all-my-drum-cover #video-choice-list ul li:nth-of-type(2) span,
 #the-chainsmokres #video-choice-list ul li span,
-#the-chainsmokres #video-choice-list ul li:nth-of-type(2) span {
+#the-chainsmokres #video-choice-list ul li:nth-of-type(2) span,
+#vi-ew #video-choice-list ul li span,
+#vi-ew #video-choice-list ul li:nth-of-type(2) span,
+#o-l-d #video-choice-list ul li span,
+#o-l-d #video-choice-list ul li:nth-of-type(2) span,
+#v-log #video-choice-list ul li span,
+#v-log #video-choice-list ul li:nth-of-type(2) span,
+#offi-cial #video-choice-list ul li span,
+#offi-cial #video-choice-list ul li:nth-of-type(2) span,
+#re-mix #video-choice-list ul li span,
+#re-mix #video-choice-list ul li:nth-of-type(2) span,
+#dub-step #video-choice-list ul li span,
+#dub-step #video-choice-list ul li:nth-of-type(2) span,
+#be-st #video-choice-list ul li span,
+#be-st #video-choice-list ul li:nth-of-type(2) span {
   font-family: 'Pretendard-Regular';
   font-size: 0.7vw;
   color: #999;
@@ -377,23 +580,73 @@ body {
 #all-my-drum-cover #video-choice-list ul li:hover,
 #all-my-drum-cover #video-choice-list ul li:nth-of-type(2):hover,
 #the-chainsmokres #video-choice-list ul li:hover,
-#the-chainsmokres #video-choice-list ul li:nth-of-type(2):hover {
+#the-chainsmokres #video-choice-list ul li:nth-of-type(2):hover,
+#vi-ew #video-choice-list ul li:hover,
+#vi-ew #video-choice-list ul li:nth-of-type(2):hover,
+#o-l-d #video-choice-list ul li:hover,
+#o-l-d #video-choice-list ul li:nth-of-type(2):hover,
+#v-log #video-choice-list ul li:hover,
+#v-log #video-choice-list ul li:nth-of-type(2):hover,
+#offi-cial #video-choice-list ul li:hover,
+#offi-cial #video-choice-list ul li:nth-of-type(2):hover,
+#re-mix #video-choice-list ul li:hover,
+#re-mix #video-choice-list ul li:nth-of-type(2):hover,
+#dub-step #video-choice-list ul li:hover,
+#dub-step #video-choice-list ul li:nth-of-type(2):hover,
+#be-st #video-choice-list ul li:hover,
+#be-st #video-choice-list ul li:nth-of-type(2):hover {
   background: rgba(153, 153, 153, 0.1);
 }
 
 #all-my-drum-cover #video-choice-list ul li.active,
 #all-my-drum-cover #video-choice-list ul li:nth-of-type(2).active,
 #the-chainsmokres #video-choice-list ul li.active,
-#the-chainsmokres #video-choice-list ul li:nth-of-type(2).active {
+#the-chainsmokres #video-choice-list ul li:nth-of-type(2).active,
+#vi-ew #video-choice-list ul li.active,
+#vi-ew #video-choice-list ul li:nth-of-type(2).active,
+#o-l-d #video-choice-list ul li.active,
+#o-l-d #video-choice-list ul li:nth-of-type(2).active,
+#v-log #video-choice-list ul li.active,
+#v-log #video-choice-list ul li:nth-of-type(2).active,
+#offi-cial #video-choice-list ul li.active,
+#offi-cial #video-choice-list ul li:nth-of-type(2).active,
+#re-mix #video-choice-list ul li.active,
+#re-mix #video-choice-list ul li:nth-of-type(2).active,
+#dub-step #video-choice-list ul li.active,
+#dub-step #video-choice-list ul li:nth-of-type(2).active,
+#be-st #video-choice-list ul li.active,
+#be-st #video-choice-list ul li:nth-of-type(2).active {
   background: #444;
 }
 
-#all-my-drum-cover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  visibility: hidden;
+#the-chainsmokres {
+  background-color: orangered;
+}
+
+#vi-ew {
+  background-color: orange;
+}
+
+#o-l-d {
+  background-color: orchid;
+}
+
+#v-log {
+  background-color: palevioletred;
+}
+
+#offi-cial {
+  background-color: peru;
+}
+
+#re-mix {
+  background-color: plum;
+}
+
+#dub-step {
+  background-color: purple;
+}
+
+#be-st {
+  background-color: rosybrown;
 }

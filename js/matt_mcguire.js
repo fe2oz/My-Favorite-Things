@@ -6,6 +6,18 @@ $(document).ready(function(){
     const chainSmokersContent = document.getElementById("the-chainsmokres");
     const viEw = document.getElementById("view");
     const viEwContent = document.getElementById("vi-ew");
+    const OLD = document.getElementById("old");
+    const OLDContent = document.getElementById("o-l-d");
+    const vLog = document.getElementById("vlog");
+    const vLogContent = document.getElementById("v-log");
+    const offiCial = document.getElementById("official");
+    const offiCialContent = document.getElementById("offi-cial");
+    const reMix = document.getElementById("remix");
+    const reMixContent = document.getElementById("re-mix");
+    const dubStep = document.getElementById("dubstep");
+    const dubStepContent = document.getElementById("dub-step");
+    const beSt = document.getElementById("best");
+    const beStContent = document.getElementById("be-st");
 
     //
     //메인 메뉴 클릭
@@ -13,6 +25,12 @@ $(document).ready(function(){
         ALLContent.style.visibility = "visible";
         chainSmokersContent.style.visibility = "hidden";
         viEwContent.style.visibility = "hidden";
+        OLDContent.style.visibility = "hidden";
+        vLogContent.style.visibility = "hidden";
+        offiCialContent.style.visibility = "hidden";
+        reMixContent.style.visibility = "hidden";
+        dubStepContent.style.visibility = "hidden";
+        beStContent.style.visibility = "hidden";
         showContent();
         iframeDown();
     });
@@ -21,6 +39,12 @@ $(document).ready(function(){
         chainSmokersContent.style.visibility = "visible";
         ALLContent.style.visibility = "hidden";
         viEwContent.style.visibility = "hidden";
+        OLDContent.style.visibility = "hidden";
+        vLogContent.style.visibility = "hidden";
+        offiCialContent.style.visibility = "hidden";
+        reMixContent.style.visibility = "hidden";
+        dubStepContent.style.visibility = "hidden";
+        beStContent.style.visibility = "hidden";
         showContent();
         iframeDown();
     });
@@ -29,6 +53,96 @@ $(document).ready(function(){
         viEwContent.style.visibility = "visible";
         ALLContent.style.visibility = "hidden";
         chainSmokersContent.style.visibility = "hidden";
+        OLDContent.style.visibility = "hidden";
+        vLogContent.style.visibility = "hidden";
+        offiCialContent.style.visibility = "hidden";
+        reMixContent.style.visibility = "hidden";
+        dubStepContent.style.visibility = "hidden";
+        beStContent.style.visibility = "hidden";
+        showContent();
+        iframeDown();
+    });
+
+    OLD.addEventListener("click", function(){
+        OLDContent.style.visibility = "visible";
+        ALLContent.style.visibility = "hidden";
+        chainSmokersContent.style.visibility = "hidden";
+        viEwContent.style.visibility = "hidden";
+        vLogContent.style.visibility = "hidden";
+        offiCialContent.style.visibility = "hidden";
+        reMixContent.style.visibility = "hidden";
+        dubStepContent.style.visibility = "hidden";
+        beStContent.style.visibility = "hidden";
+        showContent();
+        iframeDown();
+    });
+
+    vLog.addEventListener("click", function(){
+        vLogContent.style.visibility = "visible";
+        ALLContent.style.visibility = "hidden";
+        chainSmokersContent.style.visibility = "hidden";
+        viEwContent.style.visibility = "hidden";
+        OLDContent.style.visibility = "hidden";
+        offiCialContent.style.visibility = "hidden";
+        reMixContent.style.visibility = "hidden";
+        dubStepContent.style.visibility = "hidden";
+        beStContent.style.visibility = "hidden";
+        showContent();
+        iframeDown();
+    });
+
+    offiCial.addEventListener("click", function(){
+        offiCialContent.style.visibility = "visible";
+        ALLContent.style.visibility = "hidden";
+        chainSmokersContent.style.visibility = "hidden";
+        viEwContent.style.visibility = "hidden";
+        OLDContent.style.visibility = "hidden";
+        vLogContent.style.visibility = "hidden";
+        reMixContent.style.visibility = "hidden";
+        dubStepContent.style.visibility = "hidden";
+        beStContent.style.visibility = "hidden";
+        showContent();
+        iframeDown();
+    });
+
+    reMix.addEventListener("click", function(){
+        reMixContent.style.visibility = "visible";
+        ALLContent.style.visibility = "hidden";
+        chainSmokersContent.style.visibility = "hidden";
+        viEwContent.style.visibility = "hidden";
+        OLDContent.style.visibility = "hidden";
+        vLogContent.style.visibility = "hidden";
+        offiCialContent.style.visibility = "hidden";
+        dubStepContent.style.visibility = "hidden";
+        beStContent.style.visibility = "hidden";
+        showContent();
+        iframeDown();
+    });
+
+    dubStep.addEventListener("click", function(){
+        dubStepContent.style.visibility = "visible";
+        ALLContent.style.visibility = "hidden";
+        chainSmokersContent.style.visibility = "hidden";
+        viEwContent.style.visibility = "hidden";
+        OLDContent.style.visibility = "hidden";
+        vLogContent.style.visibility = "hidden";
+        offiCialContent.style.visibility = "hidden";
+        reMixContent.style.visibility = "hidden";
+        beStContent.style.visibility = "hidden";
+        showContent();
+        iframeDown();
+    });
+
+    beSt.addEventListener("click", function(){
+        beStContent.style.visibility = "visible";
+        ALLContent.style.visibility = "hidden";
+        chainSmokersContent.style.visibility = "hidden";
+        viEwContent.style.visibility = "hidden";
+        OLDContent.style.visibility = "hidden";
+        vLogContent.style.visibility = "hidden";
+        offiCialContent.style.visibility = "hidden";
+        reMixContent.style.visibility = "hidden";
+        dubStepContent.style.visibility = "hidden";
         showContent();
         iframeDown();
     });
