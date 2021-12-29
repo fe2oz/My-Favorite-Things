@@ -19,6 +19,7 @@ $(document).ready(function(){
     const beSt = document.getElementById("best");
     const beStContent = document.getElementById("be-st");
 
+
     //
     //메인 메뉴 클릭
     ALL.addEventListener("click", function(){
@@ -33,6 +34,7 @@ $(document).ready(function(){
         beStContent.style.visibility = "hidden";
         showContent();
         iframeDown();
+        $('iframe').attr('src', $('iframe').attr('src'));
     });
 
     chainSmokers.addEventListener("click", function(){   
@@ -47,6 +49,7 @@ $(document).ready(function(){
         beStContent.style.visibility = "hidden";
         showContent();
         iframeDown();
+        $('iframe').attr('src', $('iframe').attr('src'));
     });
 
     viEw.addEventListener("click", function(){
@@ -61,6 +64,7 @@ $(document).ready(function(){
         beStContent.style.visibility = "hidden";
         showContent();
         iframeDown();
+        $('iframe').attr('src', $('iframe').attr('src'));
     });
 
     OLD.addEventListener("click", function(){
@@ -75,6 +79,7 @@ $(document).ready(function(){
         beStContent.style.visibility = "hidden";
         showContent();
         iframeDown();
+        $('iframe').attr('src', $('iframe').attr('src'));
     });
 
     vLog.addEventListener("click", function(){
@@ -89,6 +94,7 @@ $(document).ready(function(){
         beStContent.style.visibility = "hidden";
         showContent();
         iframeDown();
+        $('iframe').attr('src', $('iframe').attr('src'));
     });
 
     offiCial.addEventListener("click", function(){
@@ -103,6 +109,7 @@ $(document).ready(function(){
         beStContent.style.visibility = "hidden";
         showContent();
         iframeDown();
+        $('iframe').attr('src', $('iframe').attr('src'));
     });
 
     reMix.addEventListener("click", function(){
@@ -117,6 +124,7 @@ $(document).ready(function(){
         beStContent.style.visibility = "hidden";
         showContent();
         iframeDown();
+        $('iframe').attr('src', $('iframe').attr('src'));
     });
 
     dubStep.addEventListener("click", function(){
@@ -131,6 +139,7 @@ $(document).ready(function(){
         beStContent.style.visibility = "hidden";
         showContent();
         iframeDown();
+        $('iframe').attr('src', $('iframe').attr('src'));
     });
 
     beSt.addEventListener("click", function(){
@@ -145,6 +154,7 @@ $(document).ready(function(){
         dubStepContent.style.visibility = "hidden";
         showContent();
         iframeDown();
+        $('iframe').attr('src', $('iframe').attr('src'));
     });
 
     function showContent(){
@@ -165,6 +175,7 @@ $(document).ready(function(){
     const eightVideo = document.getElementById("eight");
     const nineVideo = document.getElementById("nine");
     const tenVideo = document.getElementById("ten");
+    const ytPage = document.getElementById("ytpage");
     
     oneVideo.addEventListener("click", function(){
         pageMove.src = "drum==1.html";
@@ -216,12 +227,23 @@ $(document).ready(function(){
         pageMove.style.display = "block";
     });
 
+    ytPage.addEventListener("click", function(){
+        pageMove.src = "https://www.youtube.com/c/MattMcGuireOfficial/featured";
+        pageMove.style.display = "block";
+    });
+
     //
     function iframeDown(){
         pageMove.style.display = "none";
     }
     pageDown.addEventListener("click", function(){
         iframeDown();
+    });
+
+    $(function(){
+        $('#prev').click(function(){      
+            $('iframe').attr('src', $('iframe').attr('src'));
+        });
     });
 });
 
