@@ -29,7 +29,7 @@ body::-webkit-scrollbar-track {
 #slider {
   width: 100%;
   height: 80vh;
-  background-image: url(../../../포트폴리오3-mgk/img/testbg.jpg);
+  background-image: url(../../img/testbg.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;

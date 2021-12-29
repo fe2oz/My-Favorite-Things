@@ -1,0 +1,399 @@
+body {
+  height: 100vh;
+  background: url(../../img/preview.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+}
+
+.container {
+  background: url(../../img/bg.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#section {
+  position: relative;
+}
+
+#pagemove {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 8;
+  display: none;
+  border: 0;
+}
+
+.main_menu {
+  width: 18%;
+  height: 89%;
+  border-radius: 10px 0 0 10px;
+  padding-top: 5.7%;
+}
+
+.main_menu li {
+  width: 100%;
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 60px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 60px rgba(0, 0, 0, 0.3);
+  -webkit-transition: .35s;
+  transition: .35s;
+  cursor: pointer;
+}
+
+.main_menu li:hover {
+  background: #737DFE;
+}
+
+.main_menu li:hover img {
+  -webkit-filter: invert(0);
+          filter: invert(0);
+}
+
+.main_menu li:hover p {
+  color: black;
+}
+
+.main_menu li.activeA {
+  background: #737DFE;
+}
+
+.main_menu li img {
+  padding-left: 10%;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  -webkit-transition: .35s;
+  transition: .35s;
+}
+
+.main_menu li p {
+  padding-left: 10%;
+  color: white;
+  -webkit-transition: .35s;
+  transition: .35s;
+}
+
+#home {
+  width: 100%;
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 60px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 60px rgba(0, 0, 0, 0.3);
+  -webkit-transition: .35s;
+  transition: .35s;
+  cursor: pointer;
+}
+
+.home,
+.prev {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transition: .35s;
+  transition: .35s;
+}
+
+.home:hover,
+.prev:hover {
+  background: #444;
+}
+
+.home p,
+.prev p {
+  color: white;
+}
+
+.home img,
+.prev img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.home {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#section {
+  width: 82%;
+  height: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+#main {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: flooat 1s infinite alternate;
+          animation: flooat 1s infinite alternate;
+  cursor: default;
+}
+
+#main img {
+  width: 3.5vw;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+#main p {
+  color: white;
+  font-size: 3vw;
+  padding-left: 10%;
+}
+
+@-webkit-keyframes flooat {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
+  }
+}
+
+@keyframes flooat {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
+  }
+}
+
+#all-my-drum-cover,
+#the-chainsmokres {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+#all-my-drum-cover #video-list,
+#the-chainsmokres #video-list {
+  width: 70%;
+  height: 100%;
+  position: relative;
+}
+
+#all-my-drum-cover #video-list video,
+#the-chainsmokres #video-list video {
+  width: 99%;
+  position: absolute;
+  bottom: 20%;
+  left: 1%;
+  display: none;
+}
+
+#all-my-drum-cover #video-list video:hover,
+#the-chainsmokres #video-list video:hover {
+  -webkit-filter: opacity(0.9);
+          filter: opacity(0.9);
+}
+
+#all-my-drum-cover #video-list video:nth-of-type(1),
+#the-chainsmokres #video-list video:nth-of-type(1) {
+  display: block;
+}
+
+#all-my-drum-cover #video-list #play,
+#the-chainsmokres #video-list #play {
+  width: 4vw;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  z-index: 4;
+}
+
+#all-my-drum-cover #video-choice,
+#the-chainsmokres #video-choice {
+  width: 29%;
+  height: 98%;
+  background-color: #222;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+#all-my-drum-cover #video-choice-text p,
+#the-chainsmokres #video-choice-text p {
+  color: white;
+  font-family: 'Pretendard-Regular';
+}
+
+#all-my-drum-cover #video-choice-text p:nth-of-type(2),
+#the-chainsmokres #video-choice-text p:nth-of-type(2) {
+  font-size: 0.8vw;
+  padding-top: 1%;
+}
+
+#all-my-drum-cover #video-choice-text p:nth-of-type(2) span,
+#the-chainsmokres #video-choice-text p:nth-of-type(2) span {
+  color: #999;
+  font-size: 0.7vw;
+}
+
+#all-my-drum-cover #video-choice-text,
+#the-chainsmokres #video-choice-text {
+  width: 93%;
+  height: 6vh;
+  padding-top: 5%;
+  padding-left: 4%;
+  margin-left: 1.5%;
+  margin-top: 20%;
+  background: #333;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 0;
+}
+
+#all-my-drum-cover #video-choice-list,
+#the-chainsmokres #video-choice-list {
+  width: 97%;
+  height: 70vh;
+  margin-left: 1.5%;
+  padding-top: 2%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow-y: scroll;
+}
+
+#all-my-drum-cover #video-choice-list::-webkit-scrollbar,
+#the-chainsmokres #video-choice-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+#all-my-drum-cover #video-choice-list::-webkit-scrollbar-thumb,
+#the-chainsmokres #video-choice-list::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 10px;
+}
+
+#all-my-drum-cover #video-choice-list::-webkit-scrollbar-track,
+#the-chainsmokres #video-choice-list::-webkit-scrollbar-track {
+  background-color: #222;
+}
+
+#all-my-drum-cover #video-choice-list ul,
+#the-chainsmokres #video-choice-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+#all-my-drum-cover #video-choice-list ul li,
+#all-my-drum-cover #video-choice-list ul li:nth-of-type(2),
+#the-chainsmokres #video-choice-list ul li,
+#the-chainsmokres #video-choice-list ul li:nth-of-type(2) {
+  width: 100%;
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+#all-my-drum-cover #video-choice-list ul li img,
+#all-my-drum-cover #video-choice-list ul li:nth-of-type(2) img,
+#the-chainsmokres #video-choice-list ul li img,
+#the-chainsmokres #video-choice-list ul li:nth-of-type(2) img {
+  width: 5.5vw;
+}
+
+#all-my-drum-cover #video-choice-list ul li > div > p,
+#all-my-drum-cover #video-choice-list ul li:nth-of-type(2) > div > p,
+#the-chainsmokres #video-choice-list ul li > div > p,
+#the-chainsmokres #video-choice-list ul li:nth-of-type(2) > div > p {
+  width: 100%;
+}
+
+#all-my-drum-cover #video-choice-list ul li > div,
+#all-my-drum-cover #video-choice-list ul li:nth-of-type(2) > div,
+#the-chainsmokres #video-choice-list ul li > div,
+#the-chainsmokres #video-choice-list ul li:nth-of-type(2) > div {
+  width: 50%;
+}
+
+#all-my-drum-cover #video-choice-list ul li p,
+#all-my-drum-cover #video-choice-list ul li:nth-of-type(2) p,
+#the-chainsmokres #video-choice-list ul li p,
+#the-chainsmokres #video-choice-list ul li:nth-of-type(2) p {
+  font-family: 'Pretendard-Regular';
+  font-size: 0.8vw;
+  color: white;
+}
+
+#all-my-drum-cover #video-choice-list ul li span,
+#all-my-drum-cover #video-choice-list ul li:nth-of-type(2) span,
+#the-chainsmokres #video-choice-list ul li span,
+#the-chainsmokres #video-choice-list ul li:nth-of-type(2) span {
+  font-family: 'Pretendard-Regular';
+  font-size: 0.7vw;
+  color: #999;
+}
+
+#all-my-drum-cover #video-choice-list ul li:hover,
+#all-my-drum-cover #video-choice-list ul li:nth-of-type(2):hover,
+#the-chainsmokres #video-choice-list ul li:hover,
+#the-chainsmokres #video-choice-list ul li:nth-of-type(2):hover {
+  background: rgba(153, 153, 153, 0.1);
+}
+
+#all-my-drum-cover #video-choice-list ul li.active,
+#all-my-drum-cover #video-choice-list ul li:nth-of-type(2).active,
+#the-chainsmokres #video-choice-list ul li.active,
+#the-chainsmokres #video-choice-list ul li:nth-of-type(2).active {
+  background: #444;
+}
+
+#all-my-drum-cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+}
