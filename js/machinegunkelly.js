@@ -2,17 +2,19 @@
 
 $(function(){
 
+    $(".album-list-list li:last").prependTo(".album-list-list")
+
     $("#next").click(function(){
-        $(".album-list-list").stop().animate({marginLeft:-223.95}, function(){
+        $(".album-list-list").stop().animate({marginLeft:-222.95}, function(){
             $(".album-list-list li:first").appendTo(".album-list-list");
             $(".album-list-list").css({marginLeft:0});
         });
     });
 
     $("#prev").click(function(){
-        $(".album-list-list").stop().animate({marginLeft:223.95}, function(){
+        $(".album-list-list").stop().animate({marginLeft:0}, function(){
             $(".album-list-list li:last").prependTo(".album-list-list");
-            $(".album-list-list").css({marginLeft:0});
+            $(".album-list-list").css({marginLeft:-223.95});
         });
     });
 
