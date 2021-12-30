@@ -132,7 +132,8 @@ body{
 
     & #video-list,
     & #video-list-1,
-    & #video-list-2{
+    & #video-list-2,
+    & #video-list-3{
         width:70%; height:100%;
         position:relative;
 
@@ -163,7 +164,8 @@ body{
 
         &-text,
         &-text-1,
-        &-text-2{
+        &-text-2,
+        &-text-3{
             width:93%; height:6vh;
             padding-top:5%; padding-left:4%; 
             margin-left:1.5%; margin-top:20%;
@@ -185,7 +187,8 @@ body{
         }
         &-list,
         &-list-1,
-        &-list-2{
+        &-list-2,
+        &-list-3{
             width:97%; height:70vh;
             margin-left:1.5%;
             padding-top:2%;
@@ -250,9 +253,7 @@ body{
 
     }
 }
-#o-l-d{
-    background-color: orchid;
-}
+
 #v-log{
     background-color:palevioletred ;
 }
