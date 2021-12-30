@@ -190,13 +190,13 @@ $(document).ready(function(){
 
 
     twoBVideo.addEventListener("click", function(){
-        pageMove.src = "drum==2-2.html";
+        pageMove.src = "drum==1-1.html";
         pageMove.style.display = "block";
     });
 
 
     threeBVideo.addEventListener("click", function(){
-        pageMove.src = "drum==3-2.html";
+        pageMove.src = "drum==2-1.html";
         pageMove.style.display = "block";
     });
 

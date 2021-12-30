@@ -124,7 +124,7 @@ $(function(){
         $("#two-1").css("display", "none");
         $("#three-1").css("display", "none");
         $("#four-1").css("display", "none");
-        $("# #five-1").css("display", "none");
+        $("#five-1").css("display", "none");
         $("#six-1").css("display", "none");
         $("#eight-1").css("display", "none");
         $(" #nine-1").css("display", "none");
@@ -152,22 +152,22 @@ $(function(){
         $("#four-1").css("display", "none");
         $("#five-1").css("display", "none");
         $("#six-1").css("display", "none");
-        $("##seven-1").css("display", "none");
+        $("#seven-1").css("display", "none");
         $("#eight-1").css("display", "none");
         $("#ten-1").css("display", "none");
     });
 
     $(".video-choice-list-1 li:nth-of-type(10)").click(function(){
         $("#ten-1").css("display", "block");
-        $(" #one-1").css("display", "none");
+        $("#one-1").css("display", "none");
         $("#two-1").css("display", "none");
-        $(" #three-1").css("display", "none");
+        $("#three-1").css("display", "none");
         $("#four-1").css("display", "none");
         $("#five-1").css("display", "none");
         $("#six-1").css("display", "none");
         $("#seven-1").css("display", "none");
         $("#eight-1").css("display", "none");
-        $(" #nine-1").css("display", "none");
+        $("#nine-1").css("display", "none");
     });
 
     
