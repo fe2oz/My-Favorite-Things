@@ -173,6 +173,11 @@ $(function(){
         $(this).addClass("active");
     });
 
+    $(".video-choice-list-2 li").click(function(){
+        $(".video-choice-list-2 li").removeClass("active");
+        $(this).addClass("active");
+    });
+
     $("#main_menu li").click(function(){
         $("#main_menu li").removeClass("activeA");
         $(this).addClass("activeA");
