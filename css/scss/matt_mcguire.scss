@@ -2,12 +2,12 @@
 
 body{
     height:100vh;
-    background:url(../../img/preview.jpg); background-size:100% 100%; background-repeat: no-repeat;
+    background:url(../../img/drum/preview.jpg); background-size:100% 100%; background-repeat: no-repeat;
     overflow-y: hidden;
 }
 
 .container{
-    background: url(../../img/bg.jpg); background-size:100% 100%; background-repeat: no-repeat;
+    background: url(../../img/drum/bg.jpg); background-size:100% 100%; background-repeat: no-repeat;
     display:flex;
 }
 
@@ -130,7 +130,8 @@ body{
     visibility: hidden;
     display:flex; align-items: center;
 
-    & #video-list{
+    & #video-list,
+    & #video-list-1{
         width:70%; height:100%;
         position:relative;
 
@@ -159,26 +160,29 @@ body{
         border:1px solid rgba(255,255,255,0.1);
         overflow:hidden;
 
-        &-text p{
-            color:white;
-            font-family: 'Pretendard-Regular';
-            &:nth-of-type(2){
-                font-size:0.8vw;
-                padding-top:1%;
-                & span{
-                    color:#999;
-                    font-size:0.7vw;
-                }
-            }
-        }
-        &-text{
+        &-text,
+        &-text-1{
             width:93%; height:6vh;
             padding-top:5%; padding-left:4%; 
             margin-left:1.5%; margin-top:20%;
             background:#333;
             border:1px solid rgba(255,255,255,0.1); border-bottom:0;
+
+            & p{
+                color:white;
+                font-family: 'Pretendard-Regular';
+                &:nth-of-type(2){
+                    font-size:0.8vw;
+                    padding-top:1%;
+                    & span{
+                        color:#999;
+                        font-size:0.7vw;
+                    }
+                }
+            }
         }
-        &-list{
+        &-list,
+        &-list-1{
             width:97%; height:70vh;
             margin-left:1.5%;
             padding-top:2%;
@@ -230,10 +234,13 @@ body{
             }
         }
 
+        &-list-1{
+            & ul li:nth-of-type(1){
+                height:10vh;
+            }
+        }
+
     }
-}
-#the-chainsmokres{
-    background-color:orangered;
 }
 #vi-ew{
     background-color: orange;

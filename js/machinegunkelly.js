@@ -5,7 +5,7 @@ $(function(){
     $(".album-list-list li:last").prependTo(".album-list-list")
 
     $("#next").click(function(){
-        $(".album-list-list").stop().animate({marginLeft:-222.95}, function(){
+        $(".album-list-list").stop().animate({marginLeft:-223.95}, function(){
             $(".album-list-list li:first").appendTo(".album-list-list");
             $(".album-list-list").css({marginLeft:0});
         });

@@ -113,15 +113,15 @@ $(document).ready(function(){
     // 재생, 정지 버튼 토글
     img.addEventListener("click", function(){
         if(img.src.match("stop_icon")){ // 이미지 src 중 stop_icon과 일치하면
-            img.src = "img/211876_play_icon.png"; // play_icon 이미지로 변경되고
+            img.src = "img/music/211876_play_icon.png"; // play_icon 이미지로 변경되고
             img.style.filter ="invert(0)";
             audio.pause(); // 오디오 멈춤
         }else if(img.src.match("play_icon")){ // 이미지 src 중 play_icon과 일치하면
-            img.src = "img/743894_pause_control_line_play_stop_icon.png"; //stop_icon 이미지로 변경되고
+            img.src = "img/music/743894_pause_control_line_play_stop_icon.png"; //stop_icon 이미지로 변경되고
             img.style.filter ="invert(1)";
             audio.play(); // 오디오 재생
         }else if(progressBar.value = audio.duration){
-            img.src = "img/211876_play_icon.png";
+            img.src = "img/music/211876_play_icon.png";
         };
     });
 
@@ -129,7 +129,7 @@ $(document).ready(function(){
     dopaMine.addEventListener("click", function(){
         audio.src = playList[0]; 
         musicStart();
-        document.getElementById("album_image").src = "img/400x400cc.jpg";
+        document.getElementById("album_image").src = "img/music/400x400cc.jpg";
         document.getElementById("music_title").innerHTML = "Dopamine";
         document.getElementById("singer_and_album").innerHTML = "Purple Disco Machine 및 Eyelar • Exotica";
         imgToggle();
@@ -138,7 +138,7 @@ $(document).ready(function(){
     juiceWrld.addEventListener("click", function(){
         audio.src = playList[1]; 
         musicStart();
-        document.getElementById("album_image").src = "img/4641786.jpg";
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/004/641/4641786.jpg?type=r480Fll&v=20210802043027";
         document.getElementById("music_title").innerHTML = "Come & Go(feat. Marshmallow)";
         document.getElementById("singer_and_album").innerHTML = "Juice Wrld(주스 월드) Legends Never Die 2020";
         imgToggle();
@@ -147,7 +147,7 @@ $(document).ready(function(){
     imagineDargon.addEventListener("click", function(){
         audio.src = playList[2]; 
         musicStart();
-        document.getElementById("album_image").src = "img/6398197.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/006/398/6398197.jpg?type=r480Fll&v=20210908093207"
         document.getElementById("music_title").innerHTML = "Wrekced"
         document.getElementById("singer_and_album").innerHTML = "Imagine Dragons Mercury - Act 1 2021"
         imgToggle();
@@ -156,7 +156,7 @@ $(document).ready(function(){
     againImagineDargon.addEventListener("click", function(){
         audio.src = playList[2]; 
         musicStart();
-        document.getElementById("album_image").src = "img/6398197.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/006/398/6398197.jpg?type=r480Fll&v=20210908093207"
         document.getElementById("music_title").innerHTML = "Wrekced"
         document.getElementById("singer_and_album").innerHTML = "Imagine Dragons Mercury - Act 1 2021"
         imgToggle();
@@ -165,7 +165,7 @@ $(document).ready(function(){
     alanWalker.addEventListener("click", function(){
         audio.src = playList[3]; 
         musicStart();
-        document.getElementById("album_image").src = "img/2345147.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/002/345/2345147.jpg?type=r480Fll&v=20211109104526"
         document.getElementById("music_title").innerHTML = "Stranger Things (Alan Walker Remix)(feat. OneRepublic(원리퍼블릭))"
         document.getElementById("singer_and_album").innerHTML = "Kygo(카이고) • Kids in Love (Remixes)"
         imgToggle();
@@ -174,7 +174,7 @@ $(document).ready(function(){
     OneRepublic.addEventListener("click", function(){
         audio.src = playList[4]; 
         musicStart();
-        document.getElementById("album_image").src = "img/6391703.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/006/391/6391703.jpg?type=r480Fll&v=20210906092709"
         document.getElementById("music_title").innerHTML = "Someday"
         document.getElementById("singer_and_album").innerHTML = "OneRepublic Human (Deluxe)"
         imgToggle();
@@ -183,7 +183,7 @@ $(document).ready(function(){
     TheWeeknd.addEventListener("click", function(){
         audio.src = playList[5]; 
         musicStart();
-        document.getElementById("album_image").src = "img/mta.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/006/547/6547420.jpg?type=r480Fll&v=20211022124540"
         document.getElementById("music_title").innerHTML = "Moth To A Flame"
         document.getElementById("singer_and_album").innerHTML = "Swedish House Mafia 및 The Weeknd Moth To A Flame"
         imgToggle();
@@ -192,7 +192,7 @@ $(document).ready(function(){
     ericNam.addEventListener("click", function(){
         audio.src = playList[6]; 
         musicStart();
-        document.getElementById("album_image").src = "img/649974.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/000/649/649974.jpg?type=r480Fll&v=20181011213049"
         document.getElementById("music_title").innerHTML = "못참겠어(feat. 로꼬)"
         document.getElementById("singer_and_album").innerHTML = "에릭남 • 못참겠어 Can't Help Myself"
         imgToggle();
@@ -201,7 +201,7 @@ $(document).ready(function(){
     peppertones.addEventListener("click", function(){
         audio.src = playList[7]; 
         musicStart();
-        document.getElementById("album_image").src = "img/318851.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/000/318/318851.jpg?type=r480Fll&v=20210526101022"
         document.getElementById("music_title").innerHTML = "행운을 빌어요"
         document.getElementById("singer_and_album").innerHTML = "페퍼톤스 (Peppertones) • Beginner's Luck"
         imgToggle();
@@ -210,7 +210,7 @@ $(document).ready(function(){
     babyBlue.addEventListener("click", function(){
         audio.src = playList[8]; 
         musicStart();
-        document.getElementById("album_image").src = "img/6294979.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/006/294/6294979.jpg?type=r480Fll&v=20210913223531"
         document.getElementById("music_title").innerHTML = "Baby Blue"
         document.getElementById("singer_and_album").innerHTML = "Luke Hemmings • When Facing the Things We Turn Away From"
         imgToggle();
@@ -219,7 +219,7 @@ $(document).ready(function(){
     airmanSoda.addEventListener("click", function(){
         audio.src = playList[9]; 
         musicStart();
-        document.getElementById("album_image").src = "img/4898075.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/004/898/4898075.jpg?type=r480Fll&v=20210806073024"
         document.getElementById("music_title").innerHTML = "SODA(feat. 0back, 1ho)"
         document.getElementById("singer_and_album").innerHTML = "공기남 • 오선지"
         imgToggle();
@@ -228,7 +228,7 @@ $(document).ready(function(){
     valleySociety.addEventListener("click", function(){
         audio.src = playList[10];
         musicStart();
-        document.getElementById("album_image").src = "img/5992143.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/005/992/5992143.jpg?type=r480Fll&v=20210802054533"
         document.getElementById("music_title").innerHTML = "SOCIETY"
         document.getElementById("singer_and_album").innerHTML = "Valley • SOCIETY • 2021"
         imgToggle();
@@ -237,7 +237,7 @@ $(document).ready(function(){
     epikHigh.addEventListener("click", function(){
         audio.src = playList[11];
         musicStart();
-        document.getElementById("album_image").src = "img/138893.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/000/138/138893.jpg?type=r480Fll&v=20210913224537"
         document.getElementById("music_title").innerHTML = "One(feat. 지선)"
         document.getElementById("singer_and_album").innerHTML = "Epik High • Pieces, Part One"
         imgToggle();
@@ -246,7 +246,7 @@ $(document).ready(function(){
     loveRace.addEventListener("click", function(){
         audio.src = playList[12];
         musicStart();
-        document.getElementById("album_image").src = "img/5739088.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/005/739/5739088.jpg?type=r480Fll&v=20210430152535"
         document.getElementById("music_title").innerHTML = "love race(feat. kellin Quinn)"
         document.getElementById("singer_and_album").innerHTML = "노래 • Machine Gun Kelly"
         imgToggle();
@@ -255,7 +255,7 @@ $(document).ready(function(){
     hypnoTized.addEventListener("click", function(){
         audio.src = playList[13];
         musicStart();
-        document.getElementById("album_image").src = "img/400x400cc.jpg"
+        document.getElementById("album_image").src = "img/music/400x400cc.jpg"
         document.getElementById("music_title").innerHTML = "Hypnotized"
         document.getElementById("singer_and_album").innerHTML = "노래 • Purple Disco Machine 및 Sophie and the Giants"
         imgToggle();
@@ -264,7 +264,7 @@ $(document).ready(function(){
     waveOfyou.addEventListener("click", function(){
         audio.src = playList[14];
         musicStart();
-        document.getElementById("album_image").src = "img/5535290.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/005/535/5535290.jpg?type=r480Fll&v=20210513142405"
         document.getElementById("music_title").innerHTML = "Wave of You"
         document.getElementById("singer_and_album").innerHTML = "노래 • Surfaces"
         imgToggle();
@@ -273,7 +273,7 @@ $(document).ready(function(){
     myExsBestFriend.addEventListener("click", function(){
         audio.src = playList[15];
         musicStart();
-        document.getElementById("album_image").src = "img/4962415.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/004/962/4962415.jpg?type=r480Fll&v=20210913232033"
         document.getElementById("music_title").innerHTML = "my ex's best friend"
         document.getElementById("singer_and_album").innerHTML = "노래 • Machine Gun Kelly • Tickets To My Downfall"
         imgToggle();
@@ -282,7 +282,7 @@ $(document).ready(function(){
     summerLove.addEventListener("click", function(){
         audio.src = playList[16];
         musicStart();
-        document.getElementById("album_image").src = "img/437030.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/000/437/437030.jpg?type=r480Fll&v=20210531220517"
         document.getElementById("music_title").innerHTML = "애타는 마음 Summer Love"
         document.getElementById("singer_and_album").innerHTML = "노래 • 울랄라세션 & 아이유 및 IU • 애타는 마음"
         imgToggle();
@@ -291,7 +291,7 @@ $(document).ready(function(){
     startAgain.addEventListener("click", function(){
         audio.src = playList[17];
         musicStart();
-        document.getElementById("album_image").src = "img/2468750.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/002/468/2468750.jpg?type=r480Fll&v=20200331010710"
         document.getElementById("music_title").innerHTML = "Start Again"
         document.getElementById("singer_and_album").innerHTML = "노래 • OneRepublic(원리퍼블릭) 및 Vegas Jones • Start Again"
         imgToggle();
@@ -300,7 +300,7 @@ $(document).ready(function(){
     fallIn.addEventListener("click", function(){
         audio.src = playList[18];
         musicStart();
-        document.getElementById("album_image").src = "img/5009855.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/005/009/5009855.jpg?type=r480Fll&v=20210530190027"
         document.getElementById("music_title").innerHTML = "Fallin' (Adrenaline)"
         document.getElementById("singer_and_album").innerHTML = "노래 • 와이 돈 위 • The Good Times and The Bad Ones"
         imgToggle();
@@ -309,7 +309,7 @@ $(document).ready(function(){
     sweetHome.addEventListener("click", function(){
         audio.src = playList[19];
         musicStart();
-        document.getElementById("album_image").src = "img/5173694.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/005/173/5173694.jpg?type=r480Fll&v=20201225175909"
         document.getElementById("music_title").innerHTML = "4 Strings of Sweet Home"
         document.getElementById("singer_and_album").innerHTML = "노래 • GAE MI • 스위트홈 OST (넷플릭스 드라마)"
         imgToggle();
@@ -318,7 +318,7 @@ $(document).ready(function(){
     toothBrush.addEventListener("click", function(){
         audio.src = playList[20];
         musicStart();
-        document.getElementById("album_image").src = "img/730592.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/000/730/730592.jpg?type=r480Fll&v=20210528103513"
         document.getElementById("music_title").innerHTML = "Toothbrush"
         document.getElementById("singer_and_album").innerHTML = "노래 • DNCE • DNCE"
         imgToggle();
@@ -327,7 +327,7 @@ $(document).ready(function(){
     nicklasSahl.addEventListener("click", function(){
         audio.src = playList[21];
         musicStart();
-        document.getElementById("album_image").src = "img/4568375.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/004/568/4568375.jpg?type=r480Fll&v=20210913213026"
         document.getElementById("music_title").innerHTML = "All For Me"
         document.getElementById("singer_and_album").innerHTML = "노래 • Nicklas Sahl"
         imgToggle();
@@ -336,7 +336,7 @@ $(document).ready(function(){
     johnK.addEventListener("click", function(){
         audio.src = playList[22];
         musicStart();
-        document.getElementById("album_image").src = "img/6077615.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/006/077/6077615.jpg?type=r480Fll&v=20211222073021"
         document.getElementById("music_title").innerHTML = "shadows"
         document.getElementById("singer_and_album").innerHTML = "노래 • John k"
         imgToggle();
@@ -345,7 +345,7 @@ $(document).ready(function(){
     taeYeon.addEventListener("click", function(){
         audio.src = playList[23];
         musicStart();
-        document.getElementById("album_image").src = "img/6153066.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/006/153/6153066.jpg?type=r480Fll&v=20210803165451"
         document.getElementById("music_title").innerHTML = "Weekend"
         document.getElementById("singer_and_album").innerHTML = "노래 • 태연 (TAEYEON) • Weekend"
         imgToggle();
@@ -354,7 +354,7 @@ $(document).ready(function(){
     flashBack.addEventListener("click", function(){
         audio.src = playList[24];
         musicStart();
-        document.getElementById("album_image").src = "img/5975463.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/005/975/5975463.jpg?type=r480Fll&v=20211019110813"
         document.getElementById("music_title").innerHTML = "Flashback"
         document.getElementById("singer_and_album").innerHTML = "노래 • 엔플라잉(N.Flying) • Man on the Moon"
         imgToggle();
@@ -363,7 +363,7 @@ $(document).ready(function(){
     scorTons.addEventListener("click", function(){
         audio.src = playList[25];
         musicStart();
-        document.getElementById("album_image").src = "img/4593766.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/004/593/4593766.jpg?type=r480Fll&v=20200731182125"
         document.getElementById("music_title").innerHTML = "scorton's creek (re-imagined by filous)"
         document.getElementById("singer_and_album").innerHTML = "노래 • 이삭 던바"
         imgToggle();
@@ -372,7 +372,7 @@ $(document).ready(function(){
     golDen.addEventListener("click", function(){
         audio.src = playList[26];
         musicStart();
-        document.getElementById("album_image").src = "img/3248968.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/003/248/3248968.jpg?type=r480Fll&v=20211221214020"
         document.getElementById("music_title").innerHTML = "Golden"
         document.getElementById("singer_and_album").innerHTML = "노래 • Harry Styles(해리 스타일스)"
         imgToggle();
@@ -381,7 +381,7 @@ $(document).ready(function(){
     bloodStream.addEventListener("click", function(){
         audio.src = playList[27];
         musicStart();
-        document.getElementById("album_image").src = "img/1775087.jpg"
+        document.getElementById("album_image").src = "https://musicmeta-phinf.pstatic.net/album/001/775/1775087.jpg?type=r480Fll&v=20211119191556"
         document.getElementById("music_title").innerHTML = "Bloodstream"
         document.getElementById("singer_and_album").innerHTML = "노래 • The chainsmokers(체인스모커스)"
         imgToggle();
@@ -409,31 +409,31 @@ $(document).ready(function(){
     });
 
     function changeIframe(){
-        document.getElementById("pagemove").src = "ttrm.html";
+        document.getElementById("pagemove").src = "music==1.html";
         document.getElementById("pagemove").style.display = "block";
         document.getElementById("wrap").style.overflowY = "hidden";
     };
 
     function changeIframeTwo(){
-        document.getElementById("pagemove").src = "theweeknd.html";
+        document.getElementById("pagemove").src = "music==2.html";
         document.getElementById("pagemove").style.display = "block";
         document.getElementById("wrap").style.overflowY = "hidden";
     };
 
     function changeIframeThree(){
-        document.getElementById("pagemove").src = "peppertones.html";
+        document.getElementById("pagemove").src = "music==3.html";
         document.getElementById("pagemove").style.display = "block";
         document.getElementById("wrap").style.overflowY = "hidden";
     };
 
     function changeIframeFour(){
-        document.getElementById("pagemove").src = "machinegunkelly.html";
+        document.getElementById("pagemove").src = "music==4.html";
         document.getElementById("pagemove").style.display = "block";
         document.getElementById("wrap").style.overflowY = "hidden";
     };
 
     function changeIframeFive(){
-        document.getElementById("pagemove").src = "yungun.html";
+        document.getElementById("pagemove").src = "music==5.html";
         document.getElementById("pagemove").style.display = "block";
         document.getElementById("wrap").style.overflowY = "hidden";
     };

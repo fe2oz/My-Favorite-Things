@@ -2,14 +2,14 @@ body {
   height: 100vh;
   background: -webkit-gradient(linear, left top, right top, from(#9257ff), to(#402565));
   background: linear-gradient(90deg, #9257ff, #402565);
-  background: url(../../img/preview.jpg);
+  background: url(../../img/drum/preview.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   overflow-y: hidden;
 }
 
 .container {
-  background: url(../../img/bg.jpg);
+  background: url(../../img/drum/bg.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
