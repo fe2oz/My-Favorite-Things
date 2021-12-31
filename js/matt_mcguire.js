@@ -357,7 +357,7 @@ $(document).ready(function(){
     });
     ///////////////////////////// 10 million views+
     oneBVideo.addEventListener("click", function(){
-        pageMove.src = "drum==1-2.html";
+        pageMove.src = "https://www.youtube.com/embed/gvNQYCzMnF4";
         pageMove.style.display = "block";
     });
     twoBVideo.addEventListener("click", function(){
@@ -378,7 +378,7 @@ $(document).ready(function(){
     });
     //////////////////////////////// old drum covers
     oneCVideo.addEventListener("click", function(){
-        pageMove.src = "drum==1-3.html";
+        pageMove.src = "https://www.youtube.com/embed/7AOtgu3_3_8";
         pageMove.style.display = "block";
     });
 
@@ -388,7 +388,7 @@ $(document).ready(function(){
     });
 
     threeCVideo.addEventListener("click", function(){
-        pageMove.src = "drum==3-3.html";
+        pageMove.src = "https://www.youtube.com/embed/d1-bXoWpZPc";
         pageMove.style.display = "block";
     });
 
@@ -408,7 +408,7 @@ $(document).ready(function(){
     });
 
     sevenCVideo.addEventListener("click", function(){
-        pageMove.src = "drum==7-3.html";
+        pageMove.src = "https://www.youtube.com/embed/ODPKUlFolIY";
         pageMove.style.display = "block";
     });
 
@@ -418,7 +418,7 @@ $(document).ready(function(){
     });
 
     nineCVideo.addEventListener("click", function(){
-        pageMove.src = "drum==9-3.html";
+        pageMove.src = "https://www.youtube.com/embed/xx5cnuM0Om4";
         pageMove.style.display = "block";
     });
 
@@ -428,12 +428,12 @@ $(document).ready(function(){
     });
 
     elevenCVideo.addEventListener("click", function(){
-        pageMove.src = "drum==11-3.html";
+        pageMove.src = "https://www.youtube.com/embed/lfrassTAOQU";
         pageMove.style.display = "block";
     });
     //////////////////////////////// vlogs
     oneDVideo.addEventListener("click", function(){
-        pageMove.src = "drum==1-4.html";
+        pageMove.src = "https://www.youtube.com/embed/CCSFMghgt8U";
         pageMove.style.display = "block";
     });
 
