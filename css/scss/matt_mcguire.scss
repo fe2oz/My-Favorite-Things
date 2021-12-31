@@ -130,10 +130,7 @@ body{
     visibility: hidden;
     display:flex; align-items: center;
 
-    & #video-list,
-    & #video-list-1,
-    & #video-list-2,
-    & #video-list-3{
+    & #video-list{
         width:70%; height:100%;
         position:relative;
 
@@ -165,7 +162,12 @@ body{
         &-text,
         &-text-1,
         &-text-2,
-        &-text-3{
+        &-text-3,
+        &-text-4,
+        &-text-5,
+        &-text-6,
+        &-text-7,
+        &-text-8{
             width:93%; height:6vh;
             padding-top:5%; padding-left:4%; 
             margin-left:1.5%; margin-top:20%;
@@ -188,7 +190,12 @@ body{
         &-list,
         &-list-1,
         &-list-2,
-        &-list-3{
+        &-list-3,
+        &-list-4,
+        &-list-5,
+        &-list-6,
+        &-list-7,
+        &-list-8{
             width:97%; height:70vh;
             margin-left:1.5%;
             padding-top:2%;
@@ -215,7 +222,7 @@ body{
                 cursor: pointer;
 
                 & img{
-                    width:5.5vw;
+                    width:5.5vw; height:7vh;
                 }
                 & > div > p{
                     width:100%;
@@ -240,8 +247,15 @@ body{
             }
         }
 
-        &-list-1{
+        &-list-1,
+        &-list-6{
             & ul li:nth-of-type(1){
+                height:10vh;
+            }
+        }
+        &-list-6{
+            & ul li:nth-of-type(5),
+            & ul li:nth-of-type(9){
                 height:10vh;
             }
         }
@@ -252,22 +266,6 @@ body{
         }
 
     }
-}
-
-#v-log{
-    background-color:palevioletred ;
-}
-#offi-cial{
-    background-color: peru;
-}
-#re-mix{
-    background-color: plum;
-}
-#dub-step{
-    background-color: purple;
-}
-#be-st{
-    background-color: rosybrown;
 }
 
 
