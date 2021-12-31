@@ -322,12 +322,12 @@ $(document).ready(function(){
     });
 
     fiveAVideo.addEventListener("click", function(){
-        pageMove.src = "drum==5-1.html";
+        pageMove.src = "https://www.youtube.com/embed/5pxfJuDxwNw";
         pageMove.style.display = "block";
     });
 
     sixAVideo.addEventListener("click", function(){
-        pageMove.src = "drum==6-1.html";
+        pageMove.src = "https://www.youtube.com/embed/Fn_sFTcHQbM";
         pageMove.style.display = "block";
     });
 
@@ -342,12 +342,12 @@ $(document).ready(function(){
     });
 
     nineAVideo.addEventListener("click", function(){
-        pageMove.src = "drum==9-1.html";
+        pageMove.src = "https://www.youtube.com/embed/dfXAf51Kg_Y";
         pageMove.style.display = "block";
     });
 
     tenAVideo.addEventListener("click", function(){
-        pageMove.src = "drum==10-1.html";
+        pageMove.src = "https://www.youtube.com/embed/afsed2OUxGg";
         pageMove.style.display = "block";
     });
 
