@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/css/pinterest.css">
+    <link href="css/common.css" rel="stylesheet">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+</head>
+<body>
+
+    <div id="wrap">
+        <div class="container" onload="printClock()">
+            <div id="clock" onload="showTime()"></div>
+            <div id="the_top_right">
+                <img src="img/free-icon-wifi-93158.png" alt="">
+                <img src="img/premium-icon-half-battery-5604492.png" alt="">
+            </div>
+
+            <header>
+                <ul>
+                    <li>시티팝</li>
+                </ul>
+            </header>
+        </div>
+    </div>
+
+    <script>
+        function showTime(){
+        var date = new Date();
+        var h = date.getHours();
+        var m = date.getMinutes();
+        var s = date.getSeconds();
+        var session = "AM";
+
+        if(h==0){
+            h=12;
+        }
+
+        if(h>12){
+            h = h - 12;
+            session = "PM";
+        }
+
+        h = (h<10) ? "0" + h : h;
+        m = (m<10) ? "0" + m : m;
+        s = (s<10) ? "0" + s : s;
+
+        var time = h + ":" + m + ":" + s + " " + session;
+
+        document.getElementById("clock").innerText = time;
+        document.getElementById("clock").textContent = time;
+
+        setTimeout(showTime, 1000);
+        }
+
+        showTime();
+    </script>
+
+    <script>
+        $.ajax({
+            method: "GET",
+            url: "https://dapi.kakao.com/v2/search/image",
+            data: {query:"citypop"},
+            headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+        })
+
+        .done(function(msg) {
+            console.log(msg);
+            $("#ss").append("<img src='"+msg.doucments[0].image_url+"'/>");
+        });
+    </script>
+</body>
+</html>

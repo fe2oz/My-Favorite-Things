@@ -573,22 +573,22 @@ $(document).ready(function(){
     });
 
     twoHVideo.addEventListener("click", function(){
-        pageMove.src = "drum==5.html";
+        pageMove.src = "https://www.youtube.com/embed/ebJHuLONSCg";
         pageMove.style.display = "block";
     });
 
     threeHVideo.addEventListener("click", function(){
-        pageMove.src = "drum==2.html";
+        pageMove.src = "https://www.youtube.com/embed/OcdI2JRp8O4";
         pageMove.style.display = "block";
     });
 
     fourHVideo.addEventListener("click", function(){
-        pageMove.src = "drum==7.html";
+        pageMove.src = "https://www.youtube.com/embed/4Dh6TZjxEkA";
         pageMove.style.display = "block";
     });
 
     fiveHVideo.addEventListener("click", function(){
-        pageMove.src = "drum==8.html";
+        pageMove.src = "https://www.youtube.com/embed/o64qycOIve8";
         pageMove.style.display = "block";
     });
 
@@ -598,22 +598,22 @@ $(document).ready(function(){
     });
 
     sevenHVideo.addEventListener("click", function(){
-        pageMove.src = "drum==9.html";
+        pageMove.src = "https://www.youtube.com/embed/WOHwKyzQw6M";
         pageMove.style.display = "block";
     });
 
     eightHVideo.addEventListener("click", function(){
-        pageMove.src = "drum==10.html";
+        pageMove.src = "https://www.youtube.com/embed/zha7gagfysY";
         pageMove.style.display = "block";
     });
 
     nineHVideo.addEventListener("click", function(){
-        pageMove.src = "drum==9-8.html";
+        pageMove.src = "https://www.youtube.com/embed/S7VKk10bWp0";
         pageMove.style.display = "block";
     });
 
     tenHVideo.addEventListener("click", function(){
-        pageMove.src = "drum==10-8.html";
+        pageMove.src = "https://www.youtube.com/embed/3oXiXyKH7ZQ";
         pageMove.style.display = "block";
     });
     ytPageThree.addEventListener("click", function(){

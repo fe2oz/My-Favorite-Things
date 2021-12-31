@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body{
+    height:100vh;
+    background:url(../../img/ezgif.com-gif-maker-city.gif); background-size:100% 100%; background-repeat: no-repeat;
+    overflow-y: hidden;
+}
+
+.container{
+    display:flex;
+    
+}
+
+#ss img{
+    width:20vw;
+}

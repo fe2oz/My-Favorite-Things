@@ -10,6 +10,10 @@ body{
     overflow-y: hidden;
 }
 
+    #wrap{
+        background:hsl(265, 46%, 27%, 0.5);
+    }
+
     .container > div:nth-of-type(1){
         width:18vw; height:8vh; 
         background:rgba(255, 255, 255, 0.5);
