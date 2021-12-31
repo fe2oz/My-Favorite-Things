@@ -478,7 +478,7 @@ $(document).ready(function(){
     });
     //////////////////////////////// remixes
     oneFVideo.addEventListener("click", function(){
-        pageMove.src = "https://www.youtube.com/embed/hYS0JMPDCyo";
+        pageMove.src = "drum==1-6.html";
         pageMove.style.display = "block";
     });
 
@@ -503,12 +503,12 @@ $(document).ready(function(){
     });
 
     sixFVideo.addEventListener("click", function(){
-        pageMove.src = "drum==6-6.html";
+        pageMove.src = "https://www.youtube.com/embed/8GgqFAXug50";
         pageMove.style.display = "block";
     });
 
     sevenFVideo.addEventListener("click", function(){
-        pageMove.src = "drum==7-6.html";
+        pageMove.src = "https://www.youtube.com/embed/XJaCBIW_lnU";
         pageMove.style.display = "block";
     });
 
@@ -523,7 +523,7 @@ $(document).ready(function(){
     });
 
     tenFVideo.addEventListener("click", function(){
-        pageMove.src = "drum==10-6.html";
+        pageMove.src = "https://www.youtube.com/embed/QqtKVCPTDdU";
         pageMove.style.display = "block";
     });
 
@@ -593,7 +593,7 @@ $(document).ready(function(){
     });
 
     sixHVideo.addEventListener("click", function(){
-        pageMove.src = "drum==6-8.html";
+        pageMove.src = "https://www.youtube.com/embed/KAHrbCuq0gU";
         pageMove.style.display = "block";
     });
 
