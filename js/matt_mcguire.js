@@ -252,12 +252,12 @@ $(document).ready(function(){
     });
 
     twoVideo.addEventListener("click", function(){
-        pageMove.src = "drum==2.html";
+        pageMove.src = "https://www.youtube.com/embed/OcdI2JRp8O4";
         pageMove.style.display = "block";
     });
 
     threeVideo.addEventListener("click", function(){
-        pageMove.src = "drum==3.html";
+        pageMove.src = "https://www.youtube.com/embed/j0_2hjcmm6g";
         pageMove.style.display = "block";
     });
 
@@ -267,12 +267,12 @@ $(document).ready(function(){
     });
 
     fiveVideo.addEventListener("click", function(){
-        pageMove.src = "drum==5.html";
+        pageMove.src = "https://www.youtube.com/embed/ebJHuLONSCg";
         pageMove.style.display = "block";
     });
 
     sixVideo.addEventListener("click", function(){
-        pageMove.src = "drum==6.html";
+        pageMove.src = "https://www.youtube.com/embed/osYc8qneV44";
         pageMove.style.display = "block";
     });
 
@@ -282,42 +282,42 @@ $(document).ready(function(){
     });
 
     eightVideo.addEventListener("click", function(){
-        pageMove.src = "drum==8.html";
+        pageMove.src = "https://www.youtube.com/embed/o64qycOIve8";
         pageMove.style.display = "block";
     });
 
     nineVideo.addEventListener("click", function(){
-        pageMove.src = "drum==9.html";
+        pageMove.src = "https://www.youtube.com/embed/WOHwKyzQw6M";
         pageMove.style.display = "block";
     });
 
     tenVideo.addEventListener("click", function(){
-        pageMove.src = "drum==10.html";
+        pageMove.src = "https://www.youtube.com/embed/zha7gagfysY";
         pageMove.style.display = "block";
     });
 
     ytPage.addEventListener("click", function(){
-        pageMove.src = "https://www.youtube.com/embed/watch?v=d9qmvcyEOsE&list=PLcCKnIzyTeeqUNQWEbO6x5tuAO3IS0hpa";
+        pageMove.src = "https://www.youtube.com/embed/d9qmvcyEOsE&list=PLcCKnIzyTeeqUNQWEbO6x5tuAO3IS0hpa";
         pageMove.style.display = "block";
     });
     /////////////////////////////////////// the chainsmokers
     oneAVideo.addEventListener("click", function(){
-        pageMove.src = "drum==1-1.html";
+        pageMove.src = "https://www.youtube.com/embed/hRIM1SJnQI";
         pageMove.style.display = "block";
     });
 
     twoAVideo.addEventListener("click", function(){
-        pageMove.src = "drum==2-1.html";
+        pageMove.src = "https://www.youtube.com/embed/GkOu2UPH804";
         pageMove.style.display = "block";
     });
 
     threeAVideo.addEventListener("click", function(){
-        pageMove.src = "drum==3-1.html";
+        pageMove.src = "https://www.youtube.com/embed/jmLj33UQkik";
         pageMove.style.display = "block";
     });
 
     fourAVideo.addEventListener("click", function(){
-        pageMove.src = "drum==4-1.html";
+        pageMove.src = "https://www.youtube.com/embed/oJFP6wjrEYY";
         pageMove.style.display = "block";
     });
 
@@ -332,12 +332,12 @@ $(document).ready(function(){
     });
 
     sevenAVideo.addEventListener("click", function(){
-        pageMove.src = "drum==7-1.html";
+        pageMove.src = "https://www.youtube.com/embed/z_tmrp8HS8g";
         pageMove.style.display = "block";
     });
 
     eightAVideo.addEventListener("click", function(){
-        pageMove.src = "drum==8-1.html";
+        pageMove.src = "https://www.youtube.com/embed/sX2UasJmEAU";
         pageMove.style.display = "block";
     });
 
@@ -361,19 +361,19 @@ $(document).ready(function(){
         pageMove.style.display = "block";
     });
     twoBVideo.addEventListener("click", function(){
-        pageMove.src = "drum==1-1.html";
+        pageMove.src = "https://www.youtube.com/embed/hRIM1SJnQI";
         pageMove.style.display = "block";
     });
     threeBVideo.addEventListener("click", function(){
-        pageMove.src = "drum==2-1.html";
+        pageMove.src = "https://www.youtube.com/embed/GkOu2UPH804";
         pageMove.style.display = "block";
     });
     fourBVideo.addEventListener("click", function(){
-        pageMove.src = "drum==4-2.html";
+        pageMove.src = "https://www.youtube.com/embed/mp3TBz8UVMc";
         pageMove.style.display = "block";
     });
     fiveBVideo.addEventListener("click", function(){
-        pageMove.src = "drum==5-2.html";
+        pageMove.src = "https://www.youtube.com/embed/Rd1nkdMPxQY";
         pageMove.style.display = "block";
     });
     //////////////////////////////// old drum covers
@@ -383,7 +383,7 @@ $(document).ready(function(){
     });
 
     twoCVideo.addEventListener("click", function(){
-        pageMove.src = "drum==2-3.html";
+        pageMove.src = "https://www.youtube.com/embed/UlnWaG815rM";
         pageMove.style.display = "block";
     });
 
@@ -393,17 +393,17 @@ $(document).ready(function(){
     });
 
     fourCVideo.addEventListener("click", function(){
-        pageMove.src = "drum==4-3.html";
+        pageMove.src = "https://www.youtube.com/embed/FOOlY_keSME";
         pageMove.style.display = "block";
     });
 
     fiveCVideo.addEventListener("click", function(){
-        pageMove.src = "drum==5-3.html";
+        pageMove.src = "https://www.youtube.com/embed/49VPRef4V9c";
         pageMove.style.display = "block";
     });
 
     sixCVideo.addEventListener("click", function(){
-        pageMove.src = "drum==6-3.html";
+        pageMove.src = "https://www.youtube.com/embed/963TE8mh8VA";
         pageMove.style.display = "block";
     });
 
@@ -413,7 +413,7 @@ $(document).ready(function(){
     });
 
     eightCVideo.addEventListener("click", function(){
-        pageMove.src = "drum==8-3.html";
+        pageMove.src = "https://www.youtube.com/embed/L11uqJSjviY";
         pageMove.style.display = "block";
     });
 
@@ -423,7 +423,7 @@ $(document).ready(function(){
     });
 
     tenCVideo.addEventListener("click", function(){
-        pageMove.src = "drum==10-3.html";
+        pageMove.src = "https://www.youtube.com/embed/CBBuan98vx8";
         pageMove.style.display = "block";
     });
 
@@ -443,12 +443,12 @@ $(document).ready(function(){
     });
 
     threeDVideo.addEventListener("click", function(){
-        pageMove.src = "drum==3-4.html";
+        pageMove.src = "https://www.youtube.com/embed/ekftUeRW7OU";
         pageMove.style.display = "block";
     });
 
     fourDVideo.addEventListener("click", function(){
-        pageMove.src = "drum==4-4.html";
+        pageMove.src = "https://www.youtube.com/embed/Qq-XsKqjIrM";
         pageMove.style.display = "block";
     });
 
@@ -463,12 +463,12 @@ $(document).ready(function(){
     });
 
     twoEVideo.addEventListener("click", function(){
-        pageMove.src = "drum==2-5.html";
+        pageMove.src = "https://www.youtube.com/embed/7t464_CHk1s";
         pageMove.style.display = "block";
     });
 
     threeEVideo.addEventListener("click", function(){
-        pageMove.src = "drum==3-5.html";
+        pageMove.src = "https://www.youtube.com/embed/9XECsdaWMsM";
         pageMove.style.display = "block";
     });
 
@@ -478,27 +478,27 @@ $(document).ready(function(){
     });
     //////////////////////////////// remixes
     oneFVideo.addEventListener("click", function(){
-        pageMove.src = "drum==1-6.html";
+        pageMove.src = "https://www.youtube.com/embed/hYS0JMPDCyo";
         pageMove.style.display = "block";
     });
 
     twoFVideo.addEventListener("click", function(){
-        pageMove.src = "drum==2-6.html";
+        pageMove.src = "https://www.youtube.com/embed/tUWH9v1AdlI";
         pageMove.style.display = "block";
     });
 
     threeFVideo.addEventListener("click", function(){
-        pageMove.src = "drum==3-6.html";
+        pageMove.src = "https://www.youtube.com/embed/S1ALHkGrw6k";
         pageMove.style.display = "block";
     });
 
     fourFVideo.addEventListener("click", function(){
-        pageMove.src = "drum==4-6.html";
+        pageMove.src = "https://www.youtube.com/embed/tjXVxKjHa9Q";
         pageMove.style.display = "block";
     });
 
     fiveFVideo.addEventListener("click", function(){
-        pageMove.src = "drum==5-6.html";
+        pageMove.src = "https://www.youtube.com/embed/wCE76DEEYqQ";
         pageMove.style.display = "block";
     });
 
@@ -513,12 +513,12 @@ $(document).ready(function(){
     });
 
     eightFVideo.addEventListener("click", function(){
-        pageMove.src = "drum==8-6.html";
+        pageMove.src = "https://www.youtube.com/embed/lYWcBzCEuXA";
         pageMove.style.display = "block";
     });
 
     nineFVideo.addEventListener("click", function(){
-        pageMove.src = "drum==9-6.html";
+        pageMove.src = "https://www.youtube.com/embed/dwcWxBwMAS0";
         pageMove.style.display = "block";
     });
 
@@ -543,7 +543,7 @@ $(document).ready(function(){
     });
 
     threeGVideo.addEventListener("click", function(){
-        pageMove.src = "drum==3-7.html";
+        pageMove.src = "https://www.youtube.com/embed/RDIvfct1kdo";
         pageMove.style.display = "block";
     });
 
@@ -553,7 +553,7 @@ $(document).ready(function(){
     });
 
     fiveGVideo.addEventListener("click", function(){
-        pageMove.src = "drum==5-7.html";
+        pageMove.src = "https://www.youtube.com/embed/uSz7HV2LAGY";
         pageMove.style.display = "block";
     });
 
