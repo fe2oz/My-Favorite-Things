@@ -438,7 +438,7 @@ $(document).ready(function(){
     });
 
     twoDVideo.addEventListener("click", function(){
-        pageMove.src = "drum==2-4.html";
+        pageMove.src = "https://www.youtube.com/embed/nIsZiL_ntrU";
         pageMove.style.display = "block";
     });
 
@@ -453,12 +453,12 @@ $(document).ready(function(){
     });
 
     fiveDVideo.addEventListener("click", function(){
-        pageMove.src = "drum==5-4.html";
+        pageMove.src = "https://www.youtube.com/embed/pxjKx9rKw9c";
         pageMove.style.display = "block";
     });
      //////////////////////////////// official artist mixes
      oneEVideo.addEventListener("click", function(){
-        pageMove.src = "drum==1-5.html";
+        pageMove.src = "https://www.youtube.com/embed/Qh5_i-d9v6c";
         pageMove.style.display = "block";
     });
 
@@ -473,12 +473,12 @@ $(document).ready(function(){
     });
 
     fourEVideo.addEventListener("click", function(){
-        pageMove.src = "drum==4-5.html";
+        pageMove.src = "https://www.youtube.com/embed/U1cLXbWgreQ";
         pageMove.style.display = "block";
     });
     //////////////////////////////// remixes
     oneFVideo.addEventListener("click", function(){
-        pageMove.src = "drum==1-6.html";
+        pageMove.src = "https://www.youtube.com/embed/hYS0JMPDCyo";
         pageMove.style.display = "block";
     });
 
