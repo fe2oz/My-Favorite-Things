@@ -10,9 +10,10 @@
     <link href="css/common.css" rel="stylesheet">
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    <script src="js/pinterest.js"></script>
 </head>
-<body>
-
+<body onload="showImage()">
+    <img id="mainimg">
     <div id="wrap">
         <div class="container" onload="printClock()">
             <div id="clock" onload="showTime()"></div>
@@ -23,12 +24,27 @@
 
             <header>
                 <ul>
-                    <li>시티팝</li>
-                    <li>픽셀 아트</li>
-                    <li>애니메이션</li>
+                    <li id="citypop-pin">시티팝</li>
+                    <li id="pixel-art-pin">픽셀 아트</li>
+                    <li id="anime-pin">애니메이션</li>
                     <li>어두운, 어둑어둑한</li>
                 </ul>
             </header>
+
+            <div id="section">
+                <div id="citypop">
+
+                </div>
+                <div id="pixel-art">
+
+                </div>
+                <div id="anime">
+
+                </div>
+                <div id="gloomy">
+
+                </div>
+            </div>
         </div>
     </div>
 
@@ -62,6 +78,19 @@
         }
 
         showTime();
+
+
+        var imgList = new Array();
+        imgList[0] = "img/ezgif.com-gif-maker-pixelart1.gif";
+        imgList[1] = "img/ezgif.com-gif-maker-pixelart2.gif";
+        imgList[2] = "img/ezgif.com-gif-maker-pixelart3.gif";
+        imgList[3] = "img/ezgif.com-gif-maker-city.gif";
+
+        function showImage(){
+            var imgNum = Math.floor(Math.random() * (imgList.length));
+            var objImg = document.getElementById("mainimg");
+            objImg.src = imgList[imgNum];
+        }
     </script>
 
     <script>

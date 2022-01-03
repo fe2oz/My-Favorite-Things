@@ -2,19 +2,23 @@
 
 body{
     height:100vh;
-    background:url(../../img/ezgif.com-gif-maker-city.gif); background-size:100% 100%; background-repeat: no-repeat;
+    background-size:100% 100%; background-repeat: no-repeat;
     overflow-y: hidden;
+}
+#mainimg{
+    width:100%; height:100%;
+    position:absolute; top:0; left:0; z-index:-1;
 }
 
 .container{
-    display:flex;
-    background-color:hsla(0, 0, 0.5, 0.5)
+    display:flex; flex-flow: column;
+    background-color:hsla(0, 0, 0.5, 0.2);
 }
 
 header{
     width:100%; height:7vh;
     display:flex; justify-content: center; align-items: center;
-    background-color: orange;
+    background-color: black;
 
     & ul{
         display: flex; justify-content: space-evenly;
@@ -30,4 +34,30 @@ header{
             margin: 0 1% 0 1%;
         }
     }
+}
+
+#section{
+    width:100%; height:100%;
+    position:relative;
+}
+
+#citypop{
+    width:100%; height:100%;
+    background-color:orangered;
+    position:absolute; top:0; left:0; z-index:1;
+    border-radius: 0 0 0.5% 0.5%;
+}
+#pixel-art{
+    width:100%; height:100%;
+    position:absolute; top:0; left:0; z-index:1;
+    background-color:orange;
+    visibility: hidden;
+    border-radius: 0 0 0.5% 0.5%;
+}
+#anime{
+    width:100%; height:100%;
+    position:absolute; top:0; left:0; z-index:1;
+    background-color:pink;
+    visibility: hidden;
+    border-radius: 0 0 0.5% 0.5%;
 }
