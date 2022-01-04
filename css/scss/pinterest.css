@@ -47,7 +47,7 @@ header #pinbox li {
   font-size: 0.7vw;
   background: #eee;
   margin: 0 1% 0 1%;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 60px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 -3px 5px rgba(255, 255, 255, 0.2), 0 0 60px rgba(0, 0, 0, 0.3);
 }
 header #pinbox li.activeA {
   background: #737DFE;
