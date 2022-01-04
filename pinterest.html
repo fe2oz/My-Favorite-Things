@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="css/css/pinterest.css">
+    <link rel="stylesheet" href="css/scss/pinterest.css">
     <link href="css/common.css" rel="stylesheet">
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
@@ -23,28 +23,402 @@
             </div>
 
             <header>
-                <ul>
-                    <li id="citypop-pin">시티팝</li>
-                    <li id="pixel-art-pin">픽셀 아트</li>
+                <ul class="pinbox" id="pinbox">
+                    <li onclick="location.href='index.html'">홈</li>
+                    <li class="activeA" id="citypop-pin">시티팝</li>
+                    <li id="pixelart-pin">픽셀 아트</li>
                     <li id="anime-pin">애니메이션</li>
                     <li>어두운, 어둑어둑한</li>
                 </ul>
             </header>
 
-            <div id="section">
-                <div id="citypop">
+            <section class="section">
+                <div class="grid">
+                    <div class="citypop" id="citypop">
+                        <div class="item" style="background-image:url(https://i.pinimg.com/564x/06/0a/b6/060ab63ec500d34bcb17d1f801fc50fd.jpg)">
+                            <div class="item__details">
+                            Night drive2 
+                            </div>
+                        </div>
 
-                </div>
-                <div id="pixel-art">
+                        <div class="item item--large" style="background-image:url(https://i.pinimg.com/564x/17/d6/ea/17d6ea38da00e2647e0d8c03dbbd4070.jpg)">
+                            <div class="item__details">
+                                PEACHES – 鈴木英人 
+                            </div>
+                        </div>
 
-                </div>
-                <div id="anime">
+                        <div class="item item--medium" style="background-image:url(https://i.pinimg.com/564x/da/e3/b4/dae3b4ca0d4c68f484fbc59706a6aae8.jpg)">
+                            <div class="item__details">
+                            Moon and Universe
+                            </div>
+                        </div>
 
-                </div>
-                <div id="gloomy">
+                        <div class="item item--large" style="background-image:url(https://i.pinimg.com/564x/bd/11/06/bd1106aa716c34245a3b132b23944a74.jpg)">
+                            <div class="item__details">
+                            Girl
+                            </div>
+                        </div>
 
-                </div>
-            </div>
+                        <div class="item item--full" style="background-image: url(https://i.pinimg.com/564x/ee/25/a5/ee25a53e3738a932db6d3a4f0c6c7a43.jpg);">
+                            <div class="item__details">
+                            @yagedan.png
+                            </div>
+                        </div>
+
+                        <div class="item item--medium" style="background-image:url(https://i.pinimg.com/564x/ef/fd/5e/effd5ee5342efb6bb289e77cb5afdf5c.jpg)">
+                            <div class="item__details">
+                            04page no.61-80 (1988-1990) - GALLERY
+                            </div>
+                        </div>
+
+                        <div class="item item--large" style="background-image: url(https://i.pinimg.com/564x/53/de/e1/53dee18c52c6a40035e9ce4323c5dd5d.jpg);">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item" style="background-image: url(https://i.pinimg.com/originals/49/c2/8c/49c28ce44dde2481de3812ec03dc8240.gif);">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item item--medium" style="background-image:url(https://i.pinimg.com/originals/20/82/03/208203fb478a20028997e00e4cb7357a.gif)">
+                            <div class="item__details">
+                            The awesome art and animation of Venus Wars (1989) - GIFs
+                            </div>
+                        </div>
+
+                        <div class="item item--large" style="background-image: url(https://i.pinimg.com/564x/1f/4b/3e/1f4b3e1bb0615273df665b3d686f4071.jpg);">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item" style="background-image: url(https://i.pinimg.com/564x/0a/14/f4/0a14f41d830b4cb3490813af79451c59.jpg);">
+                            <div class="item__details">
+                            shiniga mi on twitter
+                            </div>
+                        </div>
+
+                        <div class="item item--medium" style="background-image: url(https://i.pinimg.com/564x/76/a8/e2/76a8e2ac3900654cac2d61d47227db6a.jpg);">
+                            <div class="item__details">
+                            미적 - 애니메이션
+                            </div>
+                        </div>
+
+                        <div class="item item--medium" style="background-image: url(https://i.pinimg.com/564x/d7/6b/98/d76b986c80ffde5c1c34a0f0bf8e7cfe.jpg);">
+                            <div class="item__details">
+                            moodboard purple | Tumblr
+                            </div>
+                        </div>
+
+                        <div class="item item--large" style="background-image: url(https://i.pinimg.com/564x/9b/72/02/9b72020043d697d95e0181744c5b5fda.jpg);">
+                            <div class="item__details">
+                            you obey mevories
+                            </div>
+                        </div>
+
+                        <div class="item" style="background-image: url(https://i.pinimg.com/564x/93/07/1e/93071ebfbadd09e0ac570bded8b328a9.jpg);">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div> <!--15-->
+
+                        <div class="item item--medium" style="background-image: url(https://i.pinimg.com/564x/e0/82/28/e082286898fcbb80df5762cfc4f43856.jpg);">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item item--large" style="background-image: url(https://i.pinimg.com/564x/6a/be/14/6abe14b22dd9927b17355ca3db942b8e.jpg);">
+                            <div class="item__details">
+                            you obey mevories
+                            </div>
+                        </div>
+
+                        <div class="item item--medium" style="background-image: url(https://i.pinimg.com/564x/62/bb/b8/62bbb82a4cb44c36cb33779c04f8487e.jpg);">
+                            <div class="item__details">
+                            i'd like to throw an egg into an electric fan
+                            </div>
+                        </div>
+                    </div> <!--citypop-->
+
+                    <div class="pixelart" id="pixelart">
+                        <div class="item2">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item2 item2--large2">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item2 item2--medium2">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item2 item2--large2">
+                            <div class="item__details">
+                           
+                            </div>
+                        </div>
+
+                        <div class="item2 item2--full2">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item2 item2--medium2">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item2 item2--large2">
+                            <div class="item__details">
+                           
+                            </div>
+                        </div>
+
+                        <div class="item2">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item2 item2--medium2">
+                            <div class="item__details">
+                           
+                            </div>
+                        </div>
+
+                        <div class="item2 item2--large2">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item2">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item2 item2--medium2">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item2 item2--medium2">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item2 item2--large2">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item2">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item2 item2--large2">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item2">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item2 item2--medium2">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item2">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item2 item2--full2">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item2">
+                            <div class="item__details">
+                           
+                            </div>
+                        </div>
+
+                        <div class="item2 item2--medium2">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item2 item2--large2">
+                            <div class="item__details">
+                             
+                            </div>
+                        </div>
+                    </div> <!--pixelart-->
+
+                    <div class="anime" id="anime">
+                        <div class="item3">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item3 item3--large3">
+                            <div class="item__details">
+                           
+                            </div>
+                        </div>
+
+                        <div class="item3 item3--full3">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item3">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item3 item3--medium3">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item3 item3--large3">
+                            <div class="item__details">
+                           
+                            </div>
+                        </div>
+                        
+                        <div class="item3 item3--medium3">
+                            <div class="item__details">
+                           
+                            </div>
+                        </div>
+
+                        <div class="item3 item3--large3">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item3">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item3 item3--medium3">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item3 item3--medium3">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item3 item3--large3">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item3 item3--medium3">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item3">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item3 item3--large3">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item3">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item3 item3--medium3">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item3">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item3 item3--full3">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item3">
+                            <div class="item__details">
+                           
+                            </div>
+                        </div>
+
+                        <div class="item3 item3--medium3">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item3 item3--large3">
+                            <div class="item__details">
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--grid-->
+            </section>
         </div>
     </div>
 
