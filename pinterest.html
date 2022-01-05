@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="css/scss/pinterest.css">
+    <link rel="stylesheet" href="css/css/pinterest.css">
     <link href="css/common.css" rel="stylesheet">
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
@@ -25,10 +25,11 @@
             <header>
                 <ul class="pinbox" id="pinbox">
                     <li onclick="location.href='index.html'">홈</li>
-                    <li class="activeA" id="citypop-pin">시티팝</li>
-                    <li id="pixelart-pin">픽셀 아트</li>
-                    <li id="anime-pin">애니메이션</li>
-                    <li>어두운, 어둑어둑한</li>
+                    <li onclick="searchHide()">뒤로가기</li>
+                </ul>
+                <ul class="querysearch">
+                    <li><input type="text" id="query" placeholder="보고 싶은 이미지를 검색해 보세요!" onkeyup="enter()"></li>
+                    <li><button id="search">검색</button></li>
                 </ul>
             </header>
 
@@ -142,282 +143,33 @@
                             i'd like to throw an egg into an electric fan
                             </div>
                         </div>
+
+                        <div class="item item--large" style="background-image: url(https://i.pinimg.com/564x/27/ef/25/27ef25291275b2b383ae419e96b2cc57.jpg);">
+                            <div class="item__details">
+                            when noirlac doesn't source, tumblr loses!
+                            </div>
+                        </div>
+
+                        <div class="item" style="background-image: url(https://i.pinimg.com/564x/3e/39/2e/3e392e0605308c7c590fd6f4ae0f5e2b.jpg);">
+                            <div class="item__details">
+                            Y2k Aesthetic Institute BLM on Twitter
+                            </div>
+                        </div>
+                        <div class="item" style="background-image: url(https://i.pinimg.com/564x/15/3d/53/153d53af150be390306bcf297718ffd7.jpg);">
+                            <div class="item__details">
+                            Browse thousands of Event images for design inspiration
+                            </div>
+                        </div>
                     </div> <!--citypop-->
-
-                    <div class="pixelart" id="pixelart">
-                        <div class="item2">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item2 item2--large2">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item2 item2--medium2">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item2 item2--large2">
-                            <div class="item__details">
-                           
-                            </div>
-                        </div>
-
-                        <div class="item2 item2--full2">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item2 item2--medium2">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item2 item2--large2">
-                            <div class="item__details">
-                           
-                            </div>
-                        </div>
-
-                        <div class="item2">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item2 item2--medium2">
-                            <div class="item__details">
-                           
-                            </div>
-                        </div>
-
-                        <div class="item2 item2--large2">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item2">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item2 item2--medium2">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item2 item2--medium2">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item2 item2--large2">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item2">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item2 item2--large2">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item2">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item2 item2--medium2">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item2">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item2 item2--full2">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item2">
-                            <div class="item__details">
-                           
-                            </div>
-                        </div>
-
-                        <div class="item2 item2--medium2">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item2 item2--large2">
-                            <div class="item__details">
-                             
-                            </div>
-                        </div>
-                    </div> <!--pixelart-->
-
-                    <div class="anime" id="anime">
-                        <div class="item3">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item3 item3--large3">
-                            <div class="item__details">
-                           
-                            </div>
-                        </div>
-
-                        <div class="item3 item3--full3">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item3">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item3 item3--medium3">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item3 item3--large3">
-                            <div class="item__details">
-                           
-                            </div>
-                        </div>
-                        
-                        <div class="item3 item3--medium3">
-                            <div class="item__details">
-                           
-                            </div>
-                        </div>
-
-                        <div class="item3 item3--large3">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item3">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item3 item3--medium3">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item3 item3--medium3">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item3 item3--large3">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item3 item3--medium3">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item3">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item3 item3--large3">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item3">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item3 item3--medium3">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item3">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item3 item3--full3">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item3">
-                            <div class="item__details">
-                           
-                            </div>
-                        </div>
-
-                        <div class="item3 item3--medium3">
-                            <div class="item__details">
-                            
-                            </div>
-                        </div>
-
-                        <div class="item3 item3--large3">
-                            <div class="item__details">
-                             
-                            </div>
-                        </div>
-                    </div>
                 </div> <!--grid-->
+            </section>
+
+            <section class="section2">
+                <div class="grid2" id="grid2">
+                    <Fragment>
+                        
+                    </Fragment>
+                </div>
             </section>
         </div>
     </div>
@@ -466,18 +218,58 @@
         }
     </script>
 
-    <script>
-        $.ajax({
-            method: "GET",
-            url: "https://dapi.kakao.com/v2/search/image",
-            data: {query:"citypop"},
-            headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
-        })
 
-        .done(function(msg) {
-            console.log(msg);
-            $("#ss").append("<img src='"+msg.doucments[0].image_url+"'/>");
+    <script>
+        $(document).ready(function () {
+            var pageNum = 1;
+ 
+            $("#search").click(function () {
+                $("Fragment").html("");
+                $(".citypop").hide();
+               
+                $.ajax({
+                    method: "GET",
+                    url: "https://dapi.kakao.com/v2/search/image",
+                    data: { query: $("#query").val(), page: pageNum},
+                    headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+                })
+                .done(function (msg) {
+                    console.log(msg);
+                    for (var i = 0; i < 10; i++){
+                      $("Fragment").append("<img src='" + msg.documents[i].image_url + "'/>");
+                    }
+                });
+            });
+ 
+            $("#grid2").scroll(function(){  
+                if ( Math.ceil($("#grid2").scrollTop()) + $("#grid2").height() >= $(".container").height()){
+                    pageNum++;
+                    $.ajax({
+                        method: "GET",
+                        url: "https://dapi.kakao.com/v2/search/image",
+                        data: { query: $("#query").val(),  page: pageNum},
+                        headers: {Authorization: "KakaoAK 58f6d0b6aa8f0767623a8d35f4ef2f61"}
+                    })
+                    .done(function (msg) {
+                        console.log(msg);
+                        for (var i = 0; i < 10; i++){
+                          $("Fragment").append("<img src='" + msg.documents[i].image_url + "'/>");
+                        }
+                    });
+                }
+            });
         });
+
+        function searchHide(){
+            $("Fragment").hide();
+            $(".citypop").show();
+        }
+
+        function enter(){
+            if(event.keyCode == 13){
+                $("#search").click();
+            }
+        }
     </script>
 </body>
 </html>
