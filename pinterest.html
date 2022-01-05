@@ -155,9 +155,52 @@
                             Y2k Aesthetic Institute BLM on Twitter
                             </div>
                         </div>
+
                         <div class="item" style="background-image: url(https://i.pinimg.com/564x/15/3d/53/153d53af150be390306bcf297718ffd7.jpg);">
                             <div class="item__details">
                             Browse thousands of Event images for design inspiration
+                            </div>
+                        </div>
+
+                        <div class="item item--large" style="background-image: url(https://i.pinimg.com/564x/f7/5f/a4/f75fa42a9748889737500318fe858410.jpg);">
+                            <div class="item__details">
+                            when noirlac doesn't source, tumblr loses!
+                            </div>
+                        </div>
+
+                        <div class="item" style="background-image: url(https://i.pinimg.com/564x/eb/7b/b7/eb7bb7f7ceff88fdcd97ed3497c1902f.jpg);">
+                            <div class="item__details">
+                            Trix on Twitter
+                            </div>
+                        </div>
+
+                        <div class="item item--large" style="background-image: url(https://i.pinimg.com/originals/cf/97/53/cf9753f43b2f3c20388576fc3deb8566.gif);">
+                            <div class="item__details">
+                            픽셀 이미지 - 스퀘어 카테고리
+                            </div>
+                        </div>
+
+                        <div class="item item--medium" style="background-image: url(https://i.pinimg.com/736x/80/87/3b/80873bfa19d40e9378dc178009f74e83.jpg);">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item item--large" style="background-image: url(https://i.pinimg.com/564x/19/7a/b4/197ab4ca26a0fc4cae7c06c4ef8c3284.jpg);">
+                            <div class="item__details">
+                            
+                            </div>
+                        </div>
+
+                        <div class="item item--medium" style="background-image: url(https://i.pinimg.com/564x/4f/e9/fa/4fe9faf3b3def80ccb2bc4a207ad0c09.jpg);">
+                            <div class="item__details">
+                            Jubilee (@16pxl)
+                            </div>
+                        </div>
+
+                        <div class="item" style="background-image: url(https://i.pinimg.com/564x/ce/81/b4/ce81b44b788ac85ef48e47ff61ec7b9f.jpg);">
+                            <div class="item__details">
+                            
                             </div>
                         </div>
                     </div> <!--citypop-->
@@ -205,11 +248,13 @@
 
         showTime();
 
-
+        /////////////////////////////////////////////////////
         var imgList = new Array();
         imgList[0] = "img/ezgif.com-gif-maker-pixelart1.gif";
         imgList[1] = "img/ezgif.com-gif-maker-pixelart2.gif";
         imgList[2] = "img/ezgif.com-gif-maker-city.gif";
+        imgList[3] = "img/bg.jpg";
+        imgList[4] = "img/preview.jpg";
 
         function showImage(){
             var imgNum = Math.floor(Math.random() * (imgList.length));
@@ -241,8 +286,8 @@
                 });
             });
  
-            $("#grid2").scroll(function(){  
-                if ( Math.ceil($("#grid2").scrollTop()) + $("#grid2").height() >= $(".container").height()){
+            $(".container").scroll(function(){  
+                if ( Math.ceil($(".grid2").scrollTop()) + $(".grid2").height() >= $(".container").height()){
                     pageNum++;
                     $.ajax({
                         method: "GET",
