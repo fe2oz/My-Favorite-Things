@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/css/nexflix.css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="js/netflix.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="container" onload="printClock()">
+            <div id="clock" onload="showTime()"></div>
+            <div id="the_top_right">
+                <img src="img/free-icon-wifi-93158.png" alt="">
+                <img src="img/premium-icon-half-battery-5604492.png" alt="">
+            </div>
+
+            <div class="sec">
+                <h1>
+                    sandra bullock
+                </h1>
+                <h1>
+                    george clooney
+                </h1>
+            </div>
+
+            <div id="sec">
+                gravity
+            </div>
+
+            <div class="gallery">
+                <div class="box">
+                    <div class="image">
+                        <ul id="image">
+                            <li class="content">
+                                <img src="img/netflix/2537984752451A4331.jpg" alt="">
+                            </li>
+                            <li class="content">
+                                <img src="img/netflix/2737984752451A4432.jpg" alt="">
+                            </li>
+                            <li class="content">
+                                <img src="img/netflix/212B963A5224431F11.jpg" alt="">
+                            </li>
+                            <li class="content">
+                                <img src="img/netflix/232BDC4F51E79A910F.jpg" alt="">
+                            </li>
+                            <li class="content">
+                                <img src="img/netflix/common(1).jpg" alt="">
+                            </li>
+                            <li class="content">
+                                <img src="img/netflix/common(2).jpg" alt="">
+                            </li>
+                        </ul>
+
+                        <ul id="image">
+                            <li class="content">
+                                <img src="img/netflix/01e5607d5757256a4a8a2cff6d49b79eae111efa.jpg" alt="">
+                            </li>
+                            <li class="content">
+                                <img src="img/netflix/2228EB3652203B2D05.jpg" alt="">
+                            </li>
+                            <li class="content">
+                                <img src="img/netflix/c53f25fab367858eafb3fe1b319229f7ec019654.jpg" alt="">
+                            </li>
+                            <li class="content">
+                                <img src="img/netflix/2145B73E51FB640F24.jpg" alt="">
+                            </li>
+                        </ul>
+
+                        <ul id="image">
+                            <li class="content">
+                                <img src="img/netflix/252BC748524E5C902E.jpg" alt="">
+                            </li>
+                            <li class="content">
+                                <img src="img/netflix/2221624852451A1E17.jpg" alt="">
+                            </li>
+                            <li class="content">
+                                <img src="img/netflix/27688749524519FC29(1).jpg" alt="">
+                            </li>
+                            <li class="content">
+                                <img src="img/netflix/2437984752451A4733(1).jpg" alt="">
+                            </li>
+                            <li class="content">
+                                <img src="img/netflix/common.jpg" alt="">
+                            </li>
+                            <li class="content">
+                                <img src="img/netflix/common(3).jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showTime(){
+            var date = new Date();
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+            var session = "AM";
+
+            if(h==0){
+                h=12;
+            }
+
+            if(h>12){
+                h = h - 12;
+                session = "PM";
+            }
+
+            h = (h<10) ? "0" + h : h;
+            m = (m<10) ? "0" + m : m;
+            s = (s<10) ? "0" + s : s;
+
+            var time = h + ":" + m + ":" + s + " " + session;
+
+            document.getElementById("clock").innerText = time;
+            document.getElementById("clock").textContent = time;
+
+            setTimeout(showTime, 1000);
+        }
+
+        showTime();
+    </script>
+
+    <script>
+const additionalY = { val: 0 };
+let additionalYAnim;
+let offset = 0;
+const cols = gsap.utils.toArray("#image");
+
+cols.forEach((col, i) => {
+  const images = col.childNodes;
+
+  images.forEach((image) => {
+    var clone = image.cloneNode(true);
+    col.appendChild(clone);
+  });
+
+  images.forEach((item) => {
+    let columnHeight = item.parentElement.clientHeight;
+    let direction = i % 2 !== 0 ? "+=" : "-=";
+
+    gsap.to(item, {
+      y: direction + Number(columnHeight / 2),
+      duration: 20,
+      repeat: -1,
+      ease: "none",
+      modifiers: {
+        y: gsap.utils.unitize((y) => {
+          if (direction == "+=") {
+            offset += additionalY.val;
+            y = (parseFloat(y) - offset) % (columnHeight * 0.5);
+          } else {
+            offset += additionalY.val;
+            y = (parseFloat(y) + offset) % -Number(columnHeight * 0.5);
+          }
+
+          return y;
+        })
+      }
+    });
+  });
+});
+
+const imagesScrollerTrigger = ScrollTrigger.create({
+  trigger: "section",
+  start: "top 50%",
+  end: "bottom 50%",
+  onUpdate: function (self) {
+    const velocity = self.getVelocity();
+    if (velocity > 0) {
+      if (additionalYAnim) additionalYAnim.kill();
+      additionalY.val = -velocity / 2000;
+      additionalYAnim = gsap.to(additionalY, { val: 0 });
+    }
+    if (velocity < 0) {
+      if (additionalYAnim) additionalYAnim.kill();
+      additionalY.val = -velocity / 3000;
+      additionalYAnim = gsap.to(additionalY, { val: 0 });
+    }
+  }
+});
+
+
+    </script>
+</body>
+</html>
