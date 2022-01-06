@@ -102,7 +102,7 @@ body {
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
   z-index: 100 !important;
-  margin-bottom: 5%;
+  margin-bottom: 15%;
 }
 
 #image:nth-of-type(1) li img:hover,
