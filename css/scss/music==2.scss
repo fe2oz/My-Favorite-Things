@@ -36,15 +36,15 @@ body::-webkit-scrollbar {
 }
 
 #slider{
-    width:100%; height:80vh;
-    background-image: url(../../img/music==2/afterhours.jpg); background-repeat: no-repeat; background-size:100% 100%;
+    width:100%; height:auto;
+    background-image: url(../../img/music==2/afterhours.jpg); background-repeat: no-repeat; background-size:cover;
     position:relative;
 }
 
 #ttrm-show{
     width:90%; height:auto;
     display:flex; flex-flow: column;
-    position:relative; top:60%; left:10%;
+    padding-left: 10%; padding-top: 30%;
 
     & > div:nth-of-type(2){
         width:90%;
@@ -74,16 +74,16 @@ body::-webkit-scrollbar {
 }
   
   .read-more-target {
-    opacity: 0;
+    display: none;
     max-height: 0;
     font-size: 0;
     transition: .25s ease;
   }
   
   .read-more-state:checked ~ .read-more-wrap .read-more-target{
-    opacity: 1;
+    display: block;
     font-size: inherit;
-    height: 999rem;
+    max-height: 999rem;
   }
 
   .read-more-state ~ .read-more-trigger:before {
@@ -137,10 +137,11 @@ body::-webkit-scrollbar {
 
 .section{
     width:100%; height:235vh;
+    padding-top: 5%;
 }
 
 #music-list,
-#album-list,
+.album-list,
 #video-list,
 #artist-recommend{
     width:80%; height:auto;
@@ -148,14 +149,14 @@ body::-webkit-scrollbar {
     overflow:hidden;
     position:relative;
 }
-    #album-list,
+    .album-list,
     #video-list,
     #artist-title{
         margin-top:5%;
     }
 
 #music-title,
-#album-title,
+.album-title,
 #video-list-title,
 #artist-title{
     width:80%; height:6vh;
@@ -164,7 +165,7 @@ body::-webkit-scrollbar {
 }
 #music-title > p > span,
 #video-list-title > p > span,
-#album-title > p > span{
+.album-title > p > span{
     font-size:0.8vw;
     padding-left:4%;
     color:#999;
@@ -252,8 +253,8 @@ body::-webkit-scrollbar {
     }
 }
 
-#album-list-list,
-#album-list_list{
+.album-list-list,
+.album-list_list{
     width:100%; height:auto;
     display: flex;
     position:relative;
@@ -287,19 +288,19 @@ body::-webkit-scrollbar {
             font-family: 'Pretendard-Regular';
             padding-top:3%;
         }
-        & > #the-top,
-        & > #the-bottom{
+        & > .the-top,
+        & > .the-bottom{
             width:1.5vw;
             position:absolute;
         }
-        & > #the-bottom{
+        & > .the-bottom{
             width:2.5vw;
         }
-        #the-top{
+        .the-top{
             top:5%; right:5%;
             filter: invert(1);
         }
-        #the-bottom{
+        .the-bottom{
             bottom:30%; right:10%;
             opacity: 0.8;
             filter: invert(1);
@@ -320,9 +321,9 @@ body::-webkit-scrollbar {
 
 }
 
-.album-list_list,
-.album-list-list{
-    width:1709.32px;
+#album-list_list,
+#album-list-list{
+    width:200%;
     display:flex;
     overflow: hidden;
 }

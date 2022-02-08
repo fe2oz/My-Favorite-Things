@@ -309,18 +309,18 @@ header{
         background-color:#222;
         filter: brightness(0.8);
     }
-    #pdm_dopamine:hover #play,
-    #jw_comeandgo:hover #play,
-    #id_wrecked:hover #play,
-    #aw_stranger_things:hover #play,
-    #or_someday:hover #play,
-    #tw_moth_to_a_flame:hover #play,
-    #en_loco:hover #play,
-    #pt_good_luck:hover #play,
-    #lh_baby_blue:hover #play,
-    #airman_soda:hover #play,
-    #valley_society:hover #play,
-    #eh_one:hover #play{
+    #pdm_dopamine:hover .play,
+    #jw_comeandgo:hover .play,
+    #id_wrecked:hover .play,
+    #aw_stranger_things:hover .play,
+    #or_someday:hover .play,
+    #tw_moth_to_a_flame:hover .play,
+    #en_loco:hover .play,
+    #pt_good_luck:hover .play,
+    #lh_baby_blue:hover .play,
+    #airman_soda:hover .play,
+    #valley_society:hover .play,
+    #eh_one:hover .play{
         opacity:1;
         filter:brightness(1);
     }
@@ -339,18 +339,18 @@ header{
         width:3vw;
         border-radius: 3px;
     }
-        #pdm_dopamine > #play,
-        #jw_comeandgo > #play,
-        #id_wrecked > #play,
-        #aw_stranger_things > #play,
-        #or_someday > #play,
-        #tw_moth_to_a_flame > #play,
-        #en_loco > #play,
-        #pt_good_luck > #play,
-        #lh_baby_blue > #play,
-        #airman_soda > #play,
-        #valley_society > #play,
-        #eh_one > #play{
+        #pdm_dopamine > .play,
+        #jw_comeandgo > .play,
+        #id_wrecked > .play,
+        #aw_stranger_things > .play,
+        #or_someday > .play,
+        #tw_moth_to_a_flame > .play,
+        #en_loco > .play,
+        #pt_good_luck > .play,
+        #lh_baby_blue > .play,
+        #airman_soda > .play,
+        #valley_society > .play,
+        #eh_one > .play{
             width:1.5vw;
             position:absolute; top:30%; left:5%;
             opacity:0;
@@ -386,54 +386,54 @@ header{
             width:100%;
             font-family: 'Pretendard-Regular'; font-size:0.9vw;
         }
-        #pdm_dopamine_text > span,
-        #jw_comeandgo_text > span,
-        #id_wrecked_text > span,
-        #aw_stranger_things_text > span,
-        #or_someday_text > span,
-        #tw_moth_to_a_flame_text > span,
-        #en_loco_text > span,
-        #pt_good_luck_text > span,
-        #lh_baby_blue_text > span,
-        #airman_soda_text > span,
-        #valley_society_text > span,
-        #eh_one_text > span{
+        #pdm_dopamine_text > div,
+        #jw_comeandgo_text > div,
+        #id_wrecked_text > div,
+        #aw_stranger_things_text > div,
+        #or_someday_text > div,
+        #tw_moth_to_a_flame_text > div,
+        #en_loco_text > div,
+        #pt_good_luck_text > div,
+        #lh_baby_blue_text > div,
+        #airman_soda_text > div,
+        #valley_society_text > div,
+        #eh_one_text > div{
             width:100%;
             font-family: 'Pretendard-Regular'; font-size:0.9vw;
             display: flex; align-items: center;
         }
-        #pdm_dopamine_text > span > #sound,
-        #jw_comeandgo_text > span > #sound,
-        #id_wrecked_text > span > #sound,
-        #aw_stranger_things_text > span > #sound,
-        #or_someday_text > span > #sound,
-        #tw_moth_to_a_flame_text > span > #sound,
-        #en_loco_text > span > #sound,
-        #pt_good_luck_text > span > #sound,
-        #lh_baby_blue_text > span > #sound,
-        #airman_soda_text > span > #sound,
-        #valley_society_text > span > #sound,
-        #eh_one_text > span > #sound{
+        #pdm_dopamine_text > div > .sound,
+        #jw_comeandgo_text > div > .sound,
+        #id_wrecked_text > div > .sound,
+        #aw_stranger_things_text > div > .sound,
+        #or_someday_text > div > .sound,
+        #tw_moth_to_a_flame_text > div > .sound,
+        #en_loco_text > div > .sound,
+        #pt_good_luck_text > div > .sound,
+        #lh_baby_blue_text > div > .sound,
+        #airman_soda_text > div > .sound,
+        #valley_society_text > div > .sound,
+        #eh_one_text > div > .sound{
             width:1.3vw;
         }
-        #pdm_dopamine_text > span > p,
-        #jw_comeandgo_text > span > p,
-        #id_wrecked_text > span > p,
-        #aw_stranger_things_text > span > p,
-        #or_someday_text > span > p,
-        #tw_moth_to_a_flame_text > span > p,
-        #en_loco_text > span > p,
-        #pt_good_luck_text > span > p,
-        #lh_baby_blue_text > span > p,
-        #airman_soda_text > span > p,
-        #valley_society_text > span > p,
-        #eh_one_text > span > p{
+        #pdm_dopamine_text > div > p,
+        #jw_comeandgo_text > div > p,
+        #id_wrecked_text > div> p,
+        #aw_stranger_things_text > div > p,
+        #or_someday_text > div > p,
+        #tw_moth_to_a_flame_text > div > p,
+        #en_loco_text > div > p,
+        #pt_good_luck_text > div > p,
+        #lh_baby_blue_text > div > p,
+        #airman_soda_text > div > p,
+        #valley_society_text > div > p,
+        #eh_one_text > div > p{
             padding-left:3%;
         }
             #aw_stranger_things_text > p,
-            #jw_comeandgo_text > span > p,
-            #tw_moth_to_a_flame_text > span > p,
-            #lh_baby_blue_text > span > p{
+            #jw_comeandgo_text > div > p,
+            #tw_moth_to_a_flame_text > div > p,
+            #lh_baby_blue_text > div > p{
                 width:90%; 
                 text-overflow: ellipsis;
                 overflow:hidden;
@@ -512,30 +512,30 @@ header{
     #dnce_tb:hover{
         filter: brightness(0.8);
     }
-        #re_wrecked > #play,
-        #mgk_love_race > #play,
-        #pdm_hypnotized > #play,
-        #surfaces_wave_of_you > #play,
-        #mgk_meb > #play,
-        #iu_summer_love > #play,
-        #or_start_again > #play,
-        #wdw_fallin > #play,
-        #sweet_home > #play,
-        #dnce_tb > #play{
+        #re_wrecked > .play,
+        #mgk_love_race > .play,
+        #pdm_hypnotized > .play,
+        #surfaces_wave_of_you > .play,
+        #mgk_meb > .play,
+        #iu_summer_love > .play,
+        #or_start_again > .play,
+        #wdw_fallin > .play,
+        #sweet_home > .play,
+        #dnce_tb > .play{
             width:3vw;
             position:absolute; top:35%; left:42%;
             opacity: 0;
         }
-        #re_wrecked:hover > #play,
-        #mgk_love_race:hover > #play,
-        #pdm_hypnotized:hover > #play,
-        #surfaces_wave_of_you:hover > #play,
-        #mgk_meb:hover > #play,
-        #iu_summer_love:hover > #play,
-        #or_start_again:hover > #play,
-        #wdw_fallin:hover > #play,
-        #sweet_home:hover > #play,
-        #dnce_tb:hover > #play{
+        #re_wrecked:hover > .play,
+        #mgk_love_race:hover > .play,
+        #pdm_hypnotized:hover > .play,
+        #surfaces_wave_of_you:hover > .play,
+        #mgk_meb:hover > .play,
+        #iu_summer_love:hover > .play,
+        #or_start_again:hover > .play,
+        #wdw_fallin:hover > .play,
+        #sweet_home:hover > .play,
+        #dnce_tb:hover > .play{
             opacity:1;
             filter:brightness(1);
         }
@@ -553,7 +553,7 @@ header{
         width:15vw;
         border-radius: 10px;
     }
-    #re_wrecked_text,
+    .re_wrecked_text,
     #mgk_love_race_text,
     #pdm_hypnotized_text,
     #surfaces_wave_of_you_text,
@@ -723,13 +723,13 @@ header{
                 overflow: hidden;
                 white-space: nowrap;
             }
-    #ns_all_for_me > #play,
-    #johnk_shadows > #play,
-    #taeyeon > #play,
-    #n_flying > #play,
-    #isaac_dunbar > #play,
-    #hs_golden > #play,
-    #chain_smokers > #play{
+    #ns_all_for_me > .play,
+    #johnk_shadows > .play,
+    #taeyeon > .play,
+    #n_flying > .play,
+    #isaac_dunbar > .play,
+    #hs_golden > .play,
+    #chain_smokers > .play{
         width:2.3vw;
         position:absolute; top:35%; left:42%;
     }
@@ -761,7 +761,7 @@ header{
     display:flex; justify-content: space-between;
 }
     #recommend_music_video_2_text{
-        width:25vw;
+        width:26.5vw;
         margin-left:5%;
         line-height:3.5vh;
         font-family: 'Pretendard-Regular';
@@ -771,14 +771,14 @@ header{
     }
 #recommend_music_video_text > img,
 #recommend_music_video_2_text > img{
-    width:4vw;
+    width:4vw; height: 4vw;
     border-radius: 50%;
 }
-#rmvt1 > p{
+.rmvt1 > p{
     font-size:1vw;
     color:#999;
 }
-#rmvt1 > h1{
+.rmvt1 > h1{
     font-size:2vw;
 }
 
@@ -881,61 +881,61 @@ header{
                 width:12vw;
                 border-radius: 10px;
             }
-            #yungblud > #rmv_list,
-            #goody_grace > #rmv_list,
-            #halsey > #rmv_list,
-            #mod_sun > #rmv_list,
-            #pops_hits > #rmv_list,
-            #one_direction > #rmv_list,
-            #pops_hits_2 > #rmv_list,
-            #niall_horan > #rmv_list,
-            #pops_hits_3 > #rmv_list,
-            #meat_the_vamps > #rmv_list,
-            #cool_again > #rmv_list,
-            #aj_mitchell > #rmv_list,
-            #yungblud > #rmv_play,
-            #goody_grace > #rmv_play,
-            #halsey > #rmv_play,
-            #mod_sun > #rmv_play,
-            #pops_hits > #rmv_play,
-            #one_direction > #rmv_play,
-            #pops_hits_2 > #rmv_play,
-            #niall_horan > #rmv_play,
-            #pops_hits_3 > #rmv_play,
-            #meat_the_vamps > #rmv_play,
-            #cool_again > #rmv_play,
-            #aj_mitchell > #rmv_play{
+            #yungblud > .rmv_list,
+            #goody_grace > .rmv_list,
+            #halsey > .rmv_list,
+            #mod_sun > .rmv_list,
+            #pops_hits > .rmv_list,
+            #one_direction > .rmv_list,
+            #pops_hits_2 > .rmv_list,
+            #niall_horan > .rmv_list,
+            #pops_hits_3 > .rmv_list,
+            #meat_the_vamps > .rmv_list,
+            #cool_again > .rmv_list,
+            #aj_mitchell > .rmv_list,
+            #yungblud > .rmv_play,
+            #goody_grace > .rmv_play,
+            #halsey > .rmv_play,
+            #mod_sun > .rmv_play,
+            #pops_hits > .rmv_play,
+            #one_direction > .rmv_play,
+            #pops_hits_2 > .rmv_play,
+            #niall_horan > .rmv_play,
+            #pops_hits_3 > .rmv_play,
+            #meat_the_vamps > .rmv_play,
+            #cool_again > .rmv_play,
+            #aj_mitchell > .rmv_play{
                 width:2.5vw;
                 position:absolute;
                 
             }
-            #yungblud > #rmv_list,
-            #goody_grace > #rmv_list,
-            #halsey > #rmv_list,
-            #mod_sun > #rmv_list,
-            #pops_hits > #rmv_list,
-            #one_direction > #rmv_list,
-            #pops_hits_2 > #rmv_list,
-            #niall_horan > #rmv_list,
-            #pops_hits_3 > #rmv_list,
-            #meat_the_vamps > #rmv_list,
-            #cool_again > #rmv_list,
-            #aj_mitchell > #rmv_list{
+            #yungblud > .rmv_list,
+            #goody_grace > .rmv_list,
+            #halsey > .rmv_list,
+            #mod_sun > .rmv_list,
+            #pops_hits > .rmv_list,
+            #one_direction > .rmv_list,
+            #pops_hits_2 > .rmv_list,
+            #niall_horan > .rmv_list,
+            #pops_hits_3 > .rmv_list,
+            #meat_the_vamps > .rmv_list,
+            #cool_again > .rmv_list,
+            #aj_mitchell > .rmv_list{
                 width:1.3vw;
                 right:6%; top:10%;
             }
-            #yungblud > #rmv_play,
-            #goody_grace > #rmv_play,
-            #halsey > #rmv_play,
-            #mod_sun > #rmv_play,
-            #pops_hits > #rmv_play,
-            #one_direction > #rmv_play,
-            #pops_hits_2 > #rmv_play,
-            #niall_horan > #rmv_play,
-            #pops_hits_3 > #rmv_play,
-            #meat_the_vamps > #rmv_play,
-            #cool_again > #rmv_play,
-            #aj_mitchell > #rmv_play{
+            #yungblud > .rmv_play,
+            #goody_grace > .rmv_play,
+            #halsey > .rmv_play,
+            #mod_sun > .rmv_play,
+            #pops_hits > .rmv_play,
+            #one_direction > .rmv_play,
+            #pops_hits_2 > .rmv_play,
+            #niall_horan > .rmv_play,
+            #pops_hits_3 > .rmv_play,
+            #meat_the_vamps > .rmv_play,
+            #cool_again > .rmv_play,
+            #aj_mitchell > .rmv_play{
                 right:10%; bottom:30%;
             }
 
@@ -955,7 +955,7 @@ header{
         #jonas_brothers_text,
         #pops_hits_text,
         #one_direction_text,
-        #pops_hits_2_text,
+        .pops_hits_2_text,
         #niall_horan_text,
         #louis_tomlinson_text,
         #pops_hits_3_text,
@@ -986,7 +986,7 @@ header{
 
             #pops_hits_text,
             #one_direction_text,
-            #pops_hits_2_text,
+            .pops_hits_2_text,
             #niall_horan_text,
             #pops_hits_3_text,
             #meat_the_vamps_text,
@@ -1011,7 +1011,7 @@ header{
         #jonas_brothers_text > span,
         #pops_hits_text > span,
         #one_direction_text > span,
-        #pops_hits_2_text > span,
+        .pops_hits_2_text > span,
         #niall_horan_text > span,
         #louis_tomlinson_text > span,
         #pops_hits_3_text > span,
@@ -1025,7 +1025,7 @@ header{
             #yungblud_text > span,
             #halsey_text > span,
             #pops_hits_text > span,
-            #pops_hits_2_text > span,
+            .pops_hits_2_text > span,
             #pops_hits_3_text > span{
                 width:12vw; height:3vh;
                 overflow: hidden;

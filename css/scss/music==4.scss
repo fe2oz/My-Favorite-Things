@@ -140,7 +140,7 @@ body::-webkit-scrollbar {
 }
 
 #music-list,
-#album-list,
+.album-list,
 #video-list,
 #artist-recommend{
     width:80%; height:auto;
@@ -148,14 +148,14 @@ body::-webkit-scrollbar {
     overflow:hidden;
     position:relative;
 }
-    #album-list,
+    .album-list,
     #video-list,
     #artist-title{
         margin-top:5%;
     }
 
 #music-title,
-#album-title,
+.album-title,
 #video-list-title,
 #artist-title{
     width:80%; height:6vh;
@@ -164,7 +164,7 @@ body::-webkit-scrollbar {
 }
 #music-title > p > span,
 #video-list-title > p > span,
-#album-title > p > span{
+.album-title > p > span{
     font-size:0.8vw;
     padding-left:4%;
     color:#999;
@@ -256,8 +256,8 @@ body::-webkit-scrollbar {
     }
 }
 
-#album-list-list,
-#album-list_list{
+.album-list-list,
+.album-list_list{
     width:100%; height:auto;
     display: flex;
     position:relative;
@@ -292,29 +292,29 @@ body::-webkit-scrollbar {
             font-family: 'Pretendard-Regular';
             padding-top:3%;
         }
-        & > #the-top,
-        & > #the-bottom{
+        & > .the-top,
+        & > .the-bottom{
             width:1.5vw;
             position:absolute;
         }
-        & > #the-bottom{
+        & > .the-bottom{
             width:2.5vw;
             bottom:0;
         }
-        #the-top{
+        .the-top{
             top:5%; right:5%;
             filter: invert(1);
         }
-        #the-bottom{
-            bottom:25%; right:10%;
+        .the-bottom{
+            bottom:33%; right:10%;
             opacity: 0.8;
             filter: invert(1);
         }
 
     }
 
-    &-3 > #the-bottom{
-        bottom:33%;
+    &-3 > .the-bottom{
+        bottom:36%;
     }
 
     & > #prev3,
@@ -340,9 +340,9 @@ body::-webkit-scrollbar {
 
 }
 
-.album-list_list,
-.album-list-list{
-    width:1709.32px;
+#album-list_list,
+#album-list-list{
+    width:200%;
     display:flex;
     overflow: hidden;
 }

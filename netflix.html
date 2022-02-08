@@ -39,7 +39,7 @@
             <div class="gallery">
                 <div class="box">
                     <div class="image">
-                        <ul id="image">
+                        <ul class="image-1">
                             <li class="content">
                                 <img src="img/netflix/2537984752451A4331.jpg" alt="">
                             </li>
@@ -60,7 +60,7 @@
                             </li>
                         </ul>
 
-                        <ul id="image">
+                        <ul class="image-1">
                             <li class="content">
                                 <img src="img/netflix/01e5607d5757256a4a8a2cff6d49b79eae111efa.jpg" alt="">
                             </li>
@@ -75,7 +75,7 @@
                             </li>
                         </ul>
 
-                        <ul id="image">
+                        <ul class="image-1">
                             <li class="content">
                                 <img src="img/netflix/252BC748524E5C902E.jpg" alt="">
                             </li>
@@ -137,7 +137,7 @@
 const additionalY = { val: 0 };
 let additionalYAnim;
 let offset = 0;
-const cols = gsap.utils.toArray("#image");
+const cols = gsap.utils.toArray(".image-1");
 
 cols.forEach((col, i) => {
   const images = col.childNodes;

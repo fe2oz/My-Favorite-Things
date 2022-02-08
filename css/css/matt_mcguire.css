@@ -10,8 +10,6 @@ body {
   background: url(../../img/drum/bg.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -34,68 +32,45 @@ body {
   border-radius: 10px 0 0 10px;
   padding-top: 5.7%;
 }
-
 .main_menu li {
   width: 100%;
   height: 8vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 60px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 60px rgba(0, 0, 0, 0.3);
-  -webkit-transition: .35s;
-  transition: .35s;
+  align-items: center;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 60px rgba(0, 0, 0, 0.3);
+  transition: 0.35s;
   cursor: pointer;
 }
-
 .main_menu li:hover {
   background: #737DFE;
 }
-
 .main_menu li:hover img {
-  -webkit-filter: invert(0);
-          filter: invert(0);
+  filter: invert(0);
 }
-
 .main_menu li:hover p {
   color: black;
 }
-
 .main_menu li.activeA {
   background: #737DFE;
 }
-
 .main_menu li img {
   padding-left: 10%;
-  -webkit-filter: invert(1);
-          filter: invert(1);
-  -webkit-transition: .35s;
-  transition: .35s;
+  filter: invert(1);
+  transition: 0.35s;
 }
-
 .main_menu li p {
   padding-left: 10%;
   color: white;
-  -webkit-transition: .35s;
-  transition: .35s;
+  transition: 0.35s;
 }
 
 #home {
   width: 100%;
   height: 8vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 60px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 60px rgba(0, 0, 0, 0.3);
-  -webkit-transition: .35s;
-  transition: .35s;
+  align-items: center;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 60px rgba(0, 0, 0, 0.3);
+  transition: 0.35s;
   cursor: pointer;
 }
 
@@ -103,33 +78,22 @@ body {
 .prev {
   width: 50%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-transition: .35s;
-  transition: .35s;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: 0.35s;
 }
-
 .home:hover,
 .prev:hover {
   background: #444;
 }
-
 .home p,
 .prev p {
   color: white;
 }
-
 .home img,
 .prev img {
-  -webkit-filter: invert(1);
-          filter: invert(1);
+  filter: invert(1);
 }
 
 .home {
@@ -148,50 +112,36 @@ body {
   top: 40%;
   left: 40%;
   z-index: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   -webkit-animation: flooat 1s infinite alternate;
           animation: flooat 1s infinite alternate;
   cursor: default;
 }
-
 #main img {
   width: 3.5vw;
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-  -webkit-filter: invert(1);
-          filter: invert(1);
+  transform: rotate(-180deg);
+  filter: invert(1);
 }
-
 #main p {
   color: white;
   font-size: 3vw;
   padding-left: 10%;
 }
-
 @-webkit-keyframes flooat {
   0% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
   }
   100% {
-    -webkit-transform: translate(0, 10px);
-            transform: translate(0, 10px);
+    transform: translate(0, 10px);
   }
 }
-
 @keyframes flooat {
   0% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
   }
   100% {
-    -webkit-transform: translate(0, 10px);
-            transform: translate(0, 10px);
+    transform: translate(0, 10px);
   }
 }
 
@@ -209,14 +159,9 @@ body {
   position: absolute;
   z-index: 2;
   visibility: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 #all-my-drum-cover #video-list,
 #the-chainsmokres #video-list,
 #vi-ew #video-list,
@@ -230,7 +175,6 @@ body {
   height: 100%;
   position: relative;
 }
-
 #all-my-drum-cover #video-list video,
 #the-chainsmokres #video-list video,
 #vi-ew #video-list video,
@@ -246,7 +190,6 @@ body {
   left: 1%;
   display: none;
 }
-
 #all-my-drum-cover #video-list video:hover,
 #the-chainsmokres #video-list video:hover,
 #vi-ew #video-list video:hover,
@@ -256,10 +199,8 @@ body {
 #re-mix #video-list video:hover,
 #dub-step #video-list video:hover,
 #be-st #video-list video:hover {
-  -webkit-filter: opacity(0.9);
-          filter: opacity(0.9);
+  filter: opacity(0.9);
 }
-
 #all-my-drum-cover #video-list video:nth-of-type(1),
 #the-chainsmokres #video-list video:nth-of-type(1),
 #vi-ew #video-list video:nth-of-type(1),
@@ -271,7 +212,6 @@ body {
 #be-st #video-list video:nth-of-type(1) {
   display: block;
 }
-
 #all-my-drum-cover #video-list #play,
 #the-chainsmokres #video-list #play,
 #vi-ew #video-list #play,
@@ -287,7 +227,6 @@ body {
   top: 45%;
   z-index: 4;
 }
-
 #all-my-drum-cover #video-choice,
 #the-chainsmokres #video-choice,
 #vi-ew #video-choice,
@@ -304,7 +243,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
 }
-
 #all-my-drum-cover #video-choice-text, #all-my-drum-cover #video-choice-text-1, #all-my-drum-cover #video-choice-text-2, #all-my-drum-cover #video-choice-text-3, #all-my-drum-cover #video-choice-text-4, #all-my-drum-cover #video-choice-text-5, #all-my-drum-cover #video-choice-text-6, #all-my-drum-cover #video-choice-text-7, #all-my-drum-cover #video-choice-text-8,
 #the-chainsmokres #video-choice-text,
 #the-chainsmokres #video-choice-text-1,
@@ -388,7 +326,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 0;
 }
-
 #all-my-drum-cover #video-choice-text p, #all-my-drum-cover #video-choice-text-1 p, #all-my-drum-cover #video-choice-text-2 p, #all-my-drum-cover #video-choice-text-3 p, #all-my-drum-cover #video-choice-text-4 p, #all-my-drum-cover #video-choice-text-5 p, #all-my-drum-cover #video-choice-text-6 p, #all-my-drum-cover #video-choice-text-7 p, #all-my-drum-cover #video-choice-text-8 p,
 #the-chainsmokres #video-choice-text p,
 #the-chainsmokres #video-choice-text-1 p,
@@ -463,9 +400,8 @@ body {
 #be-st #video-choice-text-7 p,
 #be-st #video-choice-text-8 p {
   color: white;
-  font-family: 'Pretendard-Regular';
+  font-family: "Pretendard-Regular";
 }
-
 #all-my-drum-cover #video-choice-text p:nth-of-type(2), #all-my-drum-cover #video-choice-text-1 p:nth-of-type(2), #all-my-drum-cover #video-choice-text-2 p:nth-of-type(2), #all-my-drum-cover #video-choice-text-3 p:nth-of-type(2), #all-my-drum-cover #video-choice-text-4 p:nth-of-type(2), #all-my-drum-cover #video-choice-text-5 p:nth-of-type(2), #all-my-drum-cover #video-choice-text-6 p:nth-of-type(2), #all-my-drum-cover #video-choice-text-7 p:nth-of-type(2), #all-my-drum-cover #video-choice-text-8 p:nth-of-type(2),
 #the-chainsmokres #video-choice-text p:nth-of-type(2),
 #the-chainsmokres #video-choice-text-1 p:nth-of-type(2),
@@ -542,7 +478,6 @@ body {
   font-size: 0.8vw;
   padding-top: 1%;
 }
-
 #all-my-drum-cover #video-choice-text p:nth-of-type(2) span, #all-my-drum-cover #video-choice-text-1 p:nth-of-type(2) span, #all-my-drum-cover #video-choice-text-2 p:nth-of-type(2) span, #all-my-drum-cover #video-choice-text-3 p:nth-of-type(2) span, #all-my-drum-cover #video-choice-text-4 p:nth-of-type(2) span, #all-my-drum-cover #video-choice-text-5 p:nth-of-type(2) span, #all-my-drum-cover #video-choice-text-6 p:nth-of-type(2) span, #all-my-drum-cover #video-choice-text-7 p:nth-of-type(2) span, #all-my-drum-cover #video-choice-text-8 p:nth-of-type(2) span,
 #the-chainsmokres #video-choice-text p:nth-of-type(2) span,
 #the-chainsmokres #video-choice-text-1 p:nth-of-type(2) span,
@@ -619,7 +554,6 @@ body {
   color: #999;
   font-size: 0.7vw;
 }
-
 #all-my-drum-cover #video-choice-list, #all-my-drum-cover #video-choice-list-1, #all-my-drum-cover #video-choice-list-2, #all-my-drum-cover #video-choice-list-3, #all-my-drum-cover #video-choice-list-4, #all-my-drum-cover #video-choice-list-5, #all-my-drum-cover #video-choice-list-6, #all-my-drum-cover #video-choice-list-7, #all-my-drum-cover #video-choice-list-8,
 #the-chainsmokres #video-choice-list,
 #the-chainsmokres #video-choice-list-1,
@@ -700,7 +634,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   overflow-y: scroll;
 }
-
 #all-my-drum-cover #video-choice-list::-webkit-scrollbar, #all-my-drum-cover #video-choice-list-1::-webkit-scrollbar, #all-my-drum-cover #video-choice-list-2::-webkit-scrollbar, #all-my-drum-cover #video-choice-list-3::-webkit-scrollbar, #all-my-drum-cover #video-choice-list-4::-webkit-scrollbar, #all-my-drum-cover #video-choice-list-5::-webkit-scrollbar, #all-my-drum-cover #video-choice-list-6::-webkit-scrollbar, #all-my-drum-cover #video-choice-list-7::-webkit-scrollbar, #all-my-drum-cover #video-choice-list-8::-webkit-scrollbar,
 #the-chainsmokres #video-choice-list::-webkit-scrollbar,
 #the-chainsmokres #video-choice-list-1::-webkit-scrollbar,
@@ -776,7 +709,6 @@ body {
 #be-st #video-choice-list-8::-webkit-scrollbar {
   width: 8px;
 }
-
 #all-my-drum-cover #video-choice-list::-webkit-scrollbar-thumb, #all-my-drum-cover #video-choice-list-1::-webkit-scrollbar-thumb, #all-my-drum-cover #video-choice-list-2::-webkit-scrollbar-thumb, #all-my-drum-cover #video-choice-list-3::-webkit-scrollbar-thumb, #all-my-drum-cover #video-choice-list-4::-webkit-scrollbar-thumb, #all-my-drum-cover #video-choice-list-5::-webkit-scrollbar-thumb, #all-my-drum-cover #video-choice-list-6::-webkit-scrollbar-thumb, #all-my-drum-cover #video-choice-list-7::-webkit-scrollbar-thumb, #all-my-drum-cover #video-choice-list-8::-webkit-scrollbar-thumb,
 #the-chainsmokres #video-choice-list::-webkit-scrollbar-thumb,
 #the-chainsmokres #video-choice-list-1::-webkit-scrollbar-thumb,
@@ -853,7 +785,6 @@ body {
   background-color: #999;
   border-radius: 10px;
 }
-
 #all-my-drum-cover #video-choice-list::-webkit-scrollbar-track, #all-my-drum-cover #video-choice-list-1::-webkit-scrollbar-track, #all-my-drum-cover #video-choice-list-2::-webkit-scrollbar-track, #all-my-drum-cover #video-choice-list-3::-webkit-scrollbar-track, #all-my-drum-cover #video-choice-list-4::-webkit-scrollbar-track, #all-my-drum-cover #video-choice-list-5::-webkit-scrollbar-track, #all-my-drum-cover #video-choice-list-6::-webkit-scrollbar-track, #all-my-drum-cover #video-choice-list-7::-webkit-scrollbar-track, #all-my-drum-cover #video-choice-list-8::-webkit-scrollbar-track,
 #the-chainsmokres #video-choice-list::-webkit-scrollbar-track,
 #the-chainsmokres #video-choice-list-1::-webkit-scrollbar-track,
@@ -929,7 +860,6 @@ body {
 #be-st #video-choice-list-8::-webkit-scrollbar-track {
   background-color: #222;
 }
-
 #all-my-drum-cover #video-choice-list ul, #all-my-drum-cover #video-choice-list-1 ul, #all-my-drum-cover #video-choice-list-2 ul, #all-my-drum-cover #video-choice-list-3 ul, #all-my-drum-cover #video-choice-list-4 ul, #all-my-drum-cover #video-choice-list-5 ul, #all-my-drum-cover #video-choice-list-6 ul, #all-my-drum-cover #video-choice-list-7 ul, #all-my-drum-cover #video-choice-list-8 ul,
 #the-chainsmokres #video-choice-list ul,
 #the-chainsmokres #video-choice-list-1 ul,
@@ -1003,25 +933,10 @@ body {
 #be-st #video-choice-list-6 ul,
 #be-st #video-choice-list-7 ul,
 #be-st #video-choice-list-8 ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  flex-flow: column;
 }
-
-#all-my-drum-cover #video-choice-list ul li,
-#all-my-drum-cover #video-choice-list ul li:nth-of-type(2), #all-my-drum-cover #video-choice-list-1 ul li,
-#all-my-drum-cover #video-choice-list-1 ul li:nth-of-type(2), #all-my-drum-cover #video-choice-list-2 ul li,
-#all-my-drum-cover #video-choice-list-2 ul li:nth-of-type(2), #all-my-drum-cover #video-choice-list-3 ul li,
-#all-my-drum-cover #video-choice-list-3 ul li:nth-of-type(2), #all-my-drum-cover #video-choice-list-4 ul li,
-#all-my-drum-cover #video-choice-list-4 ul li:nth-of-type(2), #all-my-drum-cover #video-choice-list-5 ul li,
-#all-my-drum-cover #video-choice-list-5 ul li:nth-of-type(2), #all-my-drum-cover #video-choice-list-6 ul li,
-#all-my-drum-cover #video-choice-list-6 ul li:nth-of-type(2), #all-my-drum-cover #video-choice-list-7 ul li,
-#all-my-drum-cover #video-choice-list-7 ul li:nth-of-type(2), #all-my-drum-cover #video-choice-list-8 ul li,
-#all-my-drum-cover #video-choice-list-8 ul li:nth-of-type(2),
+#all-my-drum-cover #video-choice-list ul li, #all-my-drum-cover #video-choice-list ul li:nth-of-type(2), #all-my-drum-cover #video-choice-list-1 ul li, #all-my-drum-cover #video-choice-list-1 ul li:nth-of-type(2), #all-my-drum-cover #video-choice-list-2 ul li, #all-my-drum-cover #video-choice-list-2 ul li:nth-of-type(2), #all-my-drum-cover #video-choice-list-3 ul li, #all-my-drum-cover #video-choice-list-3 ul li:nth-of-type(2), #all-my-drum-cover #video-choice-list-4 ul li, #all-my-drum-cover #video-choice-list-4 ul li:nth-of-type(2), #all-my-drum-cover #video-choice-list-5 ul li, #all-my-drum-cover #video-choice-list-5 ul li:nth-of-type(2), #all-my-drum-cover #video-choice-list-6 ul li, #all-my-drum-cover #video-choice-list-6 ul li:nth-of-type(2), #all-my-drum-cover #video-choice-list-7 ul li, #all-my-drum-cover #video-choice-list-7 ul li:nth-of-type(2), #all-my-drum-cover #video-choice-list-8 ul li, #all-my-drum-cover #video-choice-list-8 ul li:nth-of-type(2),
 #the-chainsmokres #video-choice-list ul li,
 #the-chainsmokres #video-choice-list ul li:nth-of-type(2),
 #the-chainsmokres #video-choice-list-1 ul li,
@@ -1168,28 +1083,12 @@ body {
 #be-st #video-choice-list-8 ul li:nth-of-type(2) {
   width: 100%;
   height: 8vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-evenly;
+  align-items: center;
   cursor: pointer;
 }
-
-#all-my-drum-cover #video-choice-list ul li img,
-#all-my-drum-cover #video-choice-list ul li:nth-of-type(2) img, #all-my-drum-cover #video-choice-list-1 ul li img,
-#all-my-drum-cover #video-choice-list-1 ul li:nth-of-type(2) img, #all-my-drum-cover #video-choice-list-2 ul li img,
-#all-my-drum-cover #video-choice-list-2 ul li:nth-of-type(2) img, #all-my-drum-cover #video-choice-list-3 ul li img,
-#all-my-drum-cover #video-choice-list-3 ul li:nth-of-type(2) img, #all-my-drum-cover #video-choice-list-4 ul li img,
-#all-my-drum-cover #video-choice-list-4 ul li:nth-of-type(2) img, #all-my-drum-cover #video-choice-list-5 ul li img,
-#all-my-drum-cover #video-choice-list-5 ul li:nth-of-type(2) img, #all-my-drum-cover #video-choice-list-6 ul li img,
-#all-my-drum-cover #video-choice-list-6 ul li:nth-of-type(2) img, #all-my-drum-cover #video-choice-list-7 ul li img,
-#all-my-drum-cover #video-choice-list-7 ul li:nth-of-type(2) img, #all-my-drum-cover #video-choice-list-8 ul li img,
-#all-my-drum-cover #video-choice-list-8 ul li:nth-of-type(2) img,
+#all-my-drum-cover #video-choice-list ul li img, #all-my-drum-cover #video-choice-list ul li:nth-of-type(2) img, #all-my-drum-cover #video-choice-list-1 ul li img, #all-my-drum-cover #video-choice-list-1 ul li:nth-of-type(2) img, #all-my-drum-cover #video-choice-list-2 ul li img, #all-my-drum-cover #video-choice-list-2 ul li:nth-of-type(2) img, #all-my-drum-cover #video-choice-list-3 ul li img, #all-my-drum-cover #video-choice-list-3 ul li:nth-of-type(2) img, #all-my-drum-cover #video-choice-list-4 ul li img, #all-my-drum-cover #video-choice-list-4 ul li:nth-of-type(2) img, #all-my-drum-cover #video-choice-list-5 ul li img, #all-my-drum-cover #video-choice-list-5 ul li:nth-of-type(2) img, #all-my-drum-cover #video-choice-list-6 ul li img, #all-my-drum-cover #video-choice-list-6 ul li:nth-of-type(2) img, #all-my-drum-cover #video-choice-list-7 ul li img, #all-my-drum-cover #video-choice-list-7 ul li:nth-of-type(2) img, #all-my-drum-cover #video-choice-list-8 ul li img, #all-my-drum-cover #video-choice-list-8 ul li:nth-of-type(2) img,
 #the-chainsmokres #video-choice-list ul li img,
 #the-chainsmokres #video-choice-list ul li:nth-of-type(2) img,
 #the-chainsmokres #video-choice-list-1 ul li img,
@@ -1337,17 +1236,7 @@ body {
   width: 5.5vw;
   height: 7vh;
 }
-
-#all-my-drum-cover #video-choice-list ul li > div > p,
-#all-my-drum-cover #video-choice-list ul li:nth-of-type(2) > div > p, #all-my-drum-cover #video-choice-list-1 ul li > div > p,
-#all-my-drum-cover #video-choice-list-1 ul li:nth-of-type(2) > div > p, #all-my-drum-cover #video-choice-list-2 ul li > div > p,
-#all-my-drum-cover #video-choice-list-2 ul li:nth-of-type(2) > div > p, #all-my-drum-cover #video-choice-list-3 ul li > div > p,
-#all-my-drum-cover #video-choice-list-3 ul li:nth-of-type(2) > div > p, #all-my-drum-cover #video-choice-list-4 ul li > div > p,
-#all-my-drum-cover #video-choice-list-4 ul li:nth-of-type(2) > div > p, #all-my-drum-cover #video-choice-list-5 ul li > div > p,
-#all-my-drum-cover #video-choice-list-5 ul li:nth-of-type(2) > div > p, #all-my-drum-cover #video-choice-list-6 ul li > div > p,
-#all-my-drum-cover #video-choice-list-6 ul li:nth-of-type(2) > div > p, #all-my-drum-cover #video-choice-list-7 ul li > div > p,
-#all-my-drum-cover #video-choice-list-7 ul li:nth-of-type(2) > div > p, #all-my-drum-cover #video-choice-list-8 ul li > div > p,
-#all-my-drum-cover #video-choice-list-8 ul li:nth-of-type(2) > div > p,
+#all-my-drum-cover #video-choice-list ul li > div > p, #all-my-drum-cover #video-choice-list ul li:nth-of-type(2) > div > p, #all-my-drum-cover #video-choice-list-1 ul li > div > p, #all-my-drum-cover #video-choice-list-1 ul li:nth-of-type(2) > div > p, #all-my-drum-cover #video-choice-list-2 ul li > div > p, #all-my-drum-cover #video-choice-list-2 ul li:nth-of-type(2) > div > p, #all-my-drum-cover #video-choice-list-3 ul li > div > p, #all-my-drum-cover #video-choice-list-3 ul li:nth-of-type(2) > div > p, #all-my-drum-cover #video-choice-list-4 ul li > div > p, #all-my-drum-cover #video-choice-list-4 ul li:nth-of-type(2) > div > p, #all-my-drum-cover #video-choice-list-5 ul li > div > p, #all-my-drum-cover #video-choice-list-5 ul li:nth-of-type(2) > div > p, #all-my-drum-cover #video-choice-list-6 ul li > div > p, #all-my-drum-cover #video-choice-list-6 ul li:nth-of-type(2) > div > p, #all-my-drum-cover #video-choice-list-7 ul li > div > p, #all-my-drum-cover #video-choice-list-7 ul li:nth-of-type(2) > div > p, #all-my-drum-cover #video-choice-list-8 ul li > div > p, #all-my-drum-cover #video-choice-list-8 ul li:nth-of-type(2) > div > p,
 #the-chainsmokres #video-choice-list ul li > div > p,
 #the-chainsmokres #video-choice-list ul li:nth-of-type(2) > div > p,
 #the-chainsmokres #video-choice-list-1 ul li > div > p,
@@ -1494,17 +1383,7 @@ body {
 #be-st #video-choice-list-8 ul li:nth-of-type(2) > div > p {
   width: 100%;
 }
-
-#all-my-drum-cover #video-choice-list ul li > div,
-#all-my-drum-cover #video-choice-list ul li:nth-of-type(2) > div, #all-my-drum-cover #video-choice-list-1 ul li > div,
-#all-my-drum-cover #video-choice-list-1 ul li:nth-of-type(2) > div, #all-my-drum-cover #video-choice-list-2 ul li > div,
-#all-my-drum-cover #video-choice-list-2 ul li:nth-of-type(2) > div, #all-my-drum-cover #video-choice-list-3 ul li > div,
-#all-my-drum-cover #video-choice-list-3 ul li:nth-of-type(2) > div, #all-my-drum-cover #video-choice-list-4 ul li > div,
-#all-my-drum-cover #video-choice-list-4 ul li:nth-of-type(2) > div, #all-my-drum-cover #video-choice-list-5 ul li > div,
-#all-my-drum-cover #video-choice-list-5 ul li:nth-of-type(2) > div, #all-my-drum-cover #video-choice-list-6 ul li > div,
-#all-my-drum-cover #video-choice-list-6 ul li:nth-of-type(2) > div, #all-my-drum-cover #video-choice-list-7 ul li > div,
-#all-my-drum-cover #video-choice-list-7 ul li:nth-of-type(2) > div, #all-my-drum-cover #video-choice-list-8 ul li > div,
-#all-my-drum-cover #video-choice-list-8 ul li:nth-of-type(2) > div,
+#all-my-drum-cover #video-choice-list ul li > div, #all-my-drum-cover #video-choice-list ul li:nth-of-type(2) > div, #all-my-drum-cover #video-choice-list-1 ul li > div, #all-my-drum-cover #video-choice-list-1 ul li:nth-of-type(2) > div, #all-my-drum-cover #video-choice-list-2 ul li > div, #all-my-drum-cover #video-choice-list-2 ul li:nth-of-type(2) > div, #all-my-drum-cover #video-choice-list-3 ul li > div, #all-my-drum-cover #video-choice-list-3 ul li:nth-of-type(2) > div, #all-my-drum-cover #video-choice-list-4 ul li > div, #all-my-drum-cover #video-choice-list-4 ul li:nth-of-type(2) > div, #all-my-drum-cover #video-choice-list-5 ul li > div, #all-my-drum-cover #video-choice-list-5 ul li:nth-of-type(2) > div, #all-my-drum-cover #video-choice-list-6 ul li > div, #all-my-drum-cover #video-choice-list-6 ul li:nth-of-type(2) > div, #all-my-drum-cover #video-choice-list-7 ul li > div, #all-my-drum-cover #video-choice-list-7 ul li:nth-of-type(2) > div, #all-my-drum-cover #video-choice-list-8 ul li > div, #all-my-drum-cover #video-choice-list-8 ul li:nth-of-type(2) > div,
 #the-chainsmokres #video-choice-list ul li > div,
 #the-chainsmokres #video-choice-list ul li:nth-of-type(2) > div,
 #the-chainsmokres #video-choice-list-1 ul li > div,
@@ -1651,17 +1530,7 @@ body {
 #be-st #video-choice-list-8 ul li:nth-of-type(2) > div {
   width: 50%;
 }
-
-#all-my-drum-cover #video-choice-list ul li p,
-#all-my-drum-cover #video-choice-list ul li:nth-of-type(2) p, #all-my-drum-cover #video-choice-list-1 ul li p,
-#all-my-drum-cover #video-choice-list-1 ul li:nth-of-type(2) p, #all-my-drum-cover #video-choice-list-2 ul li p,
-#all-my-drum-cover #video-choice-list-2 ul li:nth-of-type(2) p, #all-my-drum-cover #video-choice-list-3 ul li p,
-#all-my-drum-cover #video-choice-list-3 ul li:nth-of-type(2) p, #all-my-drum-cover #video-choice-list-4 ul li p,
-#all-my-drum-cover #video-choice-list-4 ul li:nth-of-type(2) p, #all-my-drum-cover #video-choice-list-5 ul li p,
-#all-my-drum-cover #video-choice-list-5 ul li:nth-of-type(2) p, #all-my-drum-cover #video-choice-list-6 ul li p,
-#all-my-drum-cover #video-choice-list-6 ul li:nth-of-type(2) p, #all-my-drum-cover #video-choice-list-7 ul li p,
-#all-my-drum-cover #video-choice-list-7 ul li:nth-of-type(2) p, #all-my-drum-cover #video-choice-list-8 ul li p,
-#all-my-drum-cover #video-choice-list-8 ul li:nth-of-type(2) p,
+#all-my-drum-cover #video-choice-list ul li p, #all-my-drum-cover #video-choice-list ul li:nth-of-type(2) p, #all-my-drum-cover #video-choice-list-1 ul li p, #all-my-drum-cover #video-choice-list-1 ul li:nth-of-type(2) p, #all-my-drum-cover #video-choice-list-2 ul li p, #all-my-drum-cover #video-choice-list-2 ul li:nth-of-type(2) p, #all-my-drum-cover #video-choice-list-3 ul li p, #all-my-drum-cover #video-choice-list-3 ul li:nth-of-type(2) p, #all-my-drum-cover #video-choice-list-4 ul li p, #all-my-drum-cover #video-choice-list-4 ul li:nth-of-type(2) p, #all-my-drum-cover #video-choice-list-5 ul li p, #all-my-drum-cover #video-choice-list-5 ul li:nth-of-type(2) p, #all-my-drum-cover #video-choice-list-6 ul li p, #all-my-drum-cover #video-choice-list-6 ul li:nth-of-type(2) p, #all-my-drum-cover #video-choice-list-7 ul li p, #all-my-drum-cover #video-choice-list-7 ul li:nth-of-type(2) p, #all-my-drum-cover #video-choice-list-8 ul li p, #all-my-drum-cover #video-choice-list-8 ul li:nth-of-type(2) p,
 #the-chainsmokres #video-choice-list ul li p,
 #the-chainsmokres #video-choice-list ul li:nth-of-type(2) p,
 #the-chainsmokres #video-choice-list-1 ul li p,
@@ -1806,21 +1675,11 @@ body {
 #be-st #video-choice-list-7 ul li:nth-of-type(2) p,
 #be-st #video-choice-list-8 ul li p,
 #be-st #video-choice-list-8 ul li:nth-of-type(2) p {
-  font-family: 'Pretendard-Regular';
+  font-family: "Pretendard-Regular";
   font-size: 0.8vw;
   color: white;
 }
-
-#all-my-drum-cover #video-choice-list ul li span,
-#all-my-drum-cover #video-choice-list ul li:nth-of-type(2) span, #all-my-drum-cover #video-choice-list-1 ul li span,
-#all-my-drum-cover #video-choice-list-1 ul li:nth-of-type(2) span, #all-my-drum-cover #video-choice-list-2 ul li span,
-#all-my-drum-cover #video-choice-list-2 ul li:nth-of-type(2) span, #all-my-drum-cover #video-choice-list-3 ul li span,
-#all-my-drum-cover #video-choice-list-3 ul li:nth-of-type(2) span, #all-my-drum-cover #video-choice-list-4 ul li span,
-#all-my-drum-cover #video-choice-list-4 ul li:nth-of-type(2) span, #all-my-drum-cover #video-choice-list-5 ul li span,
-#all-my-drum-cover #video-choice-list-5 ul li:nth-of-type(2) span, #all-my-drum-cover #video-choice-list-6 ul li span,
-#all-my-drum-cover #video-choice-list-6 ul li:nth-of-type(2) span, #all-my-drum-cover #video-choice-list-7 ul li span,
-#all-my-drum-cover #video-choice-list-7 ul li:nth-of-type(2) span, #all-my-drum-cover #video-choice-list-8 ul li span,
-#all-my-drum-cover #video-choice-list-8 ul li:nth-of-type(2) span,
+#all-my-drum-cover #video-choice-list ul li span, #all-my-drum-cover #video-choice-list ul li:nth-of-type(2) span, #all-my-drum-cover #video-choice-list-1 ul li span, #all-my-drum-cover #video-choice-list-1 ul li:nth-of-type(2) span, #all-my-drum-cover #video-choice-list-2 ul li span, #all-my-drum-cover #video-choice-list-2 ul li:nth-of-type(2) span, #all-my-drum-cover #video-choice-list-3 ul li span, #all-my-drum-cover #video-choice-list-3 ul li:nth-of-type(2) span, #all-my-drum-cover #video-choice-list-4 ul li span, #all-my-drum-cover #video-choice-list-4 ul li:nth-of-type(2) span, #all-my-drum-cover #video-choice-list-5 ul li span, #all-my-drum-cover #video-choice-list-5 ul li:nth-of-type(2) span, #all-my-drum-cover #video-choice-list-6 ul li span, #all-my-drum-cover #video-choice-list-6 ul li:nth-of-type(2) span, #all-my-drum-cover #video-choice-list-7 ul li span, #all-my-drum-cover #video-choice-list-7 ul li:nth-of-type(2) span, #all-my-drum-cover #video-choice-list-8 ul li span, #all-my-drum-cover #video-choice-list-8 ul li:nth-of-type(2) span,
 #the-chainsmokres #video-choice-list ul li span,
 #the-chainsmokres #video-choice-list ul li:nth-of-type(2) span,
 #the-chainsmokres #video-choice-list-1 ul li span,
@@ -1965,21 +1824,11 @@ body {
 #be-st #video-choice-list-7 ul li:nth-of-type(2) span,
 #be-st #video-choice-list-8 ul li span,
 #be-st #video-choice-list-8 ul li:nth-of-type(2) span {
-  font-family: 'Pretendard-Regular';
+  font-family: "Pretendard-Regular";
   font-size: 0.7vw;
   color: #999;
 }
-
-#all-my-drum-cover #video-choice-list ul li:hover,
-#all-my-drum-cover #video-choice-list ul li:nth-of-type(2):hover, #all-my-drum-cover #video-choice-list-1 ul li:hover,
-#all-my-drum-cover #video-choice-list-1 ul li:nth-of-type(2):hover, #all-my-drum-cover #video-choice-list-2 ul li:hover,
-#all-my-drum-cover #video-choice-list-2 ul li:nth-of-type(2):hover, #all-my-drum-cover #video-choice-list-3 ul li:hover,
-#all-my-drum-cover #video-choice-list-3 ul li:nth-of-type(2):hover, #all-my-drum-cover #video-choice-list-4 ul li:hover,
-#all-my-drum-cover #video-choice-list-4 ul li:nth-of-type(2):hover, #all-my-drum-cover #video-choice-list-5 ul li:hover,
-#all-my-drum-cover #video-choice-list-5 ul li:nth-of-type(2):hover, #all-my-drum-cover #video-choice-list-6 ul li:hover,
-#all-my-drum-cover #video-choice-list-6 ul li:nth-of-type(2):hover, #all-my-drum-cover #video-choice-list-7 ul li:hover,
-#all-my-drum-cover #video-choice-list-7 ul li:nth-of-type(2):hover, #all-my-drum-cover #video-choice-list-8 ul li:hover,
-#all-my-drum-cover #video-choice-list-8 ul li:nth-of-type(2):hover,
+#all-my-drum-cover #video-choice-list ul li:hover, #all-my-drum-cover #video-choice-list ul li:nth-of-type(2):hover, #all-my-drum-cover #video-choice-list-1 ul li:hover, #all-my-drum-cover #video-choice-list-1 ul li:nth-of-type(2):hover, #all-my-drum-cover #video-choice-list-2 ul li:hover, #all-my-drum-cover #video-choice-list-2 ul li:nth-of-type(2):hover, #all-my-drum-cover #video-choice-list-3 ul li:hover, #all-my-drum-cover #video-choice-list-3 ul li:nth-of-type(2):hover, #all-my-drum-cover #video-choice-list-4 ul li:hover, #all-my-drum-cover #video-choice-list-4 ul li:nth-of-type(2):hover, #all-my-drum-cover #video-choice-list-5 ul li:hover, #all-my-drum-cover #video-choice-list-5 ul li:nth-of-type(2):hover, #all-my-drum-cover #video-choice-list-6 ul li:hover, #all-my-drum-cover #video-choice-list-6 ul li:nth-of-type(2):hover, #all-my-drum-cover #video-choice-list-7 ul li:hover, #all-my-drum-cover #video-choice-list-7 ul li:nth-of-type(2):hover, #all-my-drum-cover #video-choice-list-8 ul li:hover, #all-my-drum-cover #video-choice-list-8 ul li:nth-of-type(2):hover,
 #the-chainsmokres #video-choice-list ul li:hover,
 #the-chainsmokres #video-choice-list ul li:nth-of-type(2):hover,
 #the-chainsmokres #video-choice-list-1 ul li:hover,
@@ -2126,17 +1975,7 @@ body {
 #be-st #video-choice-list-8 ul li:nth-of-type(2):hover {
   background: rgba(153, 153, 153, 0.1);
 }
-
-#all-my-drum-cover #video-choice-list ul li.active,
-#all-my-drum-cover #video-choice-list ul li:nth-of-type(2).active, #all-my-drum-cover #video-choice-list-1 ul li.active,
-#all-my-drum-cover #video-choice-list-1 ul li:nth-of-type(2).active, #all-my-drum-cover #video-choice-list-2 ul li.active,
-#all-my-drum-cover #video-choice-list-2 ul li:nth-of-type(2).active, #all-my-drum-cover #video-choice-list-3 ul li.active,
-#all-my-drum-cover #video-choice-list-3 ul li:nth-of-type(2).active, #all-my-drum-cover #video-choice-list-4 ul li.active,
-#all-my-drum-cover #video-choice-list-4 ul li:nth-of-type(2).active, #all-my-drum-cover #video-choice-list-5 ul li.active,
-#all-my-drum-cover #video-choice-list-5 ul li:nth-of-type(2).active, #all-my-drum-cover #video-choice-list-6 ul li.active,
-#all-my-drum-cover #video-choice-list-6 ul li:nth-of-type(2).active, #all-my-drum-cover #video-choice-list-7 ul li.active,
-#all-my-drum-cover #video-choice-list-7 ul li:nth-of-type(2).active, #all-my-drum-cover #video-choice-list-8 ul li.active,
-#all-my-drum-cover #video-choice-list-8 ul li:nth-of-type(2).active,
+#all-my-drum-cover #video-choice-list ul li.active, #all-my-drum-cover #video-choice-list ul li:nth-of-type(2).active, #all-my-drum-cover #video-choice-list-1 ul li.active, #all-my-drum-cover #video-choice-list-1 ul li:nth-of-type(2).active, #all-my-drum-cover #video-choice-list-2 ul li.active, #all-my-drum-cover #video-choice-list-2 ul li:nth-of-type(2).active, #all-my-drum-cover #video-choice-list-3 ul li.active, #all-my-drum-cover #video-choice-list-3 ul li:nth-of-type(2).active, #all-my-drum-cover #video-choice-list-4 ul li.active, #all-my-drum-cover #video-choice-list-4 ul li:nth-of-type(2).active, #all-my-drum-cover #video-choice-list-5 ul li.active, #all-my-drum-cover #video-choice-list-5 ul li:nth-of-type(2).active, #all-my-drum-cover #video-choice-list-6 ul li.active, #all-my-drum-cover #video-choice-list-6 ul li:nth-of-type(2).active, #all-my-drum-cover #video-choice-list-7 ul li.active, #all-my-drum-cover #video-choice-list-7 ul li:nth-of-type(2).active, #all-my-drum-cover #video-choice-list-8 ul li.active, #all-my-drum-cover #video-choice-list-8 ul li:nth-of-type(2).active,
 #the-chainsmokres #video-choice-list ul li.active,
 #the-chainsmokres #video-choice-list ul li:nth-of-type(2).active,
 #the-chainsmokres #video-choice-list-1 ul li.active,
@@ -2283,7 +2122,6 @@ body {
 #be-st #video-choice-list-8 ul li:nth-of-type(2).active {
   background: #444;
 }
-
 #all-my-drum-cover #video-choice-list-1 ul li:nth-of-type(1), #all-my-drum-cover #video-choice-list-6 ul li:nth-of-type(1),
 #the-chainsmokres #video-choice-list-1 ul li:nth-of-type(1),
 #the-chainsmokres #video-choice-list-6 ul li:nth-of-type(1),
@@ -2303,9 +2141,7 @@ body {
 #be-st #video-choice-list-6 ul li:nth-of-type(1) {
   height: 10vh;
 }
-
-#all-my-drum-cover #video-choice-list-6 ul li:nth-of-type(5),
-#all-my-drum-cover #video-choice-list-6 ul li:nth-of-type(9),
+#all-my-drum-cover #video-choice-list-6 ul li:nth-of-type(5), #all-my-drum-cover #video-choice-list-6 ul li:nth-of-type(9),
 #the-chainsmokres #video-choice-list-6 ul li:nth-of-type(5),
 #the-chainsmokres #video-choice-list-6 ul li:nth-of-type(9),
 #vi-ew #video-choice-list-6 ul li:nth-of-type(5),
@@ -2324,7 +2160,6 @@ body {
 #be-st #video-choice-list-6 ul li:nth-of-type(9) {
   height: 10vh;
 }
-
 #all-my-drum-cover #video-choice-list-2 ul li:nth-of-type(2),
 #the-chainsmokres #video-choice-list-2 ul li:nth-of-type(2),
 #vi-ew #video-choice-list-2 ul li:nth-of-type(2),

@@ -247,22 +247,22 @@ body::-webkit-scrollbar {
     font-family: 'Pretendard-Regular';
     padding-top:3%;
 }
-#list-1 > #the-top,
-#list-2 > #the-top,
-#list-1 > #the-bottom,
-#list-2 > #the-bottom{
+#list-1 > .the-top,
+#list-2 > .the-top,
+#list-1 > .the-bottom,
+#list-2 > .the-bottom{
     width:1.5vw;
     position:absolute;
 }
-    #list-1 > #the-bottom,
-    #list-2 > #the-bottom{
+    #list-1 > .the-bottom,
+    #list-2 > .the-bottom{
         width:3vw;
     }
-    #the-top{
+    .the-top{
         top:5%; right:15%;
         filter: invert(1);
     }
-    #the-bottom{
+    .the-bottom{
         bottom:30%; right:18%;
         opacity: 0.9;
     }
