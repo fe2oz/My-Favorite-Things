@@ -207,13 +207,13 @@
                 </div> <!--grid-->
             </div>
 
-            <section class="section2">
+            <div class="section2">
                 <div class="grid2" id="grid2">
-                    <Fragment>
+                    <div class="teest">
                         
-                    </Fragment>
+                    </div>
                 </div>
-            </section>
+            </div>
         </div>
     </div>
 
@@ -269,7 +269,7 @@
             var pageNum = 1;
  
             $("#search").click(function () {
-                $("Fragment").html("");
+                $(".teest").html("");
                 $(".citypop").hide();
                
                 $.ajax({
@@ -281,7 +281,7 @@
                 .done(function (msg) {
                     console.log(msg);
                     for (var i = 0; i < 10; i++){
-                      $("Fragment").append("<img src='" + msg.documents[i].image_url + "'/>");
+                      $(".teest").append("<img src='" + msg.documents[i].image_url + "'/>");
                     }
                 });
             });
@@ -298,7 +298,7 @@
                     .done(function (msg) {
                         console.log(msg);
                         for (var i = 0; i < 10; i++){
-                          $("Fragment").append("<img src='" + msg.documents[i].image_url + "'/>");
+                          $(".teest").append("<img src='" + msg.documents[i].image_url + "'/>");
                         }
                     });
                 }
@@ -306,7 +306,7 @@
         });
 
         function searchHide(){
-            $("Fragment").hide();
+            $(".teest").hide();
             $(".citypop").show();
         }
 
