@@ -1,5 +1,6 @@
 body {
   height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(#9257ff), to(#402565));
   background: linear-gradient(90deg, #9257ff, #402565);
   background: url(../../img/drum/preview.jpg);
   background-size: 100% 100%;
@@ -21,24 +22,34 @@ body {
 }
 
 #mmlogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #etc {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 2%;
 }
+
 #etc p {
-  font-family: "Pretendard-Regular";
+  font-family: 'Pretendard-Regular';
   font-size: 1vw;
   color: white;
   text-align: center;
   text-decoration: underline;
   cursor: pointer;
 }
+
 #etc p:nth-of-type(1), #etc p:nth-of-type(2), #etc p:nth-of-type(3) {
   padding-right: 2%;
 }
@@ -47,25 +58,43 @@ body {
   width: 100%;
   height: 15vh;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 #show p {
   font-size: 1.5vw;
   font-weight: bold;
-  font-family: "Pretendard-Regular";
+  font-family: 'Pretendard-Regular';
 }
+
 #show span:nth-of-type(1) {
   margin-top: 1%;
 }
+
 #show span {
-  font-family: "Pretendard-Regular";
+  font-family: 'Pretendard-Regular';
 }
 
 #sponsor {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
